@@ -1,0 +1,11 @@
+{
+  "Id": "AddedFeats",
+  "DisplayName": "AddedFeats",
+  "Author": "",
+  "Version": "1.0",
+  "ManagerVersion": "0.21.3",
+  "Requirements": [],
+  "AssemblyName": "AddedFeats.dll",
+  "EntryMethod": "AddedFeats.Main.Load"
+}
+

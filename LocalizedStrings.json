@@ -1,0 +1,167 @@
+[
+  {
+    "Key": "PlanarFocus.Name",
+    // Don't process this since it is just a name. Without this it might create strange artifacts by trying to create
+    // links to encycolpedia pages.
+    "ProcessTemplates": false,
+    "enGB": "Planar Focus"
+  },
+  {
+    "Key": "PlanarFocus.Description",
+    "enGB": "When you use your animal focus class feature, you can choose any of the following new aspects unless they conflict with your alignment: Air, Chaotic, Cold, Earth, Evil, Fire, Good, Lawful, Shadow, Water."
+  },
+
+  {
+    "Key": "PlanarFocusAir.Name",
+    "ProcessTemplates": false,
+    "enGB": "Planar Focus - Air"
+  },
+  {
+    "Key": "PlanarFocusAir.Description",
+    "enGB": "You gain immunity to difficult terrain and ground based effects."
+  },
+
+  {
+    "Key": "PlanarFocusChaos.Name",
+    "ProcessTemplates": false,
+    "enGB": "Planar Focus - Chaotic"
+  },
+  {
+    "Key": "PlanarFocusChaos.Description",
+    "enGB": "Your form shifts subtly, making it difficult for others to aim precise attacks against you. You gain a 25% chance to negate extra damage from critical hits and precision damage from attacks made against you (such as from sneak attacks). Only chaotic characters can use this planar focus."
+  },
+
+  {
+    "Key": "PlanarFocusCold.Name",
+    "ProcessTemplates": false,
+    "enGB": "Planar Focus - Cold"
+  },
+  {
+    "Key": "PlanarFocusCold.Description",
+    "enGB": "Creatures that attack you with natural attacks or melee weapons take 1d4 points of cold damage for every 4 class levels you possess."
+  },
+
+  {
+    "Key": "PlanarFocusEarth.Name",
+    "ProcessTemplates": false,
+    "enGB": "Planar Focus - Earth"
+  },
+  {
+    "Key": "PlanarFocusEarth.Description",
+    "enGB": "You gain +2 bonus to CMB when performing bull rush maneuver, and a +2 bonus to CMD when defending against it. You also receive +2 enhancement bonus to your natural armor."
+  },
+
+  {
+    "Key": "PlanarFocusEvil.Name",
+    "ProcessTemplates": false,
+    "enGB": "Planar Focus - Evil"
+  },
+  {
+    "Key": "PlanarFocusEvil.Description",
+    "enGB": "You gain a +2 profane bonus to AC and on saves against attacks made and effects created by good outsiders."
+  },
+
+  {
+    "Key": "PlanarFocusFire.Name",
+    "ProcessTemplates": false,
+    "enGB": "Planar Focus - Fire"
+  },
+  {
+    "Key": "PlanarFocusFire.Description",
+    "enGB": "Your natural attacks and melee weapons deal 1d6 points of fire damage for every 4 class levels you possess."
+  },
+
+  {
+    "Key": "PlanarFocusGood.Name",
+    "ProcessTemplates": false,
+    "enGB": "Planar Focus - Good"
+  },
+  {
+    "Key": "PlanarFocusGood.Description",
+    "enGB": "You gain a +2 sacred bonus to AC and on saves against attacks made or effects created by evil outsiders."
+  },
+
+  {
+    "Key": "PlanarFocusLawful.Name",
+    "ProcessTemplates": false,
+    "enGB": "Planar Focus - Lawful"
+  },
+  {
+    "Key": "PlanarFocusLawful.Description",
+    "enGB": "You gain immunity to polymorph spells."
+  },
+
+  {
+    "Key": "PlanarFocusShadow.Name",
+    "ProcessTemplates": false,
+    "enGB": "Planar Focus - Shadow"
+  },
+  {
+    "Key": "PlanarFocusShadow.Description",
+    "enGB": "You gain a +5 bonus on Stealth and Trickery checks."
+  },
+
+  {
+    "Key": "PlanarFocusWater.Name",
+    "ProcessTemplates": false,
+    "enGB": "Planar Focus - Water"
+  },
+  {
+    "Key": "PlanarFocusWater.Description",
+    "enGB": "You gain immunity to combat maneuvers."
+  },
+  {
+    "Key": "FavoredAnimalFocus.Name",
+    "ProcessTemplates": false,
+    "enGB": "Favored Animal Focus"
+  },
+  {
+    "Key": "FavoredAnimalFocus.Description",
+    "enGB": "Choose one animal focus. When you apply that animal focus to your animal companion, the benefits increase by one step. For example, if you are 6th level and choose the bear animal focus, then when you apply the animal focus to your animal companion, it gains a +4 enhancement bonus to Constitution instead of +2."
+  },
+  {
+    "Key": "FavoredBull.Name",
+    "ProcessTemplates": false,
+    "enGB": "Favored Animal Focus - Bull"
+  },
+  {
+    "Key": "FavoredBull.Description",
+    "enGB": "The animal companions Strength bonus increases to +4/+6/+8 when using Animal Focus - Bull."
+  },
+  {
+    "Key": "FavoredBear.Name",
+    "ProcessTemplates": false,
+    "enGB": "Favored Animal Focus - Bear"
+  },
+  {
+    "Key": "FavoredBear.Description",
+    "enGB": "The animal companions Constitution bonus increases to +4/+6/+8 when using Animal Focus - Bear."
+  },
+  {
+    "Key": "FavoredTiger.Name",
+    "ProcessTemplates": false,
+    "enGB": "Favored Animal Focus - Tiger"
+  },
+  {
+    "Key": "FavoredTiger.Description",
+    "enGB": "The animal companions Dexterity bonus increases to +4/+6/+8 when using Animal Focus - Tiger."
+  },
+  {
+    "Key": "FavoredStag.Name",
+    "ProcessTemplates": false,
+    "enGB": "Favored Animal Focus - Stag"
+  },
+  {
+    "Key": "FavoredStag.Description",
+    "enGB": "The animal companions movement speed bonus increases to +10/+20/+30 when using Animal Focus - Stag."
+  },
+  {
+    "Key": "FavoredFalcon.Name",
+    "ProcessTemplates": false,
+    "enGB": "Favored Animal Focus - Falcon"
+  },
+  {
+    "Key": "FavoredFalcon.Description",
+    "enGB": "The animal companions Perception bonus increases to +6/+8/+12 when using Animal Focus - Falcon."
+  }
+]
