@@ -86,10 +86,6 @@
     </None>
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Feats\PlanarFocus\" />
-  </ItemGroup>
-
   <!-- Generates Assembly-CSharp_public.dll -->
   <Target Name="Publicize" AfterTargets="Clean">
     <ItemGroup>

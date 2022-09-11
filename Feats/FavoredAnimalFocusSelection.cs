@@ -17,6 +17,9 @@ namespace AddedFeats.Feats
             var foctiger = FavoredAnimalFocusTiger.Configure();
             var focfalcon = FavoredAnimalFocusFalcon.Configure();
             var focstag = FavoredAnimalFocusStag.Configure();
+            var focmouse = FavoredAnimalFocusMouse.Configure();
+            var focowl = FavoredAnimalFocusOwl.Configure();
+            var focmonkey = FavoredAnimalFocusMonkey.Configure();
 
             var selection = FeatureSelectionConfigurator.New("FavoredAnimalFocusSelection", "fe2d7d81-6631-4bff-8a35-b56c9811d7eb")
                 .SetDisplayName(DisplayName)
@@ -26,6 +29,9 @@ namespace AddedFeats.Feats
                 .AddToAllFeatures(foctiger)
                 .AddToAllFeatures(focfalcon)
                 .AddToAllFeatures(focstag)
+                .AddToAllFeatures(focmouse)
+                .AddToAllFeatures(focowl)
+                .AddToAllFeatures(focmonkey)
                 .SetHideInUI(true)
                 .SetHideInCharacterSheetAndLevelUp(true)
                 .SetHideNotAvailibleInUI(false)

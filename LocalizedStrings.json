@@ -163,5 +163,32 @@
   {
     "Key": "FavoredFalcon.Description",
     "enGB": "The animal companions Perception bonus increases to +6/+8/+12 when using Animal Focus - Falcon."
+  },
+  {
+    "Key": "FavoredMouse.Name",
+    "ProcessTemplates": false,
+    "enGB": "Favored Animal Focus - Mouse"
+  },
+  {
+    "Key": "FavoredMouse.Description",
+    "enGB": "The animal companions gains Improved Uncanny Dodge when using Animal Focus - Mouse using it's level as rogue levels for the purpose of determining flanking."
+  },
+  {
+    "Key": "FavoredOwl.Name",
+    "ProcessTemplates": false,
+    "enGB": "Favored Animal Focus - Owl"
+  },
+  {
+    "Key": "FavoredOwl.Description",
+    "enGB": "The animal companions stealth bonus increases to +6/+8/+12 when using Animal Focus - Owl."
+  },
+  {
+    "Key": "FavoredMonkey.Name",
+    "ProcessTemplates": false,
+    "enGB": "Favored Animal Focus - Monkey"
+  },
+  {
+    "Key": "FavoredMonkey.Description",
+    "enGB": "The animal companions athletics bonus increases to +6/+8/+12 when using Animal Focus - Monkey."
   }
 ]
