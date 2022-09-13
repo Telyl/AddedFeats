@@ -1,11 +1,11 @@
 # WrathMods-AddedFeats
 Additional feats for Pathfinder: Wrath of the Righteous
 
-Added the following feats:\n
-Planar Focus \n
-Favored Animal Focus \n
-Forceful Charge \n
-Improved Forceful Charge \n
+Added the following feats:
+Planar Focus 
+Favored Animal Focus 
+Forceful Charge 
+Improved Forceful Charge 
 
 Note: Creative liberty has been taken with some of the feats as a direct 1:1 translation was not feasible.
 
