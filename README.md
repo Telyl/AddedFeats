@@ -9,6 +9,5 @@ Improved Forceful Charge
 
 Note: Creative liberty has been taken with some of the feats as a direct 1:1 translation was not feasible.
 
-Special Thanks:
-Referenced Holiic75's Call of the Wild mod from Pathfinder:Kingmaker.
-Created with https://github.com/WittleWolfie/WW-Blueprint-Core by WittleWolfie and referencing Vek17's TableTopTweaks.
+Special thanks to Holic75, WittleWolfie, and Vek17. Referenced their work.
+Created with https://github.com/WittleWolfie/WW-Blueprint-Core
