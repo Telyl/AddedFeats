@@ -1,11 +1,8 @@
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.References;
 using Kingmaker.Blueprints.Classes;
-using Kingmaker.Enums;
 using Kingmaker.UnitLogic;
-using Kingmaker.EntitySystem.Stats;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
-using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.Utility;
 using BlueprintCore.Utils;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;

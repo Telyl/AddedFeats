@@ -56,6 +56,7 @@ namespace AddedFeats
 
                     PlanarFocus.Configure();
                     FavoredAnimalFocusSelection.Configure();
+                    ForcefulCharge.Configure();
                 }
                 catch (Exception e)
                 {

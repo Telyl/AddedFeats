@@ -1,0 +1,32 @@
+﻿using BlueprintCore.Utils;
+using Kingmaker.Blueprints.JsonSystem;
+using Kingmaker.PubSubSystem;
+using Kingmaker.RuleSystem.Rules;
+using Kingmaker.UnitLogic;
+using Kingmaker.EntitySystem.Entities;
+using Kingmaker.RuleSystem;
+using Kingmaker;
+
+namespace AddedFeats.NewComponents
+{
+    [TypeId("1a344f2340da40347a11ee61fcad7223")]
+    public class AddImprovedForcefulCharge : UnitFactComponentDelegate, IInitiatorRulebookHandler<RuleAttackWithWeapon>, IRulebookHandler<RuleAttackWithWeapon>
+    {
+        private static readonly LogWrapper ComponentLogger = LogWrapper.Get("AddForcefulCharge");
+
+        public void OnEventAboutToTrigger(RuleAttackWithWeapon evt)
+        {
+        }
+
+        public void OnEventDidTrigger(RuleAttackWithWeapon evt)
+        {
+            if (evt.IsCharge && evt.AttackRoll.IsHit) {
+                RuleCombatManeuver newevt = Game.Instance.Rulebook.TriggerEvent<RuleCombatManeuver>(new RuleCombatManeuver(evt.Initiator, evt.GetRuleTarget(), CombatManeuver.BullRush));
+                if(newevt.Success && ((newevt.InitiatorCMValue - newevt.TargetCMD) >= 5))
+                {
+                    Game.Instance.Rulebook.TriggerEvent<RuleCombatManeuver>(new RuleCombatManeuver(evt.Initiator, evt.GetRuleTarget(), CombatManeuver.Trip));
+                }
+            }
+        }
+    }
+}

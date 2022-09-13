@@ -190,5 +190,32 @@
   {
     "Key": "FavoredMonkey.Description",
     "enGB": "The animal companions athletics bonus increases to +6/+8/+12 when using Animal Focus - Monkey."
+  },
+  {
+    "Key": "ForcefulCharge.Name",
+    "ProcessTemplates": false,
+    "enGB": "Forceful Charge"
+  },
+  {
+    "Key": "ForcefulCharge.Description",
+    "enGB": "Once per round when this animal companion hits an opponent with a charge attack, it can initiate a bull rush against that target as a free action."
+  },
+  {
+    "Key": "ImprovedForcefulCharge.Name",
+    "ProcessTemplates": false,
+    "enGB": "Improved Forceful Charge"
+  },
+  {
+    "Key": "ImprovedForcefulCharge.Description",
+    "enGB": "This animal can bull rush a target that is up to two size categories larger than itself. If it pushes the target at least 10 feet as a result of this bull rush, it can attempt a trip combat maneuver check against the target as a free action. This trip combat maneuver provokes attacks of opportunity as normal."
+  },
+  {
+    "Key": "ForcefulChargeAbility.Name",
+    "ProcessTemplates": false,
+    "enGB": "Forceful Charge"
+  },
+  {
+    "Key": "ForcefulChargeAbility.Description",
+    "enGB": "Once per round when this animal companion hits an opponent with a charge attack, it can initiate a bull rush against that target as a free action. If it pushes the target at least 10 feet as a result of this bull rush, it can attempt a trip combat maneuver check against the target as a free action. This trip combat maneuver provokes attacks of opportunity as normal."
   }
 ]
