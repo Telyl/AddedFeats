@@ -27,21 +27,13 @@ namespace AddedFeats.Feats
     /// </summary>
     public class ForcefulCharge
     {
-        private static readonly string FeatName = "ForcefulChargeFeat";
-        private static readonly string FeatGuid = "b7874cf6-0a94-4685-a295-f2467b6c5428";
-        private static readonly string AbilityName = "ForcefulChargeAbility";
-        private static readonly string AbilityGuid = "d8ec6b3f-c687-493a-b5d9-2b31715b5fd2";
-        private static readonly string BuffName = "ForcefulChargeBuff";
-        private static readonly string BuffGuid = "508b7605-623c-468e-af65-7bac9cc36af7";
-
-        private static readonly string EffectName = "ForcefulChargeEffect";
-        private static readonly string EffectGuid = "508b7605-623c-468e-bbbb-7b32ccc36af7";
-
-        private static readonly string ImprovedEffectName = "ImprovedForcefulChargeEffect";
-        private static readonly string ImprovedEffectGuid = "5ccb7545-623c-468e-bbbb-7b32ccc36af7";
-
+        private static readonly string FeatName = "ForcefulCharge";
+        private static readonly string ImprovedFeatName = "ImprovedForcefulCharge";
+        
         private static readonly string DisplayName = "ForcefulCharge.Name";
         private static readonly string Description = "ForcefulCharge.Description";
+        private static readonly string ImprovedDisplayName = "ImprovedForcefulCharge.Name";
+        private static readonly string ImprovedDescription = "ImprovedForcefulCharge.Description";
 
         private static readonly LogWrapper FeatLogger = LogWrapper.Get("FavoredAnimalFocus");
 
@@ -49,21 +41,21 @@ namespace AddedFeats.Feats
         public static void Configure()
         {
 
-            BlueprintBuff ForcefulChargeEffect = BuffConfigurator.New(EffectName, EffectGuid)
+            BlueprintBuff ForcefulChargeEffect = BuffConfigurator.New(FeatName + "Effect", Guids.ForcefulChargeEffect)
                 .AddComponent<AddForcefulCharge>()
                 .Configure();
 
-            BlueprintBuff ImprovedForcefulChargeEffect = BuffConfigurator.New(ImprovedEffectName, ImprovedEffectGuid)
+            BlueprintBuff ImprovedForcefulChargeEffect = BuffConfigurator.New(ImprovedFeatName + "Effect", Guids.ImprovedForcefulChargeEffect)
                 .AddComponent<AddImprovedForcefulCharge>()
                 .Configure();
 
-            BlueprintBuff ForcefulChargeBuff = BuffConfigurator.New(BuffName, BuffGuid)
+            BlueprintBuff ForcefulChargeBuff = BuffConfigurator.New(FeatName + "Buff", Guids.ForcefulChargeBuff)
                 .SetFlags(BlueprintBuff.Flags.HiddenInUi)
                 .Configure();
 
-            BlueprintActivatableAbility ForcefulChargeToggleAbility = ActivatableAbilityConfigurator.New(AbilityName, AbilityGuid)
+            BlueprintActivatableAbility ForcefulChargeToggleAbility = ActivatableAbilityConfigurator.New(FeatName + "Ability", Guids.ForcefulChargeAbility)
                 .SetDisplayName(DisplayName)
-                .SetDescription("ForcefulChargeAbility.Description")
+                .SetDescription(Description)
                 .SetBuff(ForcefulChargeBuff)
                 .SetIcon(AbilityRefs.BullRushAction.Reference.Get().Icon)
                 .AddHideFeatureInInspect()
@@ -81,7 +73,7 @@ namespace AddedFeats.Feats
                 .Configure();
 
             //Create a feature for forceful charge
-            BlueprintFeature ForcefulChargeFeat = BasicFunctions.CreateBasicFeat(FeatName, FeatGuid, DisplayName, Description);
+            BlueprintFeature ForcefulChargeFeat = BasicFunctions.CreateBasicFeat(FeatName, Guids.ForcefulCharge, DisplayName, Description);
 
             FeatureConfigurator.For(ForcefulChargeFeat)
                 .SetGroups(FeatureGroup.Feat)
@@ -92,7 +84,9 @@ namespace AddedFeats.Feats
                 .AddPrerequisiteClassLevel(CharacterClassRefs.AnimalCompanionClass.Reference.Get(), 1)
                 .Configure();
 
-            BlueprintFeature ImprovedForcefulChargeFeat = BasicFunctions.CreateBasicFeat("ImprovedForcefulChargeFeat", "c6374cf6-0b94-4386-a281-f1167b6c5428" , "ImprovedForcefulCharge.Name", "ImprovedForcefulCharge.Description");
+            BlueprintFeature ImprovedForcefulChargeFeat = BasicFunctions.CreateBasicFeat(ImprovedFeatName, Guids.ImprovedForcefulCharge,
+                ImprovedDisplayName, ImprovedDescription);
+
             FeatureConfigurator.For(ImprovedForcefulChargeFeat)
                 .SetGroups(FeatureGroup.Feat)
                 .SetIcon(AbilityRefs.ChargeAbility.Reference.Get().Icon)

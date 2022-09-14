@@ -24,8 +24,6 @@ namespace AddedFeats.Feats.AnimalFocus
     public class FavoredAnimalFocusMonkey
     {
         private static readonly string FeatName = "FavoredAnimalFocusMonkey";
-        private static readonly string FeatGuid = "fa0ba92e-6304-494f-be38-8e4a4a840e16";
-        private static readonly string PetFeatGuid = "b462262d-73ee-4f85-a321-6c4a63de44cf";
 
         private static readonly string DisplayName = "FavoredMonkey.Name";
         private static readonly string Description = "FavoredMonkey.Description";
@@ -36,12 +34,13 @@ namespace AddedFeats.Feats.AnimalFocus
         public static BlueprintFeature Configure()
         {
             //Create a pet feature to use as the conditional information for the new buff.
-            BlueprintFeature FavoredMonkeyFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet", PetFeatGuid, "FavoredMonkey.Name", "FavoredMonkey.Description");
+            BlueprintFeature FavoredMonkeyFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet",
+                Guids.FavoredAnimalFocusMonkeyPet, DisplayName, DisplayName);
 
             //The magical new ability with it's new context and everything
-            BlueprintBuff FavoredAnimalMonkeyBuff = BuffConfigurator.New("FavoredMonkey", "f5273925-3e0f-4b91-9bdc-26d39a674825")
-                .SetDisplayName("FavoredMonkey.Name")
-                .SetDescription("FavoredMonkey.Description")
+            BlueprintBuff FavoredAnimalMonkeyBuff = BuffConfigurator.New(FeatName + "Buff", Guids.FavoredAnimalFocusMonkeyBuff )
+                .SetDisplayName(DisplayName)
+                .SetDescription(Description)
                 .SetIcon(AbilityRefs.AnimalAspectGorilla.Reference.Get().Icon)
                 .AddContextStatBonus(StatType.SkillAthletics, 
                 value: new ContextValue()
@@ -66,7 +65,7 @@ namespace AddedFeats.Feats.AnimalFocus
             .Configure();
 
             //The feature we (the player) can select that adds our pet feature.
-            return FeatureConfigurator.New(FeatName, FeatGuid)
+            return FeatureConfigurator.New(FeatName, Guids.FavoredAnimalFocusMonkey)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetReapplyOnLevelUp(true)

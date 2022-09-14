@@ -24,9 +24,6 @@ namespace AddedFeats.Feats.AnimalFocus
     public class FavoredAnimalFocusFalcon
     {
         private static readonly string FeatName = "FavoredAnimalFocusFalcon";
-        private static readonly string FeatGuid = "acfeb870-ad3f-4036-874f-4ec277944290";
-        private static readonly string PetFeatGuid = "8f297ce8-6233-4ef6-a578-0988ded5dc0b";
-
         private static readonly string DisplayName = "FavoredFalcon.Name";
         private static readonly string Description = "FavoredFalcon.Description";
 
@@ -36,12 +33,13 @@ namespace AddedFeats.Feats.AnimalFocus
         public static BlueprintFeature Configure()
         {
             //Create a pet feature to use as the conditional information for the new buff.
-            BlueprintFeature FavoredFalconFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet", PetFeatGuid, "FavoredFalcon.Name", "FavoredFalcon.Description");
+            BlueprintFeature FavoredFalconFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet",
+                Guids.FavoredAnimalFocusFalconPet, DisplayName, Description);
 
             //The magical new ability with it's new context and everything
-            BlueprintBuff FavoredAnimalFalconBuff = BuffConfigurator.New("FavoredFalcon", "b101cef2-6e25-46ac-945c-bf9f1fcdb722")
-                .SetDisplayName("FavoredFalcon.Name")
-                .SetDescription("FavoredFalcon.Description")
+            BlueprintBuff FavoredAnimalFalconBuff = BuffConfigurator.New(FeatName + "Buff", Guids.FavoredAnimalFocusFalconBuff)
+                .SetDisplayName(DisplayName)
+                .SetDescription(Description)
                 .SetIcon(AbilityRefs.AspectOfTheFalcon.Reference.Get().Icon)
                 .AddContextStatBonus(StatType.SkillPerception, 
                 value: new ContextValue()
@@ -67,7 +65,7 @@ namespace AddedFeats.Feats.AnimalFocus
 
 
             //The feature we (the player) can select that adds our pet feature.
-            return FeatureConfigurator.New(FeatName, FeatGuid)
+            return FeatureConfigurator.New(FeatName, Guids.FavoredAnimalFocusFalcon)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetReapplyOnLevelUp(true)

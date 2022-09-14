@@ -21,8 +21,6 @@ namespace AddedFeats.Feats.AnimalFocus
     public class FavoredAnimalFocusMouse
     {
         private static readonly string FeatName = "FavoredAnimalFocusMouse";
-        private static readonly string FeatGuid = "8ad4b17f-fc7d-41b3-9021-fe70108484a1";
-        private static readonly string PetFeatGuid = "373677ff-532d-49d0-bee3-eb6513fef7c7";
 
         private static readonly string DisplayName = "FavoredMouse.Name";
         private static readonly string Description = "FavoredMouse.Description";
@@ -33,12 +31,13 @@ namespace AddedFeats.Feats.AnimalFocus
         public static BlueprintFeature Configure()
         {
             //Create a pet feature to use as the conditional information for the new buff.
-            BlueprintFeature FavoredMouseFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet", PetFeatGuid, "FavoredMouse.Name", "FavoredMouse.Description");
+            BlueprintFeature FavoredMouseFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet",
+                Guids.FavoredAnimalFocusMousePet, DisplayName, Description);
 
             //The magical new ability with it's new context and everything
-            BlueprintBuff FavoredAnimalMouseBuff = BuffConfigurator.New("FavoredMouse", "322ddf08-5a72-41c1-a020-cf0f871967ec")
-                .SetDisplayName("FavoredMouse.Name")
-                .SetDescription("FavoredMouse.Description")
+            BlueprintBuff FavoredAnimalMouseBuff = BuffConfigurator.New(FeatName + "Buff", Guids.FavoredAnimalFocusMouseBuff)
+                .SetDisplayName(DisplayName)
+                .SetDescription(Description)
                 .SetIcon(AbilityRefs.AnimalAspectRacoon.Reference.Get().Icon)
                 .AddTemporaryFeat(FeatureRefs.ImprovedUncannyDodge.Reference.Get())
                 .AddContextRankConfig(
@@ -59,7 +58,7 @@ namespace AddedFeats.Feats.AnimalFocus
             .Configure();
 
             //The feature we (the player) can select that adds our pet feature.
-            return FeatureConfigurator.New(FeatName, FeatGuid)
+            return FeatureConfigurator.New(FeatName, Guids.FavoredAnimalFocusMouse)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetReapplyOnLevelUp(true)

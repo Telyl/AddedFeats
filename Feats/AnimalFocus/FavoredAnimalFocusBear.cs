@@ -19,29 +19,26 @@ using AddedFeats.Utils;
 namespace AddedFeats.Feats.AnimalFocus
 {
     /// <summary>
-    /// Creates a feat that does nothing but show up.
+    /// Creates the Favored Animal Focus - Bear logic and feature.
     /// </summary>
     public class FavoredAnimalFocusBear
     {
         private static readonly string FeatName = "FavoredAnimalFocusBear";
-        private static readonly string FeatGuid = "bca79523-3d18-4ff6-ae9d-a14ace7ff516";
-        private static readonly string PetFeatGuid = "80a1a04e-ed27-43f9-8ee0-783625d155c6";
-
         private static readonly string DisplayName = "FavoredBear.Name";
         private static readonly string Description = "FavoredBear.Description";
 
         private static readonly LogWrapper FeatLogger = LogWrapper.Get("FavoredAnimalFocus");
 
-        
         public static BlueprintFeature Configure()
         {
             //Create a pet feature to use as the conditional information for the new buff.
-            BlueprintFeature FavoredBearFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet", PetFeatGuid, "FavoredBear.Name", "FavoredBear.Description");
+            BlueprintFeature FavoredBearFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet", 
+                Guids.FavoredAnimalFocusBearPet, "FavoredBear.Name", "FavoredBear.Description");
 
             //The magical new ability with it's new context and everything
-            BlueprintBuff FavoredAnimalBearBuff = BuffConfigurator.New("FavoredBear", "ef3f2bfe-6ab0-4259-ae1e-5a6aa14cb4a2")
-                .SetDisplayName("FavoredBear.Name")
-                .SetDescription("FavoredBear.Description")
+            BlueprintBuff FavoredAnimalBearBuff = BuffConfigurator.New(FeatName + "Buff", Guids.FavoredAnimalFocusBearBuff)
+                .SetDisplayName(DisplayName)
+                .SetDescription(Description)
                 .SetIcon(AbilityRefs.BearsEndurance.Reference.Get().Icon)
                 .AddContextStatBonus(StatType.Constitution, 
                 value: new ContextValue()
@@ -66,7 +63,7 @@ namespace AddedFeats.Feats.AnimalFocus
             .Configure();
 
             //The feature we (the player) can select that adds our pet feature.
-            return FeatureConfigurator.New(FeatName, FeatGuid)
+            return FeatureConfigurator.New(FeatName, Guids.FavoredAnimalFocusBear)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetReapplyOnLevelUp(true)

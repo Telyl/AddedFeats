@@ -24,8 +24,6 @@ namespace AddedFeats.Feats.AnimalFocus
     public class FavoredAnimalFocusStag
     {
         private static readonly string FeatName = "FavoredAnimalFocusStag";
-        private static readonly string FeatGuid = "7f0e0a09-a99f-401e-a55b-1a9934aa572a";
-        private static readonly string PetFeatGuid = "8d229ae8-ca0b-4b54-98d8-581566164557";
 
         private static readonly string DisplayName = "FavoredStag.Name";
         private static readonly string Description = "FavoredStag.Description";
@@ -36,12 +34,13 @@ namespace AddedFeats.Feats.AnimalFocus
         public static BlueprintFeature Configure()
         {
             //Create a pet feature to use as the conditional information for the new buff.
-            BlueprintFeature FavoredStagFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet", PetFeatGuid, "FavoredStag.Name", "FavoredStag.Description");
+            BlueprintFeature FavoredStagFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet",
+                Guids.FavoredAnimalFocusStagPet, DisplayName, Description);
 
             //The magical new ability with it's new context and everything
-            BlueprintBuff FavoredAnimalStagBuff = BuffConfigurator.New("FavoredStag", "28ca242f-b265-48b5-acfd-4edd743bc785")
-                .SetDisplayName("FavoredStag.Name")
-                .SetDescription("FavoredStag.Description")
+            BlueprintBuff FavoredAnimalStagBuff = BuffConfigurator.New(FeatName + "Buff", Guids.FavoredAnimalFocusStagBuff)
+                .SetDisplayName(DisplayName)
+                .SetDescription(Description)
                 .SetIcon(AbilityRefs.AspectOfTheStag.Reference.Get().Icon)
                 .AddContextStatBonus(StatType.Speed, 
                 value: new ContextValue()
@@ -66,7 +65,7 @@ namespace AddedFeats.Feats.AnimalFocus
             .Configure();
 
             //The feature we (the player) can select that adds our pet feature.
-            return FeatureConfigurator.New(FeatName, FeatGuid)
+            return FeatureConfigurator.New(FeatName, Guids.FavoredAnimalFocusStag)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetReapplyOnLevelUp(true)

@@ -24,9 +24,6 @@ namespace AddedFeats.Feats.AnimalFocus
     public class FavoredAnimalFocusTiger
     {
         private static readonly string FeatName = "FavoredAnimalFocusTiger";
-        private static readonly string FeatGuid = "85120543-d4b6-403e-ac84-3acf07fa2d52";
-        private static readonly string PetFeatGuid = "c246781a-4e26-460d-ab32-673307ece6f0";
-
         private static readonly string DisplayName = "FavoredTiger.Name";
         private static readonly string Description = "FavoredTiger.Description";
 
@@ -36,12 +33,13 @@ namespace AddedFeats.Feats.AnimalFocus
         public static BlueprintFeature Configure()
         {
             //Create a pet feature to use as the conditional information for the new buff.
-            BlueprintFeature FavoredTigerFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet", PetFeatGuid, "FavoredTiger.Name", "FavoredTiger.Description");
+            BlueprintFeature FavoredTigerFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet",
+                Guids.FavoredAnimalFocusTigerPet, DisplayName, Description);
 
             //The magical new ability with it's new context and everything
-            BlueprintBuff FavoredAnimalTigerBuff = BuffConfigurator.New("FavoredTiger", "cdde9ed1-46cf-4457-8b8e-af3d7b0f3055")
-                .SetDisplayName("FavoredTiger.Name")
-                .SetDescription("FavoredTiger.Description")
+            BlueprintBuff FavoredAnimalTigerBuff = BuffConfigurator.New(FeatName + "Buff", Guids.FavoredAnimalFocusTigerBuff)
+                .SetDisplayName(DisplayName)
+                .SetDescription(Description)
                 .SetIcon(AbilityRefs.CatsGrace.Reference.Get().Icon)
                 .AddContextStatBonus(StatType.Dexterity, 
                 value: new ContextValue()
@@ -66,7 +64,7 @@ namespace AddedFeats.Feats.AnimalFocus
             .Configure();
 
             //The feature we (the player) can select that adds our pet feature.
-            return FeatureConfigurator.New(FeatName, FeatGuid)
+            return FeatureConfigurator.New(FeatName, Guids.FavoredAnimalFocusTiger)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetReapplyOnLevelUp(true)

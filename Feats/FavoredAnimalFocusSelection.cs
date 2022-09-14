@@ -1,5 +1,8 @@
 using BlueprintCore.Blueprints.Configurators.Classes.Selection;
 using AddedFeats.Feats.AnimalFocus;
+using AddedFeats.Utils;
+using Kingmaker.Blueprints.Classes;
+using Kingmaker.Blueprints.Classes.Selection;
 
 namespace AddedFeats.Feats
 {
@@ -8,6 +11,7 @@ namespace AddedFeats.Feats
     /// </summary>
     public class FavoredAnimalFocusSelection
     {
+        private static readonly string FeatName = "FavoredAnimalFocusSelection";
         private static readonly string DisplayName = "FavoredAnimalFocus.Name";
         private static readonly string Description = "FavoredAnimalFocus.Description";
         public static void Configure()
@@ -21,17 +25,10 @@ namespace AddedFeats.Feats
             var focowl = FavoredAnimalFocusOwl.Configure();
             var focmonkey = FavoredAnimalFocusMonkey.Configure();
 
-            var selection = FeatureSelectionConfigurator.New("FavoredAnimalFocusSelection", "fe2d7d81-6631-4bff-8a35-b56c9811d7eb")
+            var selection = FeatureSelectionConfigurator.New(FeatName, Guids.FavoredAnimalFocusSelection)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
-                .AddToAllFeatures(focbull)
-                .AddToAllFeatures(focbear)
-                .AddToAllFeatures(foctiger)
-                .AddToAllFeatures(focfalcon)
-                .AddToAllFeatures(focstag)
-                .AddToAllFeatures(focmouse)
-                .AddToAllFeatures(focowl)
-                .AddToAllFeatures(focmonkey)
+                .AddToAllFeatures(focbull, focbear, foctiger, focfalcon, focstag, focmouse, focowl, focmonkey)
                 .SetHideInUI(true)
                 .SetHideInCharacterSheetAndLevelUp(true)
                 .SetHideNotAvailibleInUI(false)
@@ -41,6 +38,21 @@ namespace AddedFeats.Feats
             FeatureSelectionConfigurator.For(basicFeatSelectionGuid)
                 .AddToAllFeatures(selection)
                 .Configure();
+        }
+
+        public static bool SetGroup(BlueprintFeatureSelection selection, FeatureGroup[] featuregroups)
+        {
+            try
+            {
+                FeatureSelectionConfigurator.For(selection)
+                .AddToGroups(featuregroups)
+                .Configure();
+            }
+            catch
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

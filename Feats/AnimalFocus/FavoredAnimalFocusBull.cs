@@ -24,9 +24,6 @@ namespace AddedFeats.Feats.AnimalFocus
     public class FavoredAnimalFocusBull
     {
         private static readonly string FeatName = "FavoredAnimalFocusBull";
-        private static readonly string FeatGuid = "60b339a3-33e6-4fce-0c9c-e51403ef5ada";
-        private static readonly string PetFeatGuid = "60c339a3-33e3-4fce-8c8c-e51403ef5ada";
-
         private static readonly string DisplayName = "FavoredBull.Name";
         private static readonly string Description = "FavoredBull.Description";
 
@@ -36,12 +33,13 @@ namespace AddedFeats.Feats.AnimalFocus
         public static BlueprintFeature Configure()
         {
             //Create a pet feature to use as the conditional information for the new buff.
-            BlueprintFeature FavoredBullFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet", PetFeatGuid, "FavoredBull.Name", "FavoredBull.Description");
+            BlueprintFeature FavoredBullFocusPetFeat = BasicFunctions.CreateBasicFeat(FeatName + "Pet",
+                Guids.FavoredAnimalFocusBullPet, DisplayName, Description);
 
             //The magical new ability with it's new context and everything
-            BlueprintBuff FavoredAnimalBullBuff = BuffConfigurator.New("FavoredBull", "16c88e20-b823-44b9-b15f-e69fc4c6a556")
-                .SetDisplayName("FavoredBull.Name")
-                .SetDescription("FavoredBull.Description")
+            BlueprintBuff FavoredAnimalBullBuff = BuffConfigurator.New(FeatName + "Buff", Guids.FavoredAnimalFocusBullBuff)
+                .SetDisplayName(DisplayName)
+                .SetDescription(Description)
                 .SetIcon(AbilityRefs.BullsStrength.Reference.Get().Icon)
                 .AddContextStatBonus(StatType.Strength, 
                 value: new ContextValue()
@@ -66,7 +64,7 @@ namespace AddedFeats.Feats.AnimalFocus
             .Configure();
 
             //The feature we (the player) can select that adds our pet feature.
-            return FeatureConfigurator.New(FeatName, FeatGuid)
+            return FeatureConfigurator.New(FeatName, Guids.FavoredAnimalFocusBull)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetReapplyOnLevelUp(true)

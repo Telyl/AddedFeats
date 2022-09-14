@@ -4,7 +4,7 @@ using Kingmaker.Blueprints.Classes;
 namespace AddedFeats.Utils
 {
     /// <summary>
-    /// Creates a feat that does nothing but show up.
+    /// Creates a feat that does nothing but show up with usual configuration to start with.
     /// </summary>
     public class BasicFunctions
     {
