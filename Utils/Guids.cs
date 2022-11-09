@@ -121,6 +121,10 @@ namespace AddedFeats.Utils
         internal const string PlanarFocusWaterAnimalBuff = "736fd667-b68a-4e65-bee2-78cd55f3c27f";
         //***********//
 
+        // Strong Jaw (Spell)
+        internal const string StrongJawSpell = "7cd44ce1-3575-4ceb-b81b-dc71d66415c0";
+        internal const string StrongJawSpellBuff = "6cd44ce1-3575-4ceb-b81b-dc71d66415c0";
+
     }
 }
 

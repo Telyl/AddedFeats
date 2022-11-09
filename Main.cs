@@ -1,4 +1,5 @@
 using AddedFeats.Feats;
+using AddedFeats.NewSpells;
 using BlueprintCore.Utils;
 using HarmonyLib;
 using Kingmaker.Blueprints.JsonSystem;
@@ -57,6 +58,7 @@ namespace AddedFeats
                     PlanarFocus.Configure();
                     FavoredAnimalFocusSelection.Configure();
                     ForcefulCharge.Configure();
+                    StrongJaw.Configure();
                 }
                 catch (Exception e)
                 {

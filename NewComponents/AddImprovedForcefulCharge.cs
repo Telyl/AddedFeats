@@ -5,12 +5,13 @@ using Kingmaker.RuleSystem.Rules;
 using Kingmaker.UnitLogic;
 using Kingmaker.EntitySystem.Entities;
 using Kingmaker.RuleSystem;
+using Kingmaker.ResourceLinks;
 using Kingmaker;
 
 namespace AddedFeats.NewComponents
 {
     [TypeId("1a344f2340da40347a11ee61fcad7223")]
-    public class AddImprovedForcefulCharge : UnitFactComponentDelegate, IInitiatorRulebookHandler<RuleAttackWithWeapon>, IRulebookHandler<RuleAttackWithWeapon>
+    public class AddImprovedForcefulCharge : UnitFactComponentDelegate, IInitiatorRulebookHandler<RuleAttackWithWeapon>, IRulebookHandler<RuleAttackWithWeapon>, ISubscriber, IInitiatorRulebookSubscriber, IResourcesHolder
     {
         private static readonly LogWrapper ComponentLogger = LogWrapper.Get("AddForcefulCharge");
 
