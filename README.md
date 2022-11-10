@@ -16,7 +16,7 @@ Strong Jaw
 
 Requires the following mods to function:
 ```
-ModMenu-1.3.0
+ModMenu-1.3.0 - https://github.com/WittleWolfie/ModMenu
 ```
 
 
