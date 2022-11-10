@@ -23,6 +23,7 @@ using Kingmaker.RuleSystem;
 using BlueprintCore.Actions.Builder.BasicEx;
 using AddedFeats.NewComponents;
 using AddedFeats.Utils;
+using static UnityModManagerNet.UnityModManager.ModEntry;
 
 namespace AddedFeats.Feats.PlanarFoci
 {
@@ -34,7 +35,15 @@ namespace AddedFeats.Feats.PlanarFoci
         private static readonly string FeatName = "PlanarFocusChaotic";
         private static readonly string DisplayName = "PlanarFocusChaos.Name";
         private static readonly string Description = "PlanarFocusChaos.Description";
-        
+        private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
+        public static void ConfigureDisabled()
+        {
+            BuffConfigurator.New(FeatName + "AnimalBuff", Guids.PlanarFocusChaoticAnimalBuff).Configure();
+            FeatureConfigurator.New(FeatName + "Effect", Guids.PlanarFocusChaoticEffect).Configure();
+            BuffConfigurator.New(FeatName + "AnimalBuffEffect", Guids.PlanarFocusChaoticAnimalBuffEffect).Configure();
+            BuffConfigurator.New(FeatName + "Buff", Guids.PlanarFocusChaoticBuff).Configure();
+            ActivatableAbilityConfigurator.New(FeatName, Guids.PlanarFocusChaotic).Configure();
+        }
         public static (BlueprintActivatableAbility, BlueprintBuff, BlueprintBuff) Configure()
         { 
             /************************* Adds Fortification 25 *************************/

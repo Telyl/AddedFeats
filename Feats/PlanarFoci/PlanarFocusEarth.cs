@@ -23,6 +23,7 @@ using Kingmaker.RuleSystem;
 using BlueprintCore.Actions.Builder.BasicEx;
 using AddedFeats.NewComponents;
 using AddedFeats.Utils;
+using static UnityModManagerNet.UnityModManager.ModEntry;
 
 namespace AddedFeats.Feats.PlanarFoci
 {
@@ -34,7 +35,15 @@ namespace AddedFeats.Feats.PlanarFoci
         private static readonly string FeatName = "PlanarFocusEarth";
         private static readonly string DisplayName = "PlanarFocusEarth.Name";
         private static readonly string Description = "PlanarFocusEarth.Description";
-        
+        private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
+        public static void ConfigureDisabled()
+        {
+            BuffConfigurator.New(FeatName + "AnimalBuff", Guids.PlanarFocusEarthAnimalBuff).Configure();
+            FeatureConfigurator.New(FeatName + "Effect", Guids.PlanarFocusEarthEffect).Configure();
+            BuffConfigurator.New(FeatName + "AnimalBuffEffect", Guids.PlanarFocusEarthAnimalBuffEffect).Configure();
+            BuffConfigurator.New(FeatName + "Buff", Guids.PlanarFocusEarthBuff).Configure();
+            ActivatableAbilityConfigurator.New(FeatName, Guids.PlanarFocusEarth).Configure();
+        }
         public static (BlueprintActivatableAbility, BlueprintBuff, BlueprintBuff) Configure()
         {
             /************************* Adds +2 Nat armor & Bullrush *************************/

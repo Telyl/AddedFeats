@@ -30,7 +30,13 @@ namespace AddedFeats.Feats.AnimalFocus
 
         private static readonly LogWrapper FeatLogger = LogWrapper.Get("FavoredAnimalFocus");
 
-        
+        public static void ConfigureDisabled()
+        {
+            BasicFunctions.CreateBasicFeat(FeatName + "Pet",
+                Guids.FavoredAnimalFocusBearPet, "FavoredOwl.Name", "FavoredOwl.Description");
+            BuffConfigurator.New(FeatName + "Buff", Guids.FavoredAnimalFocusOwlBuff).Configure();
+            FeatureConfigurator.New(FeatName, Guids.FavoredAnimalFocusOwl).Configure();
+        }
         public static BlueprintFeature Configure()
         {
             //Create a pet feature to use as the conditional information for the new buff.

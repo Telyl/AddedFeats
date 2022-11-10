@@ -19,6 +19,8 @@ using Kingmaker.UnitLogic.ActivatableAbilities;
 using BlueprintCore.Blueprints.Configurators.UnitLogic.ActivatableAbilities;
 using AddedFeats.NewComponents;
 using AddedFeats.Feats;
+using static UnityModManagerNet.UnityModManager.ModEntry;
+using System;
 
 namespace AddedFeats.Feats
 {
@@ -29,16 +31,40 @@ namespace AddedFeats.Feats
     {
         private static readonly string FeatName = "ForcefulCharge";
         private static readonly string ImprovedFeatName = "ImprovedForcefulCharge";
-        
-        private static readonly string DisplayName = "ForcefulCharge.Name";
+
+        internal const string DisplayName = "ForcefulCharge.Name";
         private static readonly string Description = "ForcefulCharge.Description";
-        private static readonly string ImprovedDisplayName = "ImprovedForcefulCharge.Name";
+        internal const string ImprovedDisplayName = "ImprovedForcefulCharge.Name";
         private static readonly string ImprovedDescription = "ImprovedForcefulCharge.Description";
 
-        private static readonly LogWrapper FeatLogger = LogWrapper.Get("FavoredAnimalFocus");
+        private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
 
-        
-        public static void Configure()
+        internal static void Configure()
+        {
+            try
+            {
+                if (Settings.IsEnabled(Guids.PlanarFocus))
+                    ConfigureEnabled();
+                else
+                    ConfigureDisabled();
+            }
+            catch (Exception e)
+            {
+                Logger.LogException("ForcefulCharge.Configure", e);
+            }
+        }
+
+        private static void ConfigureDisabled()
+        {
+            FeatureConfigurator.New(FeatName, Guids.ForcefulCharge).Configure();
+            FeatureConfigurator.New(ImprovedFeatName, Guids.ImprovedForcefulCharge).Configure();
+            BuffConfigurator.New(FeatName + "Effect", Guids.ForcefulChargeEffect).Configure();
+            BuffConfigurator.New(FeatName + "Buff", Guids.ForcefulChargeBuff).Configure();
+            BuffConfigurator.New(ImprovedFeatName + "Effect", Guids.ImprovedForcefulChargeEffect).Configure();
+            ActivatableAbilityConfigurator.New(FeatName + "Ability", Guids.ForcefulChargeAbility).Configure();
+        }
+
+        public static void ConfigureEnabled()
         {
 
             BlueprintBuff ForcefulChargeEffect = BuffConfigurator.New(FeatName + "Effect", Guids.ForcefulChargeEffect)

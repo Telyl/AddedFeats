@@ -1,6 +1,10 @@
-using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using BlueprintCore.Utils;
-using Kingmaker.Blueprints.Classes;
+using AddedFeats.Feats;
+using AddedFeats.NewSpells;
+using Kingmaker.Utility;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using static UnityModManagerNet.UnityModManager.ModEntry;
 
 namespace AddedFeats.Utils
 {
@@ -9,10 +13,11 @@ namespace AddedFeats.Utils
     /// </summary>
     public class Guids
     {
-        private static readonly LogWrapper GuidLogger = LogWrapper.Get("FavoredAnimalFocus");
+        private static readonly ModLogger Logger = Logging.GetLogger(nameof(Guids));
 
 
         //** Feats **//
+        #region Features
         // Favored Animal Selection Feat
         internal const string FavoredAnimalFocusSelection = "fe2d7d81-6631-4bff-8a35-b56c9811d7eb";
         // Favored Animal Focus Tiger
@@ -120,11 +125,25 @@ namespace AddedFeats.Utils
         internal const string PlanarFocusWaterEffect = "4ca8f08f-124d-4cd6-a04c-8164192f0d87";
         internal const string PlanarFocusWaterAnimalBuff = "736fd667-b68a-4e65-bee2-78cd55f3c27f";
         //***********//
+        internal static readonly (string guid, string displayName)[] Features =
+          new (string, string)[]
+          {
+              (PlanarFocus, Feats.PlanarFocus.DisplayName),
+              (ForcefulCharge, Feats.ForcefulCharge.DisplayName),
+              (FavoredAnimalFocusSelection, Feats.FavoredAnimalFocusSelection.DisplayName),
+          };
+        #endregion
 
+        #region Spells
         // Strong Jaw (Spell)
         internal const string StrongJawSpell = "7cd44ce1-3575-4ceb-b81b-dc71d66415c0";
         internal const string StrongJawSpellBuff = "6cd44ce1-3575-4ceb-b81b-dc71d66415c0";
-
+        internal static readonly (string guid, string displayName)[] Spells =
+          new (string, string)[]
+          {
+              (StrongJawSpell, StrongJaw.DisplayName),
+          };
+        #endregion
     }
 }
 

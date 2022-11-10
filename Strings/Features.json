@@ -206,23 +206,5 @@
   {
     "Key": "ImprovedForcefulCharge.Description",
     "enGB": "If the animal companion pushes the target at least 10 feet as a result of Forceful Charge, it can attempt a trip combat maneuver check against the target as a free action. This trip combat maneuver provokes attacks of opportunity as normal."
-  },
-  {
-    "Key": "ImprovedSpellSharing.Name",
-    "ProcessTemplates": false,
-    "enGB": "Improved Spell Sharing"
-  },
-  {
-    "Key": "ImprovedSpellSharing.Description",
-    "enGB": "You can cast a spell on yourself and divide the duration evenly between yourself and the companion creature. You can use this feat only on spells with a duration of at least 2 rounds. For example, you could cast bullÅfs strength on yourself, and instead of the spell lasting 1 minute per level on yourself, it lasts 5 rounds per level on yourself and 5 rounds per level on your companion."
-  },
-  {
-    "Key": "StrongJaw.Name",
-    "ProcessTemplates": false,
-    "enGB": "Strong Jaw"
-  },
-  {
-    "Key": "StrongJaw.Description",
-    "enGB": "Laying a hand upon an allied creatures jaw, claws, tentacles, or other natural weapons, you enhance the power of that creatures natural attacks. Each natural attack that creature makes deals damage as if the creature were two sizes larger than it actually is. If the creature is already Gargantuan or Colossal-sized, double the amount of damage dealt by each of its natural attacks instead. This spell does not actually change the creatureÅfs size; all of its statistics except the amount of damage dealt by its natural attacks remain unchanged."
   }
 ]
