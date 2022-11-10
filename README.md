@@ -1,5 +1,5 @@
 # WrathMods-AddedFeats
-Additional feats for Pathfinder: Wrath of the Righteous
+Additional features for Pathfinder: Wrath of the Righteous
 
 Added the following feats:
 ```
@@ -13,6 +13,12 @@ Added the following spells:
 ```
 Strong Jaw
 ```
+
+Requires the following mods to function:
+```
+ModMenu-1.3.0
+```
+
 
 Note: Creative liberty has been taken with some of the feats as a direct 1:1 translation was not feasible.
 
