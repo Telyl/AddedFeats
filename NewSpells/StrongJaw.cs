@@ -1,48 +1,54 @@
-using BlueprintCore.Blueprints.Configurators.UnitLogic.ActivatableAbilities;
-using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.References;
-using Kingmaker.Blueprints.Classes;
-using Kingmaker.UnitLogic.ActivatableAbilities;
-using Kingmaker.Enums;
-using Kingmaker.RuleSystem.Rules;
-using Kingmaker.UnitLogic;
-using Kingmaker.EntitySystem.Stats;
-using Kingmaker.UnitLogic.Buffs.Blueprints;
-using Kingmaker.UnitLogic.Commands.Base;
 using Kingmaker.UnitLogic.Mechanics;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
 using BlueprintCore.Actions.Builder;
-using BlueprintCore.Conditions.Builder;
-using BlueprintCore.Conditions.Builder.ContextEx;
 using BlueprintCore.Actions.Builder.ContextEx;
 using BlueprintCore.Utils.Types;
 using Kingmaker.Blueprints.Classes.Spells;
-using Kingmaker.RuleSystem.Rules.Damage;
-using Kingmaker.Enums.Damage;
-using Kingmaker.RuleSystem;
-using BlueprintCore.Actions.Builder.BasicEx;
-using AddedFeats.NewComponents;
 using AddedFeats.Utils;
-using AddedFeats.Feats;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
 using Kingmaker.UnitLogic.Abilities;
+using static UnityModManagerNet.UnityModManager.ModEntry;
+using System;
 
 namespace AddedFeats.NewSpells
 {
     /// <summary>
-    /// Creates a feat that does nothing but show up.
+    /// Adds the Strong Jaw spell that only effects creatures of AnimalType.
     /// </summary>
     public class StrongJaw
     {
         private static readonly string SpellName = "StrongJaw";
-        private static readonly string DisplayName = "StrongJaw.Name";
+        internal const string DisplayName = "StrongJaw.Name";
         private static readonly string Description = "StrongJaw.Description";
-        
-        public static void Configure()
-        {
 
+        private static readonly ModLogger Logger = Logging.GetLogger(SpellName);
+
+        internal static void Configure()
+        {
+            try
+            {
+                if (Settings.IsEnabled(Guids.StrongJawSpell))
+                    ConfigureEnabled();
+                else
+                    ConfigureDisabled();
+            }
+            catch (Exception e)
+            {
+                Logger.LogException("StrongJaw.Configure", e);
+            }
+        }
+
+        private static void ConfigureDisabled()
+        {
+            BuffConfigurator.New(SpellName + "Buff", Guids.StrongJawSpellBuff).Configure();
+            AbilityConfigurator.NewSpell(SpellName, Guids.StrongJawSpell, SpellSchool.Transmutation, canSpecialize: true, SpellDescriptor.None).Configure();
+        }
+
+        public static void ConfigureEnabled()
+        {
             var StrongJawBuff = BuffConfigurator.New(SpellName + "Buff", Guids.StrongJawSpellBuff) 
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)

@@ -5,6 +5,9 @@ using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using AddedFeats.Utils;
+using static UnityModManagerNet.UnityModManager.ModEntry;
+using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
+using BlueprintCore.Blueprints.Configurators.UnitLogic.ActivatableAbilities;
 
 namespace AddedFeats.Feats.PlanarFoci
 {
@@ -16,7 +19,15 @@ namespace AddedFeats.Feats.PlanarFoci
         private static readonly string FeatName = "PlanarFocusWater";
         private static readonly string DisplayName = "PlanarFocusWater.Name";
         private static readonly string Description = "PlanarFocusWater.Description";
-        
+        private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
+        public static void ConfigureDisabled()
+        {
+            BuffConfigurator.New(FeatName + "AnimalBuff", Guids.PlanarFocusWaterAnimalBuff).Configure();
+            FeatureConfigurator.New(FeatName + "Effect", Guids.PlanarFocusWaterEffect).Configure();
+            BuffConfigurator.New(FeatName + "AnimalBuffEffect", Guids.PlanarFocusWaterAnimalBuffEffect).Configure();
+            BuffConfigurator.New(FeatName + "Buff", Guids.PlanarFocusWaterBuff).Configure();
+            ActivatableAbilityConfigurator.New(FeatName, Guids.PlanarFocusWater).Configure();
+        }
         public static (BlueprintActivatableAbility, BlueprintBuff, BlueprintBuff) Configure()
         {
             /************************* Add cmb immunity *************************/

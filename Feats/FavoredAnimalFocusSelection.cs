@@ -3,6 +3,9 @@ using AddedFeats.Feats.AnimalFocus;
 using AddedFeats.Utils;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Selection;
+using static UnityModManagerNet.UnityModManager.ModEntry;
+using System;
+using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 
 namespace AddedFeats.Feats
 {
@@ -12,9 +15,39 @@ namespace AddedFeats.Feats
     public class FavoredAnimalFocusSelection
     {
         private static readonly string FeatName = "FavoredAnimalFocusSelection";
-        private static readonly string DisplayName = "FavoredAnimalFocus.Name";
+        internal const string DisplayName = "FavoredAnimalFocus.Name";
         private static readonly string Description = "FavoredAnimalFocus.Description";
-        public static void Configure()
+        private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
+
+        internal static void Configure()
+        {
+            try
+            {
+                if (Settings.IsEnabled(Guids.FavoredAnimalFocusSelection))
+                    ConfigureEnabled();
+                else
+                    ConfigureDisabled();
+            }
+            catch (Exception e)
+            {
+                Logger.LogException("FavoredAnimalFocusSelection.Configure", e);
+            }
+        }
+
+        private static void ConfigureDisabled()
+        {
+            FeatureSelectionConfigurator.New(FeatName, Guids.FavoredAnimalFocusSelection).Configure();
+            FavoredAnimalFocusBull.ConfigureDisabled();
+            FavoredAnimalFocusBear.ConfigureDisabled();
+            FavoredAnimalFocusTiger.ConfigureDisabled();
+            FavoredAnimalFocusFalcon.ConfigureDisabled();
+            FavoredAnimalFocusStag.ConfigureDisabled();
+            FavoredAnimalFocusMouse.ConfigureDisabled();
+            FavoredAnimalFocusOwl.ConfigureDisabled();
+            FavoredAnimalFocusMonkey.ConfigureDisabled();
+        }
+
+        public static void ConfigureEnabled()
         {
             var focbull = FavoredAnimalFocusBull.Configure();
             var focbear = FavoredAnimalFocusBear.Configure();

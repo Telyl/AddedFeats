@@ -23,6 +23,7 @@ using Kingmaker.RuleSystem;
 using BlueprintCore.Actions.Builder.BasicEx;
 using AddedFeats.NewComponents;
 using AddedFeats.Utils;
+using static UnityModManagerNet.UnityModManager.ModEntry;
 
 namespace AddedFeats.Feats.PlanarFoci
 {
@@ -34,7 +35,15 @@ namespace AddedFeats.Feats.PlanarFoci
         private static readonly string FeatName = "PlanarFocusCold";
         private static readonly string DisplayName = "PlanarFocusCold.Name";
         private static readonly string Description = "PlanarFocusCold.Description";
-        
+        private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
+        public static void ConfigureDisabled()
+        {
+            BuffConfigurator.New(FeatName + "AnimalBuff", Guids.PlanarFocusColdAnimalBuff).Configure();
+            FeatureConfigurator.New(FeatName + "Effect", Guids.PlanarFocusColdEffect).Configure();
+            BuffConfigurator.New(FeatName + "AnimalBuffEffect", Guids.PlanarFocusColdAnimalBuffEffect).Configure();
+            BuffConfigurator.New(FeatName + "Buff", Guids.PlanarFocusColdBuff).Configure();
+            ActivatableAbilityConfigurator.New(FeatName, Guids.PlanarFocusCold).Configure();
+        }
         public static (BlueprintActivatableAbility, BlueprintBuff, BlueprintBuff) Configure()
         {
             /************************* Add thorns 1d4 *************************/

@@ -23,6 +23,7 @@ using Kingmaker.RuleSystem;
 using BlueprintCore.Actions.Builder.BasicEx;
 using AddedFeats.NewComponents;
 using AddedFeats.Utils;
+using static UnityModManagerNet.UnityModManager.ModEntry;
 
 namespace AddedFeats.Feats.PlanarFoci
 {
@@ -34,7 +35,15 @@ namespace AddedFeats.Feats.PlanarFoci
         private static readonly string FeatName = "PlanarFocusGood";
         private static readonly string DisplayName = "PlanarFocusGood.Name";
         private static readonly string Description = "PlanarFocusGood.Description";
-        
+        private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
+        public static void ConfigureDisabled()
+        {
+            BuffConfigurator.New(FeatName + "AnimalBuff", Guids.PlanarFocusGoodAnimalBuff).Configure();
+            FeatureConfigurator.New(FeatName + "Effect", Guids.PlanarFocusGoodEffect).Configure();
+            BuffConfigurator.New(FeatName + "AnimalBuffEffect", Guids.PlanarFocusGoodAnimalBuffEffect).Configure();
+            BuffConfigurator.New(FeatName + "Buff", Guids.PlanarFocusGoodBuff).Configure();
+            ActivatableAbilityConfigurator.New(FeatName, Guids.PlanarFocusGood).Configure();
+        }
         public static (BlueprintActivatableAbility, BlueprintBuff, BlueprintBuff) Configure()
         {
             /************************* Add Sacred Bonus *************************/

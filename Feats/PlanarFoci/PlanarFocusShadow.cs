@@ -23,6 +23,7 @@ using Kingmaker.RuleSystem;
 using BlueprintCore.Actions.Builder.BasicEx;
 using AddedFeats.NewComponents;
 using AddedFeats.Utils;
+using static UnityModManagerNet.UnityModManager.ModEntry;
 
 namespace AddedFeats.Feats.PlanarFoci
 {
@@ -34,7 +35,15 @@ namespace AddedFeats.Feats.PlanarFoci
         private static readonly string FeatName = "PlanarFocusShadow";
         private static readonly string DisplayName = "PlanarFocusShadow.Name";
         private static readonly string Description = "PlanarFocusShadow.Description";
-        
+        private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
+        public static void ConfigureDisabled()
+        {
+            BuffConfigurator.New(FeatName + "AnimalBuff", Guids.PlanarFocusShadowAnimalBuff).Configure();
+            FeatureConfigurator.New(FeatName + "Effect", Guids.PlanarFocusShadowEffect).Configure();
+            BuffConfigurator.New(FeatName + "AnimalBuffEffect", Guids.PlanarFocusShadowAnimalBuffEffect).Configure();
+            BuffConfigurator.New(FeatName + "Buff", Guids.PlanarFocusShadowBuff).Configure();
+            ActivatableAbilityConfigurator.New(FeatName, Guids.PlanarFocusShadow).Configure();
+        }
         public static (BlueprintActivatableAbility, BlueprintBuff, BlueprintBuff) Configure()
         {
             /************************* Add skill bonuses *************************/

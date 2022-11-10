@@ -1,29 +1,12 @@
-using BlueprintCore.Blueprints.Configurators.UnitLogic.ActivatableAbilities;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
 using BlueprintCore.Blueprints.References;
 using Kingmaker.Blueprints.Classes;
-using Kingmaker.UnitLogic.ActivatableAbilities;
-using Kingmaker.Enums;
-using Kingmaker.RuleSystem.Rules;
-using Kingmaker.UnitLogic;
 using Kingmaker.EntitySystem.Stats;
-using Kingmaker.UnitLogic.Buffs.Blueprints;
-using Kingmaker.UnitLogic.Commands.Base;
-using Kingmaker.UnitLogic.Mechanics;
 using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Buffs;
-using BlueprintCore.Actions.Builder;
-using BlueprintCore.Conditions.Builder;
-using BlueprintCore.Conditions.Builder.ContextEx;
-using BlueprintCore.Actions.Builder.ContextEx;
-using BlueprintCore.Utils.Types;
 using Kingmaker.Blueprints.Classes.Spells;
-using Kingmaker.RuleSystem.Rules.Damage;
-using Kingmaker.Enums.Damage;
-using Kingmaker.RuleSystem;
-using BlueprintCore.Actions.Builder.BasicEx;
-using AddedFeats.NewComponents;
 using AddedFeats.Utils;
-using AddedFeats.Feats;
+using static UnityModManagerNet.UnityModManager.ModEntry;
+using System;
 
 namespace AddedFeats.Feats
 {
@@ -33,10 +16,42 @@ namespace AddedFeats.Feats
     public class PlanarFocus
     {
         private static readonly string FeatName = "PlanarFocus";
-        private static readonly string DisplayName = "PlanarFocus.Name";
+        internal const string DisplayName = "PlanarFocus.Name";
         private static readonly string Description = "PlanarFocus.Description";
-        
-        public static void Configure()
+
+        private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
+
+        internal static void Configure()
+        {
+            try
+            {
+                if (Settings.IsEnabled(Guids.PlanarFocus))
+                    ConfigureEnabled();
+                else
+                    ConfigureDisabled();
+            }
+            catch (Exception e)
+            {
+                Logger.LogException("PlanarFocus.Configure", e);
+            }
+        }
+
+        private static void ConfigureDisabled()
+        {
+            FeatureConfigurator.New(FeatName, Guids.PlanarFocus).Configure();
+            PlanarFoci.PlanarFocusAir.ConfigureDisabled();
+            PlanarFoci.PlanarFocusChaotic.ConfigureDisabled();
+            PlanarFoci.PlanarFocusCold.ConfigureDisabled();
+            PlanarFoci.PlanarFocusEarth.ConfigureDisabled();
+            PlanarFoci.PlanarFocusEvil.ConfigureDisabled();
+            PlanarFoci.PlanarFocusFire.ConfigureDisabled();
+            PlanarFoci.PlanarFocusGood.ConfigureDisabled();
+            PlanarFoci.PlanarFocusLawful.ConfigureDisabled();
+            PlanarFoci.PlanarFocusShadow.ConfigureDisabled();
+            PlanarFoci.PlanarFocusWater.ConfigureDisabled();
+        }
+
+        public static void ConfigureEnabled()
         {
             (var PF_Air, var AirBuff, var AirAnimalBuffEffect) = PlanarFoci.PlanarFocusAir.Configure();
             (var PF_Chaotic, var ChaoticBuff, var ChaoticAnimalBuffEffect) = PlanarFoci.PlanarFocusChaotic.Configure();
