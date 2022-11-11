@@ -26,15 +26,15 @@ Created with https://github.com/WittleWolfie/WW-Blueprint-Core
 
 ## Planned Content
 * Feats
-   * [Totem Beast] (https://www.d20pfsrd.com/feats/general-feats/totem-beast/)
-   * [Spirit's Gift] (https://www.d20pfsrd.com/feats/general-feats/spirit-s-gift)
-   * [Vampiric Companion] (https://www.d20pfsrd.com/feats/general-feats/vampiric-companion/)
-   * [Evolved Companion] (https://www.d20pfsrd.com/feats/general-feats/evolved-companion)
-   * [Ferocious Beast (Animal Companion Feat)] (https://www.d20pfsrd.com/feats/animal-companion-feats/ferocious-beast-animal-companion-feat-combat/)
+   * [Totem Beast](https://www.d20pfsrd.com/feats/general-feats/totem-beast/)
+   * [Spirit's Gift](https://www.d20pfsrd.com/feats/general-feats/spirit-s-gift)
+   * [Vampiric Companion](https://www.d20pfsrd.com/feats/general-feats/vampiric-companion/)
+   * [Evolved Companion](https://www.d20pfsrd.com/feats/general-feats/evolved-companion)
+   * [Ferocious Beast (Animal Companion Feat)](https://www.d20pfsrd.com/feats/animal-companion-feats/ferocious-beast-animal-companion-feat-combat/)
 
 * Spells
-   * [Atavism] (https://www.d20pfsrd.com/magic/all-spells/a/atavism/)
+   * [Atavism](https://www.d20pfsrd.com/magic/all-spells/a/atavism/)
 
 * Stretch Goals
-   * [Monstrous Companion] (https://www.d20pfsrd.com/feats/general-feats/monstrous-companion)
-   * [Skirmisher Tricks] (https://www.d20pfsrd.com/classes/core-classes/ranger/archetypes/paizo-ranger-archetypes/skirmisher/)
+   * [Monstrous Companion](https://www.d20pfsrd.com/feats/general-feats/monstrous-companion)
+   * [Skirmisher Tricks](https://www.d20pfsrd.com/classes/core-classes/ranger/archetypes/paizo-ranger-archetypes/skirmisher/)
