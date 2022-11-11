@@ -38,3 +38,4 @@ Created with https://github.com/WittleWolfie/WW-Blueprint-Core
 * Stretch Goals
    * [Monstrous Companion](https://www.d20pfsrd.com/feats/general-feats/monstrous-companion)
    * [Skirmisher Tricks](https://www.d20pfsrd.com/classes/core-classes/ranger/archetypes/paizo-ranger-archetypes/skirmisher/)
+   * [Primal Companion (Hunter Archetype)](https://www.d20pfsrd.com/classes/hybrid-classes/hunter/archetypes/paizo-hunter-archetypes/primal-companion-hunter/)
