@@ -1,18 +1,17 @@
 # WrathMods-AddedFeats
 Additional features for Pathfinder: Wrath of the Righteous
 
-Added the following feats:
-```
-Planar Focus 
-Favored Animal Focus 
-Forceful Charge 
-Improved Forceful Charge
-```
+## New Content
 
-Added the following spells:
-```
-Strong Jaw
-```
+* Homebrew
+    * Incoming
+* Feats
+    * [Forceful Charge](https://www.d20pfsrd.com/feats/animal-companion-feats/forceful-charge/)
+        * Includes [Improved](https://www.d20pfsrd.com/feats/animal-companion-feats/improved-forceful-charge/)
+    * [Favored Animal Focus](https://www.d20pfsrd.com/feats/animal-companion-feats/favored-animal-focus-animal-companion-feat/)
+    * [Planar Focus](https://www.d20pfsrd.com/feats/general-feats/planar-focus/)
+* Spells
+    * [Strong Jaw](https://www.d20pfsrd.com/magic/all-spells/s/strong-jaw/)
 
 Requires the following mods to function:
 ```
