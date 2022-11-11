@@ -32,7 +32,6 @@ Created with https://github.com/WittleWolfie/WW-Blueprint-Core
    * [Evolved Companion](https://www.d20pfsrd.com/feats/general-feats/evolved-companion)
    * [Ferocious Beast (Animal Companion Feat)](https://www.d20pfsrd.com/feats/animal-companion-feats/ferocious-beast-animal-companion-feat-combat/)
    * [Improved Natural Attack (Animal Companion Feat)](https://www.d20pfsrd.com/feats/monster-feats/improved-natural-attack/)
-   * [Improved Natural Armor (Animal Companion Feat)](https://www.d20pfsrd.com/feats/monster-feats/improved-natural-armor/)
 
 * Spells
    * [Atavism](https://www.d20pfsrd.com/magic/all-spells/a/atavism/)
