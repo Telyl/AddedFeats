@@ -9,6 +9,7 @@ using UnityModManagerNet;
 using static UnityModManagerNet.UnityModManager.ModEntry;
 using AddedFeats.Utils;
 using Kingmaker.PubSubSystem;
+using AddedFeats.Homebrew;
 
 namespace AddedFeats
 {
@@ -85,6 +86,7 @@ namespace AddedFeats
 
                     // First strings
                     LocalizationTool.LoadEmbeddedLocalizationPacks(
+                      "AddedFeats.Strings.Homebrew.json",
                       "AddedFeats.Strings.Features.json",
                       "AddedFeats.Strings.Settings.json",
                       "AddedFeats.Strings.Spells.json");
@@ -92,6 +94,7 @@ namespace AddedFeats
                     // Then settings
                     Settings.Init();
 
+                    ConfigureHomebrew();
                     ConfigureFeats();
                     ConfigureSpells();
                 }
@@ -100,7 +103,11 @@ namespace AddedFeats
                     Logger.LogException("Failed to initialize.", e);
                 }
             }
-
+            private static void ConfigureHomebrew()
+            {
+                Logger.Log("Configuring homebrew.");
+                MythicAnimalFocus.Configure();
+            }
             private static void ConfigureArchetypes()
             {
                 Logger.Log("Configuring archetypes.");
@@ -115,6 +122,9 @@ namespace AddedFeats
                 PlanarFocus.Configure();
                 FavoredAnimalFocusSelection.Configure();
                 ForcefulCharge.Configure();
+                ImprovedNaturalAttack.Configure();
+                ImprovedNaturalArmor.Configure();
+                ImprovedDamage.Configure();
             }
             private static void ConfigureSpells()
             {

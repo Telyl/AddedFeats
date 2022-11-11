@@ -12,6 +12,7 @@ using static Kingmaker.UnitLogic.Commands.Base.UnitCommand;
 using Kingmaker.UnitLogic.Abilities;
 using static UnityModManagerNet.UnityModManager.ModEntry;
 using System;
+using Kingmaker.Enums;
 
 namespace AddedFeats.NewSpells
 {
@@ -54,7 +55,8 @@ namespace AddedFeats.NewSpells
                 .SetDescription(Description)
                 .SetIcon(BuffRefs.WitchHexBeastsGiftBiteBuff.Reference.Get().Icon)
                 .SetFrequency(DurationRate.Rounds)
-                .AddWeaponSizeChange(sizeCategoryChange: 2)
+                //.AddWeaponSizeChange(sizeCategoryChange: 2)
+                .AddIncreaseDiceSizeOnAttack(additionalSize: 2, categories: new WeaponCategory[] { WeaponCategory.Bite, WeaponCategory.Claw, WeaponCategory.Gore, WeaponCategory.Sting, WeaponCategory.Tail, WeaponCategory.Talon, WeaponCategory.Slam, WeaponCategory.Slam, WeaponCategory.Hoof })
                 .Configure();
 
             AbilityConfigurator.NewSpell(SpellName, Guids.StrongJawSpell, SpellSchool.Transmutation, canSpecialize: true, SpellDescriptor.None)

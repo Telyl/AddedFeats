@@ -206,5 +206,32 @@
   {
     "Key": "ImprovedForcefulCharge.Description",
     "enGB": "If the animal companion pushes the target at least 10 feet as a result of Forceful Charge, it can attempt a trip combat maneuver check against the target as a free action. This trip combat maneuver provokes attacks of opportunity as normal."
+  },
+  {
+    "Key": "ImprovedNaturalArmor.Name",
+    "ProcessTemplates": false,
+    "enGB": "Improved Natural Armor"
+  },
+  {
+    "Key": "ImprovedNaturalArmor.Description",
+    "enGB": "The creatures natural armor bonus increases by +1. A creature can gain this feat multiple times. Each time the creature takes the feat, its natural armor bonus increases by another point."
+  },
+  {
+    "Key": "ImprovedNaturalAttack.Name",
+    "ProcessTemplates": false,
+    "enGB": "Improved Natural Attack"
+  },
+  {
+    "Key": "ImprovedNaturalAttack.Description",
+    "enGB": "Choose one of the creatureÅfs natural attack forms (not an unarmed strike). The damage for this natural attack increases by one step on the following list, as if the creatureÅfs size had increased by one category. Damage dice increase as follows: 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 3d6, 4d6, 6d6, 8d6, 12d6. This feat can be taken multiple times for a different natural attack."
+  },
+  {
+    "Key": "ImprovedDamage.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Improved Damage"
+  },
+  {
+    "Key": "ImprovedDamage.Description",
+    "enGB": "One of the eidolons natural attacks is particularly deadly. Select one natural attack form and increase the damage die type by one step. This evolution can be selected more than once. Its effects do not stack. Each time an eidolon selects this evolution, it applies to a different natural attack."
   }
 ]

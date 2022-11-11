@@ -39,6 +39,14 @@ namespace AddedFeats.Utils
                 //.AddImage(ResourcesLibrary.TryGetResource<Sprite>("assets/illustrations/wolfie.png"), height: 200, imageScale: 0.75f)
                 .AddDefaultButton(OnDefaultsApplied);
 
+            settings.AddSubHeader(GetString("Settings.Homebrew.Title"));
+            foreach (var (guid, name) in Guids.Homebrews)
+            {
+                settings.AddToggle(
+                  Toggle.New(GetKey(guid), defaultValue: true, GetString(name))
+                    .WithLongDescription(GetString("Settings.EnableFeature")));
+            }
+
             settings.AddSubHeader(GetString("Settings.Feats.Title"));
             foreach (var (guid, name) in Guids.Features)
             {

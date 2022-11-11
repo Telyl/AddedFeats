@@ -33,7 +33,7 @@ namespace AddedFeats.Feats.AnimalFocus
         public static void ConfigureDisabled()
         {
             BasicFunctions.CreateBasicFeat(FeatName + "Pet",
-                Guids.FavoredAnimalFocusBearPet, "FavoredOwl.Name", "FavoredOwl.Description");
+                Guids.FavoredAnimalFocusOwlPet, "FavoredOwl.Name", "FavoredOwl.Description");
             BuffConfigurator.New(FeatName + "Buff", Guids.FavoredAnimalFocusOwlBuff).Configure();
             FeatureConfigurator.New(FeatName, Guids.FavoredAnimalFocusOwl).Configure();
         }

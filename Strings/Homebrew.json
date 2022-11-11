@@ -1,0 +1,13 @@
+[
+  {
+    "Key": "MythicAnimalFocus.Name",
+    "ProcessTemplates": false,
+    "enGB": "Mythic Bond"
+  },
+
+  {
+    "Key": "MythicAnimalFocus.Description",
+    "ProcessTemplates": false,
+    "enGB": "You use your mythic powers to power your bond with your animal companion. Benefit: You may now apply an additional animal foci to both herself and her animal companion."
+  }
+]

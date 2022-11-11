@@ -27,11 +27,13 @@
     <None Remove="Strings\ClassFeatures.json" />
     <None Remove="Strings\Components.json" />
     <None Remove="Strings\Features.json" />
+    <None Remove="Strings\Homebrew.json" />
     <None Remove="Strings\Settings.json" />
     <None Remove="Strings\Spells.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Strings\Homebrew.json" />
     <EmbeddedResource Include="Strings\Archetypes.json" />
     <EmbeddedResource Include="Strings\BugFixes.json" />
     <EmbeddedResource Include="Strings\ClassFeatures.json" />
@@ -115,6 +117,10 @@
     <None Update="Strings\Spells.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Feats\Evolutions\OnePoint\" />
   </ItemGroup>
 
   <!-- Generates Assembly-CSharp_public.dll -->

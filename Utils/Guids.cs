@@ -1,5 +1,6 @@
 using AddedFeats.Feats;
 using AddedFeats.NewSpells;
+using AddedFeats.Homebrew;
 using Kingmaker.Utility;
 using System;
 using System.Collections.Generic;
@@ -124,6 +125,16 @@ namespace AddedFeats.Utils
         internal const string PlanarFocusWaterAnimalBuffEffect = "6c912f1a-16e6-4870-b0d8-a3cb881bbfaa";
         internal const string PlanarFocusWaterEffect = "4ca8f08f-124d-4cd6-a04c-8164192f0d87";
         internal const string PlanarFocusWaterAnimalBuff = "736fd667-b68a-4e65-bee2-78cd55f3c27f";
+
+        //Improved Natural Armor
+        internal const string ImprovedNaturalArmor = "5f91ffea-81a3-4743-894b-e76e39c9567c";
+        //Improved Natural Attack
+        internal const string ImprovedNaturalAttack = "f020ce8c-09df-4ec3-a10f-92d08f69dc94";
+
+        //EVOLUTIONS
+        internal const string ImprovedDamage = "d79bb9d8-f021-462f-b9af-33744de95e20";
+        internal const string ImprovedDamagePet = "c79bb9d8-f021-462f-b9af-33744de95e20";
+
         //***********//
         internal static readonly (string guid, string displayName)[] Features =
           new (string, string)[]
@@ -131,6 +142,9 @@ namespace AddedFeats.Utils
               (PlanarFocus, Feats.PlanarFocus.DisplayName),
               (ForcefulCharge, Feats.ForcefulCharge.DisplayName),
               (FavoredAnimalFocusSelection, Feats.FavoredAnimalFocusSelection.DisplayName),
+              (ImprovedNaturalArmor, Feats.ImprovedNaturalArmor.DisplayName),
+              (ImprovedNaturalAttack, Feats.ImprovedNaturalAttack.DisplayName),
+              (ImprovedDamage, Feats.ImprovedDamage.DisplayName),
           };
         #endregion
 
@@ -144,6 +158,16 @@ namespace AddedFeats.Utils
               (StrongJawSpell, StrongJaw.DisplayName),
           };
         #endregion
+
+        #region Homebrew
+        internal const string MythicAnimalFocus = "f15fc8d6-b2cd-495d-8977-bf99e6176d1d";
+        internal static readonly (string guid, string displayName)[] Homebrews =
+          new (string, string)[]
+          {
+              (MythicAnimalFocus, Homebrew.MythicAnimalFocus.DisplayName),
+          };
+        #endregion
+
     }
 }
 
