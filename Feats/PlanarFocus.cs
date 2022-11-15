@@ -69,6 +69,7 @@ namespace AddedFeats.Feats
                 .SetDescription(Description)
                 .AddFacts(new() { PF_Air, PF_Chaotic, PF_Cold, PF_Earth, PF_Evil, PF_Fire, PF_Good, PF_Lawful, PF_Shadow, PF_Water })
                 .AddPrerequisiteFeature(FeatureRefs.HunterAnimalFocusFeature.Reference.Get())
+                .AddRecommendationHasFeature(FeatureRefs.HunterAnimalFocusFeature.Reference.Get())
                 .AddPrerequisiteStatValue(StatType.SkillKnowledgeArcana, 5)
                 .Configure();
 

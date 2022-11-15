@@ -116,6 +116,7 @@ namespace AddedFeats.Feats
             FeatureConfigurator.For(ImprovedForcefulChargeFeat)
                 .SetGroups(FeatureGroup.Feat)
                 .SetIcon(AbilityRefs.ChargeAbility.Reference.Get().Icon)
+                .AddRecommendationHasFeature(FeatureRefs.AnimalCompanionArchetypeBullyFeature.Reference.Get())
                 .AddPrerequisiteFeature(FeatureRefs.ImprovedBullRush.Reference.Get())
                 .AddPrerequisiteFeature(FeatureRefs.PowerAttackFeature.Reference.Get())
                 .AddPrerequisiteFeature(ForcefulChargeFeat)

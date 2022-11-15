@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "Key": "StrongJaw.Name",
     "ProcessTemplates": false,
@@ -6,6 +6,15 @@
   },
   {
     "Key": "StrongJaw.Description",
-    "enGB": "Laying a hand upon an allied creatures jaw, claws, tentacles, or other natural weapons, you enhance the power of that creatures natural attacks. Each natural attack that creature makes deals damage as if the creature were two sizes larger than it actually is. If the creature is already Gargantuan or Colossal-sized, double the amount of damage dealt by each of its natural attacks instead. This spell does not actually change the creature�fs size; all of its statistics except the amount of damage dealt by its natural attacks remain unchanged."
+    "enGB": "Laying a hand upon an allied creatures jaw, claws, tentacles, or other natural weapons, you enhance the power of that creatures natural attacks. Each natural attack that creature makes deals damage as if the creature were two sizes larger than it actually is. If the creature is already Gargantuan or Colossal-sized, double the amount of damage dealt by each of its natural attacks instead. This spell does not actually change the creature’s size; all of its statistics except the amount of damage dealt by its natural attacks remain unchanged."
+  },
+  {
+    "Key": "Atavism.Name",
+    "ProcessTemplates": false,
+    "enGB": "Atavism"
+  },
+  {
+    "Key": "Atavism.Description",
+    "enGB": "By bringing forth the primeval ancestry of the target animal, you awaken a savage engine of destruction. The animal immediately gains the advanced creature simple template. It gains a +2 bonus on all rolls, including damage rolls and special ability DCs, a +4 bonus to AC and CMD, and +2 hit points per HD. The animals primal instincts take hold for the duration of this spell—if the animal knows tricks granted by the Lore (Nature) skill, it loses access to all of those tricks save for attack. "
   }
 ]

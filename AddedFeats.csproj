@@ -120,7 +120,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Feats\Evolutions\OnePoint\" />
+    <Folder Include="NewControllers\" />
   </ItemGroup>
 
   <!-- Generates Assembly-CSharp_public.dll -->

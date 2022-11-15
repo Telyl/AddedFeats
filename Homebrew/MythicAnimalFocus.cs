@@ -17,9 +17,6 @@ using Kingmaker.Blueprints.Classes;
 
 namespace AddedFeats.Homebrew
 {
-    /// <summary>
-    /// Adds the Strong Jaw spell that only effects creatures of AnimalType.
-    /// </summary>
     public class MythicAnimalFocus
     {
         private static readonly string FeatName = "MythicAnimalFocus";
@@ -61,6 +58,7 @@ namespace AddedFeats.Homebrew
                 .SetRanks(1)
                 .SetIcon(FeatureRefs.HunterAnimalFocus.Reference.Get().Icon)
                 .AddPrerequisiteFeature(FeatureRefs.HunterAnimalFocusFeature.Reference.Get())
+                .AddRecommendationHasFeature(FeatureRefs.HunterAnimalFocusFeature.Reference.Get())
                 .Configure();
                 
         }

@@ -226,6 +226,15 @@
     "enGB": "Choose one of the creatureÅfs natural attack forms (not an unarmed strike). The damage for this natural attack increases by one step on the following list, as if the creatureÅfs size had increased by one category. Damage dice increase as follows: 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 3d6, 4d6, 6d6, 8d6, 12d6. This feat can be taken multiple times for a different natural attack."
   },
   {
+    "Key": "EvolvedCompanion.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolved Companion"
+  },
+  {
+    "Key": "EvolvedCompanion.Description",
+    "enGB": "Select a 1-point evolution other than pounce or reach from those available to a summonerÅfs eidolon. Your animal companion gains this evolution. The animal companion must conform to any limitations of the evolution. You may take this feat multiple times for a unique evolution."
+  },
+  {
     "Key": "ImprovedDamage.Name",
     "ProcessTemplates": false,
     "enGB": "Evolution: Improved Damage"
@@ -233,5 +242,238 @@
   {
     "Key": "ImprovedDamage.Description",
     "enGB": "One of the eidolons natural attacks is particularly deadly. Select one natural attack form and increase the damage die type by one step. This evolution can be selected more than once. Its effects do not stack. Each time an eidolon selects this evolution, it applies to a different natural attack."
+  },
+  {
+    "Key": "Claw.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Claw"
+  },
+  {
+    "Key": "Claw.Description",
+    "enGB": "An eidolon has a pair of vicious claws at the end of its limbs, giving it two claw attacks. These attacks are primary attacks. The claws deal 1d4 points of damage (1d6 if Large, 1d8 if Huge)."
+  },
+  {
+    "Key": "TotemBeastSelection.Name",
+    "ProcessTemplates": false,
+    "enGB": "Totem Beast"
+  },
+  {
+    "Key": "TotemBeastSelection.Description",
+    "enGB": "Select one animal aspect from the list presented in the hunter classÅfs animal focus class feature. Your animal companion gains the benefits of the selected animal aspect, treating its Hit Dice as its effective hunter level for this ability."
+  },
+  {
+    "Key": "TotemBeastBull.Name",
+    "ProcessTemplates": false,
+    "enGB": "Totem Beast - Bull"
+  },
+  {
+    "Key": "TotemBeastBull.Description",
+    "enGB": "The creature gains a +2 enhancement bonus to Strength. This bonus increases to +4 at 8th level and +6 at 15th level."
+  },
+  {
+    "Key": "TotemBeastBear.Name",
+    "ProcessTemplates": false,
+    "enGB": "Totem Beast - Bear"
+  },
+  {
+    "Key": "TotemBeastBear.Description",
+    "enGB": "The creature gains a +2 enhancement bonus to Constitution. This bonus increases to +4 at 8th level and +6 at 15th level."
+  },
+  {
+    "Key": "TotemBeastTiger.Name",
+    "ProcessTemplates": false,
+    "enGB": "Totem Beast - Tiger"
+  },
+  {
+    "Key": "TotemBeastTiger.Description",
+    "enGB": "The creature gains a +2 enhancement bonus to Dexterity. This bonus increases to +4 at 8th level and +6 at 15th level."
+  },
+  {
+    "Key": "TotemBeastFalcon.Name",
+    "ProcessTemplates": false,
+    "enGB": "Totem Beast - Falcon"
+  },
+  {
+    "Key": "TotemBeastFalcon.Description",
+    "enGB": "The creature gains a +4 enhancement bonus to Perception. This bonus increases to +6 at 8th level and +8 at 15th level."
+  },
+  {
+    "Key": "TotemBeastMonkey.Name",
+    "ProcessTemplates": false,
+    "enGB": "Totem Beast - Monkey"
+  },
+  {
+    "Key": "TotemBeastMonkey.Description",
+    "enGB": "The creature gains a +4 enhancement bonus to Athletics. This bonus increases to +6 at 8th level and +8 at 15th level."
+  },
+  {
+    "Key": "TotemBeastStag.Name",
+    "ProcessTemplates": false,
+    "enGB": "Totem Beast - Stag"
+  },
+  {
+    "Key": "TotemBeastStag.Description",
+    "enGB": "The creature gains a +5 enhancement bonus to Movement Speed. This bonus increases to +10 at 8th level and +20 at 15th level."
+  },
+  {
+    "Key": "TotemBeastOwl.Name",
+    "ProcessTemplates": false,
+    "enGB": "Totem Beast - Owl"
+  },
+  {
+    "Key": "TotemBeastOwl.Description",
+    "enGB": "The creature gains a +4 enhancement bonus to Stealth. This bonus increases to +6 at 8th level and +8 at 15th level."
+  },
+  {
+    "Key": "TotemBeastMouse.Name",
+    "ProcessTemplates": false,
+    "enGB": "Totem Beast - Mouse"
+  },
+  {
+    "Key": "TotemBeastMouse.Description",
+    "enGB": "The creature gains evasion, as the rogue class feature. At 12th level, this increases to improved evasion, as the rogue advanced talent."
+  },
+  {
+    "Key": "BiteImprovedDamage.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Improved Damage (Bite)"
+  },
+  {
+    "Key": "ClawImprovedDamage.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Improved Damage (Claw)"
+  },
+  {
+    "Key": "GoreImprovedDamage.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Improved Damage (Gore)"
+  },
+  {
+    "Key": "HoofImprovedDamage.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Improved Damage (Hoof)"
+  },
+  {
+    "Key": "TalonImprovedDamage.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Improved Damage (Talon)"
+  },
+  {
+    "Key": "SlamImprovedDamage.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Improved Damage (Slam)"
+  },
+  {
+    "Key": "TailImprovedDamage.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Improved Damage (Tail)"
+  },
+  {
+    "Key": "Skilled.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled"
+  },
+  {
+    "Key": "Skilled.Description",
+    "enGB": "The creature becomes especially adept at a specific skill, gaining a +8 racial bonus on that skill. This evolution can be selected more than once. Its effects do not stack."
+  },
+  {
+    "Key": "SkilledAthletics.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled (Athletics)"
+  },
+  {
+    "Key": "SkilledMobility.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled (Mobility)"
+  },
+  {
+    "Key": "SkilledTrickery.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled (Trickery)"
+  },
+  {
+    "Key": "SkilledStealth.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled (Stealth)"
+  },
+  {
+    "Key": "SkilledArcana.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled (Arcana)"
+  },
+  {
+    "Key": "SkilledWorld.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled (World)"
+  },
+  {
+    "Key": "SkilledNature.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled (Nature)"
+  },
+  {
+    "Key": "SkilledReligion.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled (Religion)"
+  },
+  {
+    "Key": "SkilledPerception.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled (Perception)"
+  },
+  {
+    "Key": "SkilledPersuasion.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled (Persuasion)"
+  },
+  {
+    "Key": "SkilledUMD.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Skilled (UMD)"
+  },
+  {
+    "Key": "EvolutionImprovedNaturalArmor.Name",
+    "ProcessTemplates": false,
+    "enGB": "Evolution: Improved Natural Armor"
+  },
+  {
+    "Key": "EvolutionImprovedNaturalArmor.Description",
+    "enGB": "The creatures hide grows thick fur, rigid scales, or bony plates, giving it a +2 bonus to its natural armor. This evolution can be taken once for every five levels the character possesses."
+  },
+  {
+    "Key": "ImprovedNaturalAttackBite.Name",
+    "ProcessTemplates": false,
+    "enGB": "Improved Natural Attack (Bite)"
+  },
+  {
+    "Key": "ImprovedNaturalAttackClaw.Name",
+    "ProcessTemplates": false,
+    "enGB": "Improved Natural Attack (Claw)"
+  },
+  {
+    "Key": "ImprovedNaturalAttackGore.Name",
+    "ProcessTemplates": false,
+    "enGB": "Improved Natural Attack (Gore)"
+  },
+  {
+    "Key": "ImprovedNaturalAttackTalon.Name",
+    "ProcessTemplates": false,
+    "enGB": "Improved Natural Attack (Talon)"
+  },
+  {
+    "Key": "ImprovedNaturalAttackHoof.Name",
+    "ProcessTemplates": false,
+    "enGB": "Improved Natural Attack (Hoof)"
+  },
+  {
+    "Key": "ImprovedNaturalAttackTail.Name",
+    "ProcessTemplates": false,
+    "enGB": "Improved Natural Attack (Tail)"
+  },
+  {
+    "Key": "ImprovedNaturalAttackSlam.Name",
+    "ProcessTemplates": false,
+    "enGB": "Improved Natural Attack (Slam)"
   }
 ]

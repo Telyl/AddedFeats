@@ -124,15 +124,18 @@ namespace AddedFeats
                 ForcefulCharge.Configure();
                 ImprovedNaturalAttack.Configure();
                 ImprovedNaturalArmor.Configure();
-                ImprovedDamage.Configure();
+                EvolvedCompanion.Configure();
             }
             private static void ConfigureSpells()
             {
                 Logger.Log("Configuring spells.");
                 StrongJaw.Configure();
+                Atavism.Configure();
             }
             private static void ConfigureFeatsDelayed()
             {
+                Logger.Log("Configuring delayed.");
+                TotemBeast.Configure();
             }
         }
     }

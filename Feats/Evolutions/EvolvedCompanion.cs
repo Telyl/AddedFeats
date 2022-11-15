@@ -6,6 +6,7 @@ using Kingmaker.Blueprints.Classes.Selection;
 using static UnityModManagerNet.UnityModManager.ModEntry;
 using System;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes;
+using Kingmaker.EntitySystem.Stats;
 using BlueprintCore.Blueprints.References;
 
 namespace AddedFeats.Feats
@@ -13,55 +14,51 @@ namespace AddedFeats.Feats
     /// <summary>
     /// Creates a feat that does nothing but show up.
     /// </summary>
-    public class FavoredAnimalFocusSelection
+    public class EvolvedCompanion
     {
-        private static readonly string FeatName = "FavoredAnimalFocusSelection";
-        internal const string DisplayName = "FavoredAnimalFocus.Name";
-        private static readonly string Description = "FavoredAnimalFocus.Description";
+        private static readonly string FeatName = "EvolvedCompanion";
+        internal const string DisplayName = "EvolvedCompanion.Name";
+        private static readonly string Description = "EvolvedCompanion.Description";
         private static readonly ModLogger Logger = Logging.GetLogger(FeatName);
 
         internal static void Configure()
         {
             try
             {
-                if (Settings.IsEnabled(Guids.FavoredAnimalFocusSelection))
+                if (Settings.IsEnabled(Guids.EvolvedCompanion))
                     ConfigureEnabled();
                 else
                     ConfigureDisabled();
             }
             catch (Exception e)
             {
-                Logger.LogException("FavoredAnimalFocusSelection.Configure", e);
+                Logger.LogException("EvolvedCompanion.Configure", e);
             }
         }
 
         private static void ConfigureDisabled()
         {
-            FeatureSelectionConfigurator.New(FeatName, Guids.FavoredAnimalFocusSelection).Configure();
-            FavoredAnimalFocusBull.ConfigureDisabled();
-            FavoredAnimalFocusBear.ConfigureDisabled();
-            FavoredAnimalFocusTiger.ConfigureDisabled();
-            FavoredAnimalFocusFalcon.ConfigureDisabled();
-            FavoredAnimalFocusStag.ConfigureDisabled();
-            FavoredAnimalFocusMouse.ConfigureDisabled();
-            FavoredAnimalFocusOwl.ConfigureDisabled();
-            FavoredAnimalFocusMonkey.ConfigureDisabled();
+            FeatureSelectionConfigurator.New(FeatName, Guids.EvolvedCompanion).Configure();
+            ImprovedDamage.ConfigureDisabled();
+            Claw.ConfigureDisabled();
+            Skilled.ConfigureDisabled();
+            EvolutionImprovedNaturalArmor.ConfigureDisabled();
         }
 
         public static void ConfigureEnabled()
         {
-            var focbull = FavoredAnimalFocusBull.Configure();
-            var focbear = FavoredAnimalFocusBear.Configure();
-            var foctiger = FavoredAnimalFocusTiger.Configure();
-            var focfalcon = FavoredAnimalFocusFalcon.Configure();
-            var focstag = FavoredAnimalFocusStag.Configure();
-            var focmouse = FavoredAnimalFocusMouse.Configure();
-            var focowl = FavoredAnimalFocusOwl.Configure();
-            var focmonkey = FavoredAnimalFocusMonkey.Configure();
+            var idfeat = ImprovedDamage.ConfigureEnabled();
+            var clawfeat= Claw.ConfigureEnabled();
+            var skilledfeat = Skilled.ConfigureEnabled();
+            BlueprintFeature[] EvoImpNaturalArmor = EvolutionImprovedNaturalArmor.ConfigureEnabled();
 
-            var selection = FeatureSelectionConfigurator.New(FeatName, Guids.FavoredAnimalFocusSelection)
+            var selection = FeatureSelectionConfigurator.New(FeatName, Guids.EvolvedCompanion)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
+                .AddToAllFeatures(idfeat, clawfeat, skilledfeat, 
+                EvoImpNaturalArmor[0], EvoImpNaturalArmor[1], EvoImpNaturalArmor[2], EvoImpNaturalArmor[3], EvoImpNaturalArmor[4])
+                .AddPrerequisiteFullStatValue(stat: StatType.Charisma, value: 13)
+                .AddPrerequisitePet()
                 .AddRecommendationHasFeature(FeatureRefs.AnimalCompanionFeatureBear.Reference.Get())
                 .AddRecommendationHasFeature(FeatureRefs.AnimalCompanionFeatureBoar.Reference.Get())
                 .AddRecommendationHasFeature(FeatureRefs.AnimalCompanionFeatureCentipede.Reference.Get())
@@ -78,7 +75,6 @@ namespace AddedFeats.Feats
                 .AddRecommendationHasFeature(FeatureRefs.AnimalCompanionFeatureTriceratops_PreorderBonus.Reference.Get())
                 .AddRecommendationHasFeature(FeatureRefs.AnimalCompanionFeatureVelociraptor.Reference.Get())
                 .AddRecommendationHasFeature(FeatureRefs.AnimalCompanionFeatureWolf.Reference.Get())
-                .AddToAllFeatures(focbull, focbear, foctiger, focfalcon, focstag, focmouse, focowl, focmonkey)
                 .SetHideInUI(true)
                 .SetHideInCharacterSheetAndLevelUp(true)
                 .SetHideNotAvailibleInUI(false)
@@ -88,21 +84,6 @@ namespace AddedFeats.Feats
             FeatureSelectionConfigurator.For(basicFeatSelectionGuid)
                 .AddToAllFeatures(selection)
                 .Configure();
-        }
-
-        public static bool SetGroup(BlueprintFeatureSelection selection, FeatureGroup[] featuregroups)
-        {
-            try
-            {
-                FeatureSelectionConfigurator.For(selection)
-                .AddToGroups(featuregroups)
-                .Configure();
-            }
-            catch
-            {
-                return false;
-            }
-            return true;
         }
     }
 }

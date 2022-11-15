@@ -128,12 +128,113 @@ namespace AddedFeats.Utils
 
         //Improved Natural Armor
         internal const string ImprovedNaturalArmor = "5f91ffea-81a3-4743-894b-e76e39c9567c";
+        internal const string ImprovedNaturalArmor2 = "2291ffea-81a3-4743-894b-e76e39c9567c";
+        internal const string ImprovedNaturalArmor3 = "3391ffea-81a3-4743-894b-e76e39c9567c";
+        internal const string ImprovedNaturalArmor4 = "4491ffea-81a3-4743-894b-e76e39c9567c";
+        internal const string ImprovedNaturalArmor5 = "5591ffea-81a3-4743-894b-e76e39c9567c";
+        internal const string ImprovedNaturalArmor6 = "6691ffea-81a3-4743-894b-e76e39c9567c";
+        internal const string ImprovedNaturalArmor7 = "7791ffea-81a3-4743-894b-e76e39c9567c";
+        internal const string ImprovedNaturalArmor8 = "8891ffea-81a3-4743-894b-e76e39c9567c";
+        internal const string ImprovedNaturalArmor9 = "9991ffea-81a3-4743-894b-e76e39c9567c";
+        internal const string ImprovedNaturalArmor10 = "1091ffea-81a3-4743-894b-e76e39c9567c";
         //Improved Natural Attack
-        internal const string ImprovedNaturalAttack = "f020ce8c-09df-4ec3-a10f-92d08f69dc94";
+        internal const string ImprovedNaturalAttack = "6d20775b-4347-479c-a5fe-aae3ddc35231";
+        internal const string ImprovedNaturalAttackBite = "5aab99a6-0133-4d0a-849d-e78505a56b76";
+        internal const string ImprovedNaturalAttackClaw = "56ebf0c0-cccf-471b-9366-b4e7fca5120c";
+        internal const string ImprovedNaturalAttackHoof = "7bca3185-fafa-40f9-84bc-1a7b162516ed";
+        internal const string ImprovedNaturalAttackGore = "dba99824-1cae-4520-af17-3797991909e5";
+        internal const string ImprovedNaturalAttackTalon = "6ca96d19-9a41-4e93-a6d0-ec7b187a1c3a";
+        internal const string ImprovedNaturalAttackTail = "6be0ab7c-34b7-4d29-bd8d-2c9146ff6788";
+        internal const string ImprovedNaturalAttackSlam = "cfffbb0c-5479-4eca-9394-4c38a0ac0e0c";
+        //Totem Beast
+        internal const string TotemBeastSelection = "f3dea40e-9536-4fec-8f53-25031ef360c5";
+        internal const string TotemBeastBull = "6270e7eb-eab4-492e-85cf-0794b87ab78a";
+        internal const string TotemBeastBear = "1c516d01-37b1-4652-8e55-8d65f2f22dc8";
+        internal const string TotemBeastTiger = "0588e49b-3885-45bf-8322-e6ef0938b875";
+        internal const string TotemBeastFalcon = "1ceceb1b-5b34-43e8-9795-f2541e91b2b8";
+        internal const string TotemBeastStag = "b28668bc-84ac-43ef-949d-bda568bbadad";
+        internal const string TotemBeastMouse = "22406716-3bae-4687-9903-f076a97fa937";
+        internal const string TotemBeastOwl = "572d9def-6827-47f9-afb3-ae239fa32457";
+        internal const string TotemBeastMonkey = "e46464da-f1f8-4495-b3f0-eaae9a4e366b";
+
+        internal const string TotemBeastBullBuff = "6240e7eb-eab4-492e-85cf-0794b87ab78a";
+        internal const string TotemBeastBearBuff = "1c616d01-37b1-4652-8e55-8d65f2f22dc8";
+        internal const string TotemBeastTigerBuff = "0558e49b-3885-45bf-8322-e6ef0938b875";
+        internal const string TotemBeastFalconBuff = "14eceb1b-5b34-43e8-9795-f2541e91b2b8";
+        internal const string TotemBeastStagBuff = "b28468bc-84ac-43ef-949d-bda568bbadad";
+        internal const string TotemBeastMouseBuff = "22306716-3bae-4687-9903-f076a97fa937";
+        internal const string TotemBeastOwlBuff = "572d5def-6827-47f9-afb3-ae239fa32457";
+        internal const string TotemBeastMonkeyBuff = "e46664da-f1f8-4495-b3f0-eaae9a4e366b";
+
+        internal const string TotemBeastBullPet = "5270e7eb-eab4-492e-85cf-0794b87ab78a";
+        internal const string TotemBeastBearPet = "2c516d01-37b1-4652-8e55-8d65f2f22dc8";
+        internal const string TotemBeastTigerPet = "1588e49b-3885-45bf-8322-e6ef0938b875";
+        internal const string TotemBeastFalconPet = "2ceceb1b-5b34-43e8-9795-f2541e91b2b8";
+        internal const string TotemBeastStagPet = "c28668bc-84ac-43ef-949d-bda568bbadad";
+        internal const string TotemBeastMousePet = "32406716-3bae-4687-9903-f076a97fa937";
+        internal const string TotemBeastOwlPet = "672d9def-6827-47f9-afb3-ae239fa32457";
+        internal const string TotemBeastMonkeyPet = "a46464da-f1f8-4495-b3f0-eaae9a4e366b";
 
         //EVOLUTIONS
+        //Improved Damage & Claw & Skilled
+        internal const string EvolvedCompanion = "dc9ac146-7bcd-48ab-b619-fc460641594b";
         internal const string ImprovedDamage = "d79bb9d8-f021-462f-b9af-33744de95e20";
-        internal const string ImprovedDamagePet = "c79bb9d8-f021-462f-b9af-33744de95e20";
+        internal const string ImprovedDamageBitePet = "a19bb9d8-f021-462f-b9af-33744de95e20";
+        internal const string ImprovedDamageClawPet = "b29bb9d8-f021-462f-b9af-33744de95e20";
+        internal const string ImprovedDamageHoofPet = "c39bb9d8-f021-462f-b9af-33744de95e20";
+        internal const string ImprovedDamageGorePet = "d74bb9d8-f021-462f-b9af-33744de95e20";
+        internal const string ImprovedDamageTalonPet = "e59bb9d8-f021-462f-b9af-33744de95e20";
+        internal const string ImprovedDamageTailPet = "f69bb9d8-f021-462f-b9af-33744de95e20";
+        internal const string ImprovedDamageSlamPet = "174bb9d8-f021-462f-b9af-33744de95e20";
+        internal const string ImprovedDamageBiteFeat = "a19bb9d8-f021-462f-b9af-33744de95e10";
+        internal const string ImprovedDamageClawFeat = "b29bb9d8-f021-462f-b9af-33744de95e10";
+        internal const string ImprovedDamageHoofFeat = "c39bb9d8-f021-462f-b9af-33744de95e10";
+        internal const string ImprovedDamageGoreFeat = "d74bb9d8-f021-462f-b9af-33744de95e10";
+        internal const string ImprovedDamageTalonFeat = "e59bb9d8-f021-462f-b9af-33744de95e10";
+        internal const string ImprovedDamageTailFeat = "f69bb9d8-f021-462f-b9af-33744de95e10";
+        internal const string ImprovedDamageSlamFeat = "174bb9d8-f021-462f-b9af-33744de95e10";
+
+        internal const string Claw = "44fc4faa-6964-4dee-9918-b2d0eecd7596";
+        internal const string ClawPet = "6bc428d0-42fe-4155-80fa-ba88db385786";
+
+        internal const string Skilled = "1e590d90-7bff-4eae-aa51-bf2b7b290846";
+        internal const string SkilledAthleticsFeat = "df2e0632-6236-44b2-9276-1abc4b158a4a";
+        internal const string SkilledAthleticsPet = "4e7fbe05-8e57-49a7-8a7b-b6522678c54f";
+        internal const string SkilledMobilityFeat = "463cf9d5-30c7-4766-b3d0-e10325a6204b";
+        internal const string SkilledMobilityPet = "1fb4fd93-d493-4fbd-9567-9a83136e056b";
+        internal const string SkilledTrickeryFeat = "93b53ac7-496c-48ac-9c3b-c7d710939532";
+        internal const string SkilledTrickeryPet = "2111245d-f576-4565-8b71-4dda317e2f2c";
+        internal const string SkilledStealthFeat = "c43e2c79-40e3-4600-b9fa-13fa86f76217";
+        internal const string SkilledStealthPet = "e2142a40-4adf-41cf-b6be-3ed4ccd96d07";
+        internal const string SkilledArcanaFeat = "42f8e400-79d9-4663-bb06-5da8236264d0";
+        internal const string SkilledArcanaPet = "4842c47c-e93a-4a68-8f8d-5fdff9aec9f4";
+        internal const string SkilledWorldFeat = "64cf5019-1980-4e7b-81fa-fe2cafc65580";
+        internal const string SkilledWorldPet = "77d77350-94ee-4760-9056-12babbee6b9b";
+        internal const string SkilledNatureFeat = "3c4d4434-d328-422d-a152-26aef27382cd";
+        internal const string SkilledNaturePet = "7c3a3e64-d271-4408-b64f-4b3d79b4dac2";
+        internal const string SkilledReligionFeat = "197a973d-c3f8-4267-8b48-3ebf7b20a26b";
+        internal const string SkilledReligionPet = "7253d867-6017-42d1-88ed-f9fa9916c2ac";
+        internal const string SkilledPerceptionFeat = "de7956f5-81e0-46ea-928d-8f0296aa8c6d";
+        internal const string SkilledPerceptionPet = "d42dd01a-7745-4431-b5c7-890c3145c890";
+        internal const string SkilledPersuasionFeat = "0ac3b6b1-236b-406d-b553-015af1ae18f4";
+        internal const string SkilledPersuasionPet = "868b208d-c95e-4c37-87ab-003c01d7d936";
+        internal const string SkilledUMDFeat = "74f248f0-d898-4c17-bd33-c068028d94f8";
+        internal const string SkilledUMDPet = "0cd03586-72d1-4eb6-acc8-399fad2782dc";
+
+        internal const string EvolutionImprovedNaturalArmor1 = "d62a6dbc-a86a-47f0-b734-2b23cdd882f0";
+        internal const string EvolutionImprovedNaturalArmorPet1 = "b42c7b6c-2eee-4f49-8519-168843dedbda";
+
+        internal const string EvolutionImprovedNaturalArmor2 = "8ecacba2-5a6b-440b-9e1d-3fe18e8faaeb";
+        internal const string EvolutionImprovedNaturalArmorPet2 = "f8e61a86-1bfd-40e8-bc33-626eb40c45b5";
+
+        internal const string EvolutionImprovedNaturalArmor3 = "8d218165-7f3b-4d71-a96f-f9185825f228";
+        internal const string EvolutionImprovedNaturalArmorPet3 = "d383aee2-7a35-4776-9beb-8a750bf62ee8";
+
+        internal const string EvolutionImprovedNaturalArmor4 = "7821d431-38e7-4fc0-8232-a085c40b4562";
+        internal const string EvolutionImprovedNaturalArmorPet4 = "a17d1a1a-820f-4dc9-b7c2-bc48da902e79";
+
+        internal const string EvolutionImprovedNaturalArmor5 = "199b9195-e077-4401-b55a-f9b71cf1e88a";
+        internal const string EvolutionImprovedNaturalArmorPet5 = "ef70d29a-48ac-4232-baa7-a67118770c4c";
 
         //***********//
         internal static readonly (string guid, string displayName)[] Features =
@@ -144,7 +245,8 @@ namespace AddedFeats.Utils
               (FavoredAnimalFocusSelection, Feats.FavoredAnimalFocusSelection.DisplayName),
               (ImprovedNaturalArmor, Feats.ImprovedNaturalArmor.DisplayName),
               (ImprovedNaturalAttack, Feats.ImprovedNaturalAttack.DisplayName),
-              (ImprovedDamage, Feats.ImprovedDamage.DisplayName),
+              (EvolvedCompanion, Feats.EvolvedCompanion.DisplayName),
+              (TotemBeastSelection, Feats.TotemBeast.DisplayName),
           };
         #endregion
 
@@ -152,10 +254,13 @@ namespace AddedFeats.Utils
         // Strong Jaw (Spell)
         internal const string StrongJawSpell = "7cd44ce1-3575-4ceb-b81b-dc71d66415c0";
         internal const string StrongJawSpellBuff = "6cd44ce1-3575-4ceb-b81b-dc71d66415c0";
+        internal const string AtavismSpell = "d247af76-1159-46d8-84b0-3f6a0f2b75e5";
+        internal const string AtavismSpellBuff = "dacda3da-964a-4bf8-aed2-3de9725934cf";
         internal static readonly (string guid, string displayName)[] Spells =
           new (string, string)[]
           {
               (StrongJawSpell, StrongJaw.DisplayName),
+              (AtavismSpell, Atavism.DisplayName),
           };
         #endregion
 
