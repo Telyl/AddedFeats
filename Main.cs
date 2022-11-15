@@ -125,6 +125,7 @@ namespace AddedFeats
                 ImprovedNaturalAttack.Configure();
                 ImprovedNaturalArmor.Configure();
                 EvolvedCompanion.Configure();
+                VampiricCompanion.Configure();
             }
             private static void ConfigureSpells()
             {

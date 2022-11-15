@@ -19,6 +19,7 @@ namespace AddedFeats.Utils
 
         //** Feats **//
         #region Features
+        #region Favored Animal Focus
         // Favored Animal Selection Feat
         internal const string FavoredAnimalFocusSelection = "fe2d7d81-6631-4bff-8a35-b56c9811d7eb";
         // Favored Animal Focus Tiger
@@ -53,7 +54,8 @@ namespace AddedFeats.Utils
         internal const string FavoredAnimalFocusBear = "bca79523-3d18-4ff6-ae9d-a14ace7ff516";
         internal const string FavoredAnimalFocusBearPet = "80a1a04e-ed27-43f9-8ee0-783625d155c6";
         internal const string FavoredAnimalFocusBearBuff = "ef3f2bfe-6ab0-4259-ae1e-5a6aa14cb4a2";
-
+        #endregion
+        #region Forceful Charge
         // Forceful Charge
         internal const string ForcefulCharge = "b7874cf6-0a94-4685-a295-f2467b6c5428";
         internal const string ForcefulChargeAbility= "d8ec6b3f-c687-493a-b5d9-2b31715b5fd2";
@@ -62,7 +64,8 @@ namespace AddedFeats.Utils
         // Improved Forceful Charge
         internal const string ImprovedForcefulCharge = "c6374cf6-0b94-4386-a281-f1167b6c5428";
         internal const string ImprovedForcefulChargeEffect = "5ccb7545-623c-468e-bbbb-7b32ccc36af7";
-
+        #endregion
+        #region Planar Focus
         // Planar Focus
         internal const string PlanarFocus = "3d64ed44-42f3-4a8f-b7ae-a927a45af820";
         // Planar Focus Air
@@ -125,7 +128,8 @@ namespace AddedFeats.Utils
         internal const string PlanarFocusWaterAnimalBuffEffect = "6c912f1a-16e6-4870-b0d8-a3cb881bbfaa";
         internal const string PlanarFocusWaterEffect = "4ca8f08f-124d-4cd6-a04c-8164192f0d87";
         internal const string PlanarFocusWaterAnimalBuff = "736fd667-b68a-4e65-bee2-78cd55f3c27f";
-
+        #endregion
+        #region Improved Natural Armor (lvls 1-20)
         //Improved Natural Armor
         internal const string ImprovedNaturalArmor = "5f91ffea-81a3-4743-894b-e76e39c9567c";
         internal const string ImprovedNaturalArmor2 = "2291ffea-81a3-4743-894b-e76e39c9567c";
@@ -137,6 +141,8 @@ namespace AddedFeats.Utils
         internal const string ImprovedNaturalArmor8 = "8891ffea-81a3-4743-894b-e76e39c9567c";
         internal const string ImprovedNaturalArmor9 = "9991ffea-81a3-4743-894b-e76e39c9567c";
         internal const string ImprovedNaturalArmor10 = "1091ffea-81a3-4743-894b-e76e39c9567c";
+        #endregion
+        #region Improved Natural Attack (Bite, Claw, Hoof, Gore, Talon, Tail, Slam)
         //Improved Natural Attack
         internal const string ImprovedNaturalAttack = "6d20775b-4347-479c-a5fe-aae3ddc35231";
         internal const string ImprovedNaturalAttackBite = "5aab99a6-0133-4d0a-849d-e78505a56b76";
@@ -146,6 +152,8 @@ namespace AddedFeats.Utils
         internal const string ImprovedNaturalAttackTalon = "6ca96d19-9a41-4e93-a6d0-ec7b187a1c3a";
         internal const string ImprovedNaturalAttackTail = "6be0ab7c-34b7-4d29-bd8d-2c9146ff6788";
         internal const string ImprovedNaturalAttackSlam = "cfffbb0c-5479-4eca-9394-4c38a0ac0e0c";
+        #endregion
+        #region Totem Beast
         //Totem Beast
         internal const string TotemBeastSelection = "f3dea40e-9536-4fec-8f53-25031ef360c5";
         internal const string TotemBeastBull = "6270e7eb-eab4-492e-85cf-0794b87ab78a";
@@ -174,10 +182,11 @@ namespace AddedFeats.Utils
         internal const string TotemBeastMousePet = "32406716-3bae-4687-9903-f076a97fa937";
         internal const string TotemBeastOwlPet = "672d9def-6827-47f9-afb3-ae239fa32457";
         internal const string TotemBeastMonkeyPet = "a46464da-f1f8-4495-b3f0-eaae9a4e366b";
-
-        //EVOLUTIONS
-        //Improved Damage & Claw & Skilled
+        #endregion
+        #region Evolved Companion
         internal const string EvolvedCompanion = "dc9ac146-7bcd-48ab-b619-fc460641594b";
+        #endregion
+        #region Evolution: Improved Damage (1-Point)
         internal const string ImprovedDamage = "d79bb9d8-f021-462f-b9af-33744de95e20";
         internal const string ImprovedDamageBitePet = "a19bb9d8-f021-462f-b9af-33744de95e20";
         internal const string ImprovedDamageClawPet = "b29bb9d8-f021-462f-b9af-33744de95e20";
@@ -193,10 +202,12 @@ namespace AddedFeats.Utils
         internal const string ImprovedDamageTalonFeat = "e59bb9d8-f021-462f-b9af-33744de95e10";
         internal const string ImprovedDamageTailFeat = "f69bb9d8-f021-462f-b9af-33744de95e10";
         internal const string ImprovedDamageSlamFeat = "174bb9d8-f021-462f-b9af-33744de95e10";
-
+        #endregion
+        #region Evolution: Claw (1-Point)
         internal const string Claw = "44fc4faa-6964-4dee-9918-b2d0eecd7596";
         internal const string ClawPet = "6bc428d0-42fe-4155-80fa-ba88db385786";
-
+        #endregion
+        #region Evolution: Skilled (1-Point)
         internal const string Skilled = "1e590d90-7bff-4eae-aa51-bf2b7b290846";
         internal const string SkilledAthleticsFeat = "df2e0632-6236-44b2-9276-1abc4b158a4a";
         internal const string SkilledAthleticsPet = "4e7fbe05-8e57-49a7-8a7b-b6522678c54f";
@@ -220,22 +231,22 @@ namespace AddedFeats.Utils
         internal const string SkilledPersuasionPet = "868b208d-c95e-4c37-87ab-003c01d7d936";
         internal const string SkilledUMDFeat = "74f248f0-d898-4c17-bd33-c068028d94f8";
         internal const string SkilledUMDPet = "0cd03586-72d1-4eb6-acc8-399fad2782dc";
-
+        #endregion
+        #region Evolution: Improved Natural Armoro (1-Point)
         internal const string EvolutionImprovedNaturalArmor1 = "d62a6dbc-a86a-47f0-b734-2b23cdd882f0";
         internal const string EvolutionImprovedNaturalArmorPet1 = "b42c7b6c-2eee-4f49-8519-168843dedbda";
-
         internal const string EvolutionImprovedNaturalArmor2 = "8ecacba2-5a6b-440b-9e1d-3fe18e8faaeb";
         internal const string EvolutionImprovedNaturalArmorPet2 = "f8e61a86-1bfd-40e8-bc33-626eb40c45b5";
-
         internal const string EvolutionImprovedNaturalArmor3 = "8d218165-7f3b-4d71-a96f-f9185825f228";
         internal const string EvolutionImprovedNaturalArmorPet3 = "d383aee2-7a35-4776-9beb-8a750bf62ee8";
-
         internal const string EvolutionImprovedNaturalArmor4 = "7821d431-38e7-4fc0-8232-a085c40b4562";
         internal const string EvolutionImprovedNaturalArmorPet4 = "a17d1a1a-820f-4dc9-b7c2-bc48da902e79";
-
         internal const string EvolutionImprovedNaturalArmor5 = "199b9195-e077-4401-b55a-f9b71cf1e88a";
         internal const string EvolutionImprovedNaturalArmorPet5 = "ef70d29a-48ac-4232-baa7-a67118770c4c";
-
+        #endregion
+        #region Vampiric Companion
+        internal const string VampiricCompanionFeat = "52283e17-9213-4aee-8fc5-06c28ec0fbe8";
+        #endregion
         //***********//
         internal static readonly (string guid, string displayName)[] Features =
           new (string, string)[]
@@ -247,6 +258,7 @@ namespace AddedFeats.Utils
               (ImprovedNaturalAttack, Feats.ImprovedNaturalAttack.DisplayName),
               (EvolvedCompanion, Feats.EvolvedCompanion.DisplayName),
               (TotemBeastSelection, Feats.TotemBeast.DisplayName),
+              (VampiricCompanionFeat, Feats.VampiricCompanion.DisplayName),
           };
         #endregion
 

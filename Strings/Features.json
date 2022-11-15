@@ -475,5 +475,14 @@
     "Key": "ImprovedNaturalAttackSlam.Name",
     "ProcessTemplates": false,
     "enGB": "Improved Natural Attack (Slam)"
+  },
+  {
+    "Key": "VampiricCompanion.Name",
+    "ProcessTemplates": false,
+    "enGB": "Vampiric Companion"
+  },
+  {
+    "Key": "VampiricCompanion.Description",
+    "enGB": "Your animal companion or familiarÅfs type changes to Ågundead.Åh The creature gains fast healing 5 as well as your vampire or dhampir weaknesses."
   }
 ]
