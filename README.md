@@ -34,9 +34,14 @@ Created with https://github.com/WittleWolfie/WW-Blueprint-Core
    * [Vampiric Companion](https://www.d20pfsrd.com/feats/general-feats/vampiric-companion/)
    * [Ferocious Beast (Animal Companion Feat)](https://www.d20pfsrd.com/feats/animal-companion-feats/ferocious-beast-animal-companion-feat-combat/)
    * More 1-Point Evolutions
+   * [Improved Spell Sharing (Teamwork)](https://www.d20pfsrd.com/feats/general-feats/improved-spell-sharing-teamwork/)
 
 * Spells
-   * N/A
+   * [Vine Strike](https://www.d20pfsrd.com/magic/all-spells/v/vine-strike/)
+   * [Acute Senses](https://www.d20pfsrd.com/magic/all-spells/a/acute-senses/)
+   * [Perceive Cues](https://www.d20pfsrd.com/magic/all-spells/p/perceive-cues)
+   * [Shield Companion](https://www.d20pfsrd.com/magic/all-spells/s/shield-companion)
+   * [Bloody Claws](https://www.d20pfsrd.com/magic/all-spells/b/bloody-claws)
 
 * Stretch Goals
    * [Skirmisher Tricks](https://www.d20pfsrd.com/classes/core-classes/ranger/archetypes/paizo-ranger-archetypes/skirmisher/)
