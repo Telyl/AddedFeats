@@ -169,7 +169,7 @@
   },
   {
     "Key": "FavoredMouse.Description",
-    "enGB": "The animal companions gains Improved Uncanny Dodge when using Animal Focus - Mouse using it's level as rogue levels for the purpose of determining flanking."
+    "enGB": "The animal companions gains Improved Uncanny Dodge when using Animal Focus - Mouse using its level as rogue levels for the purpose of determining flanking."
   },
   {
     "Key": "FavoredOwl.Name",
@@ -223,7 +223,7 @@
   },
   {
     "Key": "ImprovedNaturalAttack.Description",
-    "enGB": "Choose one of the creatureÅfs natural attack forms (not an unarmed strike). The damage for this natural attack increases by one step on the following list, as if the creatureÅfs size had increased by one category. Damage dice increase as follows: 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 3d6, 4d6, 6d6, 8d6, 12d6. This feat can be taken multiple times for a different natural attack."
+    "enGB": "Choose one of the creatures natural attack forms (not an unarmed strike). The damage for this natural attack increases by one step on the following list, as if the creatures size had increased by one category. Damage dice increase as follows: 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 3d6, 4d6, 6d6, 8d6, 12d6. This feat can be taken multiple times for a different natural attack."
   },
   {
     "Key": "EvolvedCompanion.Name",
@@ -232,7 +232,7 @@
   },
   {
     "Key": "EvolvedCompanion.Description",
-    "enGB": "Select a 1-point evolution other than pounce or reach from those available to a summonerÅfs eidolon. Your animal companion gains this evolution. The animal companion must conform to any limitations of the evolution. You may take this feat multiple times for a unique evolution."
+    "enGB": "Select a 1-point evolution other than pounce or reach from those available to a summoners eidolon. Your animal companion gains this evolution. The animal companion must conform to any limitations of the evolution. You may take this feat multiple times for a unique evolution."
   },
   {
     "Key": "ImprovedDamage.Name",
@@ -259,7 +259,7 @@
   },
   {
     "Key": "TotemBeastSelection.Description",
-    "enGB": "Select one animal aspect from the list presented in the hunter classÅfs animal focus class feature. Your animal companion gains the benefits of the selected animal aspect, treating its Hit Dice as its effective hunter level for this ability."
+    "enGB": "Select one animal aspect from the list presented in the hunter classs animal focus class feature. Your animal companion gains the benefits of the selected animal aspect, treating its Hit Dice as its effective hunter level for this ability."
   },
   {
     "Key": "TotemBeastBull.Name",
@@ -483,7 +483,7 @@
   },
   {
     "Key": "VampiricCompanion.Description",
-    "enGB": "Your animal companion or familiarÅfs type changes to Ågundead.Åh The creature gains fast healing 5 as well as your vampire or dhampir weaknesses."
+    "enGB": "Your animal companion or familiars type changes to Ågundead.Åh The creature gains fast healing 5 as well as your vampire or dhampir weaknesses."
   },
   {
     "Key": "SpiritsGift.Name",
@@ -501,7 +501,7 @@
   },
   {
     "Key": "SpiritFocusBattle.Description",
-    "enGB": "The shamanÅfs spirit animal looks like a fiercer version of its species, with rippling muscles and a stockier frame. It gains a +2 natural armor bonus to AC. If it already has a natural armor bonus, the bonus increases by 2 instead."
+    "enGB": "The shamans spirit animal looks like a fiercer version of its species, with rippling muscles and a stockier frame. It gains a +2 natural armor bonus to AC. If it already has a natural armor bonus, the bonus increases by 2 instead."
   },
   {
     "Key": "SpiritFocusBones.Name",
@@ -510,7 +510,7 @@
   },
   {
     "Key": "SpiritFocusBones.Description",
-    "enGB": "The shamanÅfs spirit animal gives off a ghostly glow and seems nearly transparent. The animal is under the constant effects of blur, with a caster level equal to the shamanÅfs level."
+    "enGB": "The shamans spirit animal gives off a ghostly glow and seems nearly transparent. The animal is under the constant effects of blur, with a caster level equal to the shamans level."
   },
   {
     "Key": "SpiritFocusFlame.Name",
@@ -519,7 +519,7 @@
   },
   {
     "Key": "SpiritFocusFlame.Description",
-    "enGB": "The shamans spirit animal is surrounded by a nimbus of flame that gives off light like a candle. This nimbus is warm to the touch, but doesnÅft cause any damage. The animal is immune to fire damage, but is vulnerable to cold damage."
+    "enGB": "The shamans spirit animal is surrounded by a nimbus of flame that gives off light like a candle. This nimbus is warm to the touch, but doesnt cause any damage. The animal is immune to fire damage, but is vulnerable to cold damage."
   },
   {
     "Key": "SpiritFocusFrost.Name",
@@ -582,7 +582,7 @@
   },
   {
     "Key": "SpiritFocusStone.Description",
-    "enGB": "The shamans spirit animal looks as though itÅfs made out of earth and stone, with tiny gemstones embedded in its flesh. The animal gains DR 5/adamantine."
+    "enGB": "The shamans spirit animal looks as though its made out of earth and stone, with tiny gemstones embedded in its flesh. The animal gains DR 5/adamantine."
   },
   {
     "Key": "SpiritFocusWaves.Name",
@@ -591,7 +591,7 @@
   },
   {
     "Key": "SpiritFocusWaves.Description",
-    "enGB": "The skin of the shamans spirit animal constantly distorts, much as a pondÅfs surface ripples when drops of water fall gently into it. The animal gains Mobility as a bonus feat."
+    "enGB": "The skin of the shamans spirit animal constantly distorts, much as a ponds surface ripples when drops of water fall gently into it. The animal gains Mobility as a bonus feat."
   },
   {
     "Key": "SpiritFocusWind.Name",

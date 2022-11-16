@@ -12,6 +12,7 @@ using BlueprintCore.Blueprints.CustomConfigurators.UnitLogic.Abilities;
 using Kingmaker.Blueprints;
 using Kingmaker.Enums;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
+using Kingmaker.UnitLogic.Abilities.Components;
 
 namespace AddedFeats.Feats
 {
@@ -51,10 +52,6 @@ namespace AddedFeats.Feats
 
         public static void ConfigureEnabled()
         {
-            
-            
-
-
             BlueprintAbilityResource spiritsgiftresource = AbilityResourceConfigurator.New(FeatName + "Resource", Guids.SpiritsGiftResource)
                 .SetMaxAmount(ResourceAmountBuilder.New(1).Build())
                 .SetMin(1)
@@ -106,27 +103,33 @@ namespace AddedFeats.Feats
                 .AddBuffExtraEffects(checkedBuff: CompanionWindBuff, extraEffectBuff: SpiritsGiftCompanionBuff)
                 .Configure();
 
+
+            var SpiritsGiftAbility = AbilityConfigurator.New(FeatName + "Ability", Guids.SpiritsGiftAbility)
+                .SetDisplayName(DisplayName)
+                .SetDescription(Description)
+                .SetIcon(AbilityRefs.ShamanWanderingHexAbility.Reference.Get().Icon)
+                .AddAbilityVariants(new() {
+                    BattleActiveAbility.ToReference<BlueprintAbilityReference>(),
+                    BonesActiveAbility.ToReference<BlueprintAbilityReference>(),
+                    FlameActiveAbility.ToReference<BlueprintAbilityReference>(),
+                    FrostActiveAbility.ToReference<BlueprintAbilityReference>(),
+                    LifeActiveAbility.ToReference<BlueprintAbilityReference>(),
+                    LoreActiveAbility.ToReference<BlueprintAbilityReference>(),
+                    MammothActiveAbility.ToReference<BlueprintAbilityReference>(),
+                    NatureActiveAbility.ToReference<BlueprintAbilityReference>(),
+                    SlumsActiveAbility.ToReference<BlueprintAbilityReference>(),
+                    StoneActiveAbility.ToReference<BlueprintAbilityReference>(),
+                    WavesActiveAbility.ToReference<BlueprintAbilityReference>(),
+                    WindActiveAbility.ToReference<BlueprintAbilityReference>()
+                })
+                .Configure();
+
             FeatureConfigurator.New(FeatName, Guids.SpiritsGift, FeatureGroup.Feat)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .AddPrerequisitePet()
                 .AddAbilityResources(amount: 0, resource: spiritsgiftresource, restoreAmount: true)
-                .AddFacts(new() { SpiritsGiftCompanion })
-                .AddFacts(new()
-                {
-                    BattleActiveAbility,
-                    BonesActiveAbility,
-                    FlameActiveAbility,
-                    FrostActiveAbility,
-                    LifeActiveAbility,
-                    LoreActiveAbility,
-                    MammothActiveAbility,
-                    NatureActiveAbility,
-                    SlumsActiveAbility,
-                    StoneActiveAbility,
-                    WavesActiveAbility,
-                    WindActiveAbility
-                })
+                .AddFacts(new() { SpiritsGiftCompanion, SpiritsGiftAbility })
                 .Configure();
         }
     }

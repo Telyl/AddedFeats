@@ -252,6 +252,7 @@ namespace AddedFeats.Utils
         internal const string SpiritsGiftCompanion = "dba197da-7b4a-45d5-ad7b-ae26fdc7807c";
         internal const string SpiritsGiftCompanionBuff = "eba197da-7b4a-45d5-ad7b-ae26fdc7807c";
         internal const string SpiritsGift = "7f8e20a4-4c67-4e7f-bf8d-c4769e2f5145";
+        internal const string SpiritsGiftAbility = "7f8e20a4-4c67-4111-bf1d-c4769e2f5145";
 
         internal const string SpiritFocusBattleBuff = "5d628248-9300-4688-92f4-d082598bd7ea";
         internal const string SpiritFocusBattle = "e3918d34-de74-4057-b434-e2a2e6b85a37";
