@@ -4,7 +4,7 @@ Additional features for Pathfinder: Wrath of the Righteous
 ## New Content
 
 * Homebrew
-    * Incoming
+    * Mythic Bond (Mythic Animal Focus) - Allows for one additional animal foci to be used by a hunter.
 * Feats
     * [Forceful Charge (Animal Companion Feat)](https://www.d20pfsrd.com/feats/animal-companion-feats/forceful-charge/)
         * Includes [Improved](https://www.d20pfsrd.com/feats/animal-companion-feats/improved-forceful-charge/)
@@ -13,6 +13,8 @@ Additional features for Pathfinder: Wrath of the Righteous
     * [Totem Beast](https://www.d20pfsrd.com/feats/general-feats/totem-beast/)
     * [Evolved Companion](https://www.d20pfsrd.com/feats/general-feats/evolved-companion)
     * [Improved Natural Attack (Animal Companion Feat)](https://www.d20pfsrd.com/feats/monster-feats/improved-natural-attack/)
+    * [Spirit's Gift](https://www.d20pfsrd.com/feats/general-feats/spirit-s-gift)
+    * [Vampiric Companion](https://www.d20pfsrd.com/feats/general-feats/vampiric-companion/)
 * Spells
     * [Strong Jaw](https://www.d20pfsrd.com/magic/all-spells/s/strong-jaw/)
     * [Atavism](https://www.d20pfsrd.com/magic/all-spells/a/atavism/)
@@ -30,8 +32,6 @@ Created with https://github.com/WittleWolfie/WW-Blueprint-Core
 
 ## Planned Content
 * Feats
-   * [Spirit's Gift](https://www.d20pfsrd.com/feats/general-feats/spirit-s-gift)
-   * [Vampiric Companion](https://www.d20pfsrd.com/feats/general-feats/vampiric-companion/)
    * [Ferocious Beast (Animal Companion Feat)](https://www.d20pfsrd.com/feats/animal-companion-feats/ferocious-beast-animal-companion-feat-combat/)
    * More 1-Point Evolutions
    * [Improved Spell Sharing (Teamwork)](https://www.d20pfsrd.com/feats/general-feats/improved-spell-sharing-teamwork/)
