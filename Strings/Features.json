@@ -484,5 +484,124 @@
   {
     "Key": "VampiricCompanion.Description",
     "enGB": "Your animal companion or familiarÅfs type changes to Ågundead.Åh The creature gains fast healing 5 as well as your vampire or dhampir weaknesses."
+  },
+  {
+    "Key": "SpiritsGift.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirits Gift"
+  },
+  {
+    "Key": "SpiritsGift.Description",
+    "enGB": "At the start of the day, you can choose to commune with a single shaman spirit. Once during the next 24 hours, you can spend a standard action to grant your animal companion or familiar that shaman spirits spirit animal ability for 1 minute per level in the class that grants your animal companion or familiar."
+  },
+  {
+    "Key": "SpiritFocusBattle.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Battle"
+  },
+  {
+    "Key": "SpiritFocusBattle.Description",
+    "enGB": "The shamanÅfs spirit animal looks like a fiercer version of its species, with rippling muscles and a stockier frame. It gains a +2 natural armor bonus to AC. If it already has a natural armor bonus, the bonus increases by 2 instead."
+  },
+  {
+    "Key": "SpiritFocusBones.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Bones"
+  },
+  {
+    "Key": "SpiritFocusBones.Description",
+    "enGB": "The shamanÅfs spirit animal gives off a ghostly glow and seems nearly transparent. The animal is under the constant effects of blur, with a caster level equal to the shamanÅfs level."
+  },
+  {
+    "Key": "SpiritFocusFlame.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Flame"
+  },
+  {
+    "Key": "SpiritFocusFlame.Description",
+    "enGB": "The shamans spirit animal is surrounded by a nimbus of flame that gives off light like a candle. This nimbus is warm to the touch, but doesnÅft cause any damage. The animal is immune to fire damage, but is vulnerable to cold damage."
+  },
+  {
+    "Key": "SpiritFocusFrost.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Frost"
+  },
+  {
+    "Key": "SpiritFocusFrost.Description",
+    "enGB": "The shamans spirit animal is covered in a light layer of glimmering frost, and its breath comes out as mist regardless of the temperature. The animal has resistance 5 to cold and electricity."
+  },
+  {
+    "Key": "SpiritFocusLife.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Life"
+  },
+  {
+    "Key": "SpiritFocusLife.Description",
+    "enGB": "The shamans spirit animal appears to be a beautiful and very healthy version of its species, and seems especially vibrant and full of life. Her animal companion gains fast healing 1; if the spirit animal already has fast healing, instead its fast healing increases by 1."
+  },
+  {
+    "Key": "SpiritFocusLore.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Lore"
+  },
+  {
+    "Key": "SpiritFocusLore.Description",
+    "enGB": "The shamans spirit animal appears to be quiet and unassuming. It gains a +2 bonus on Initiative checks and a +4 bonus on Stealth checks."
+  },
+  {
+    "Key": "SpiritFocusMammoth.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Mammoth"
+  },
+  {
+    "Key": "SpiritFocusMammoth.Description",
+    "enGB": "The shamans spirit animal appears more primal and prehistoric than an ordinary animal of its kind. It gains a +2 inherent bonus to its Strength score."
+  },
+  {
+    "Key": "SpiritFocusNature.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Nature"
+  },
+  {
+    "Key": "SpiritFocusNature.Description",
+    "enGB": "The shamans spirit animal looks feral, and appears to be in peak physical form. The animal can move through any sort of undergrowth or natural difficult terrain at its normal speed without taking damage or suffering any other impairment."
+  },
+  {
+    "Key": "SpiritFocusSlums.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Slums"
+  },
+  {
+    "Key": "SpiritFocusSlums.Description",
+    "enGB": "The shamans spirit animal looks like a leaner version of its species, with hungry eyes and a wiry frame. It gains a +4 bonus on initiative checks."
+  },
+  {
+    "Key": "SpiritFocusStone.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Stone"
+  },
+  {
+    "Key": "SpiritFocusStone.Description",
+    "enGB": "The shamans spirit animal looks as though itÅfs made out of earth and stone, with tiny gemstones embedded in its flesh. The animal gains DR 5/adamantine."
+  },
+  {
+    "Key": "SpiritFocusWaves.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Waves"
+  },
+  {
+    "Key": "SpiritFocusWaves.Description",
+    "enGB": "The skin of the shamans spirit animal constantly distorts, much as a pondÅfs surface ripples when drops of water fall gently into it. The animal gains Mobility as a bonus feat."
+  },
+  {
+    "Key": "SpiritFocusWind.Name",
+    "ProcessTemplates": false,
+    "enGB": "Spirit Focus - Wind"
+  },
+  {
+    "Key": "SpiritFocusWind.Description",
+    "enGB": "The shamans spirit animal crackles with electrical energy when it moves, giving off light like a candle. This electricity deals no damage to the animal or any creature that touches the animal. The animal gains electricity resistance 10."
   }
+
+
 ]

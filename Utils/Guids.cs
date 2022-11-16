@@ -247,6 +247,62 @@ namespace AddedFeats.Utils
         #region Vampiric Companion
         internal const string VampiricCompanionFeat = "52283e17-9213-4aee-8fc5-06c28ec0fbe8";
         #endregion
+        #region Spirits Gift
+        internal const string SpiritsGiftResource = "bf9b0218-b437-44f1-805f-cff756385d65";
+        internal const string SpiritsGiftCompanion = "dba197da-7b4a-45d5-ad7b-ae26fdc7807c";
+        internal const string SpiritsGiftCompanionBuff = "eba197da-7b4a-45d5-ad7b-ae26fdc7807c";
+        internal const string SpiritsGift = "7f8e20a4-4c67-4e7f-bf8d-c4769e2f5145";
+
+        internal const string SpiritFocusBattleBuff = "5d628248-9300-4688-92f4-d082598bd7ea";
+        internal const string SpiritFocusBattle = "e3918d34-de74-4057-b434-e2a2e6b85a37";
+        internal const string CustomSpiritFocusBattleBuff = "5d628248-1000-4688-92f4-d082598bd7ea";
+
+
+        internal const string SpiritFocusBonesBuff = "a4fbac75-b80a-4b4c-8ceb-1d035668da1a";
+        internal const string SpiritFocusBones = "a3918d34-de74-4057-b434-e2a2e6b85a37";
+        internal const string CustomSpiritFocusBonesBuff = "70be7d66-be60-1000-8ea1-e5b886b8c7bb";
+
+        internal const string SpiritFocusFlameBuff = "d4fbac75-b80a-4b4c-8ceb-1d035668da1a";
+        internal const string SpiritFocusFlame = "ad628248-9300-4688-92f4-d082598bd7ea";
+        internal const string CustomSpiritFocusFlameBuff = "70be7d66-be60-45fb-8ea1-e5b886b8c7bb";
+
+        internal const string SpiritFocusFrostBuff = "0666c320-c827-4978-856a-dce86890d879";
+        internal const string SpiritFocusFrost = "022ed006-6950-4d4c-91de-a0926b3c0939";
+        internal const string CustomSpiritFocusFrostBuff = "6feb5f55-759e-4cb7-9dc2-301c271c4e8b";
+
+        internal const string SpiritFocusLifeBuff = "33231c15-183b-4907-9598-a9afbf98cc8a";
+        internal const string SpiritFocusLife = "551cd35f-71a7-4093-8ecd-3c3642a842b5";
+        internal const string CustomSpiritFocusLifeBuff = "6bdeae8f-c06e-485e-8042-f15fb2c49e00";
+
+        internal const string SpiritFocusLoreBuff = "fa36e4f8-6cf7-49f0-aeb3-6b3fa3993f92";
+        internal const string SpiritFocusLore = "7284447c-d2e2-48cc-b587-4f7fcbc52acb";
+        internal const string CustomSpiritFocusLoreBuff = "74333127-95f1-4f1c-af4d-abd1bb1276b1";
+
+        internal const string SpiritFocusMammothBuff = "573b35be-345c-4d9e-b5b9-3694d7ba18f5";
+        internal const string SpiritFocusMammoth = "83ef9ad1-4a78-41d7-bbf7-668ecdd0b566";
+        internal const string CustomSpiritFocusMammothBuff = "99327593-e88b-45b6-b39d-33190655b185";
+
+        internal const string SpiritFocusNatureBuff = "b293d887-70ab-43fa-8e06-5b6b8114357d";
+        internal const string SpiritFocusNature = "da39cfa1-6af8-41d7-ba90-4f1d902ee2d0";
+        internal const string CustomSpiritFocusNatureBuff = "154cfc48-bbd7-4a22-940b-40a5e925fd3d";
+
+        internal const string SpiritFocusSlumsBuff = "c4f25928-9b8f-46ec-ab13-20a9dee760be";
+        internal const string SpiritFocusSlums = "8fa88a6d-3cde-46e7-bf60-d78b1043fc29";
+        internal const string CustomSpiritFocusSlumsBuff = "0f9e580e-2c17-4537-ba6c-d36622ed5033";
+
+        internal const string SpiritFocusStoneBuff = "db313b2e-7ac4-4d30-8cf2-8dfd2469de71";
+        internal const string SpiritFocusStone = "16d30365-5730-4d43-9321-58a04ada387c";
+        internal const string CustomSpiritFocusStoneBuff = "f7a40c91-c8aa-4219-ae4d-8b039badac47";
+
+        internal const string SpiritFocusWavesBuff = "c9f029f3-94a4-454e-89fc-c362e02e3b7c";
+        internal const string SpiritFocusWaves = "d66fafcf-bf1a-4aeb-b7fe-33166bd976b2";
+        internal const string CustomSpiritFocusWavesBuff = "d4d69af2-1a29-4cda-af4f-c9a384f2e995";
+        
+        internal const string SpiritFocusWindBuff = "e5c769ae-4146-4b5c-bd2c-5356da7dabc4";
+        internal const string SpiritFocusWind = "2cde4a02-3e12-4207-80f4-17fdfa08ae18";
+        internal const string CustomSpiritFocusWindBuff = "35d6696c-828a-4a87-89e2-5124684ba4be";
+
+        #endregion
         //***********//
         internal static readonly (string guid, string displayName)[] Features =
           new (string, string)[]
@@ -259,6 +315,7 @@ namespace AddedFeats.Utils
               (EvolvedCompanion, Feats.EvolvedCompanion.DisplayName),
               (TotemBeastSelection, Feats.TotemBeast.DisplayName),
               (VampiricCompanionFeat, Feats.VampiricCompanion.DisplayName),
+              (SpiritsGift, Feats.SpiritsGift.DisplayName),
           };
         #endregion
 

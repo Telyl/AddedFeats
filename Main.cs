@@ -126,6 +126,7 @@ namespace AddedFeats
                 ImprovedNaturalArmor.Configure();
                 EvolvedCompanion.Configure();
                 VampiricCompanion.Configure();
+                SpiritsGift.Configure();
             }
             private static void ConfigureSpells()
             {
