@@ -304,6 +304,22 @@ namespace AddedFeats.Utils
         internal const string CustomSpiritFocusWindBuff = "35d6696c-828a-4a87-89e2-5124684ba4be";
 
         #endregion
+        #region Share Spells
+        internal const string ImprovedSpellSharing = "44974dd6-2ce9-4e86-8faf-e6a2f886ceb8";
+        internal const string ImprovedSpellSharingBuff = "44974dd6-2345-3e86-8faf-e6a2f886ceb8";
+        internal const string ImprovedSpellSharingBuffCheck = "44334dd6-2345-3e86-8faf-e6a2f886ceb8";
+        internal const string ImprovedSpellSharingBuffEffect = "42974dd6-2345-3e86-8faf-e6a2f776ceb8";
+        internal const string ImprovedSpellSharingActiveAbility = "e0fd06e7-1d02-41a0-a202-5ec1162ff716";
+
+        internal const string ImprovedSpellSharingCavalier = "7bfdd789-d0aa-4443-91ed-0ead187ddf0a";
+        internal const string ImprovedSpellSharingVanguardBuff = "706d4e5f-703e-4ac7-b0bc-2e27e27cd91c";
+        internal const string ImprovedSpellSharingVanguardAbility = "c340a5c5-0e70-4703-8b45-6a9f66d3b17a";
+        internal const string ImprovedSpellSharingRagerBuff = "9ddd7a39-29ab-4cd6-9620-8bcf6c0084aa";
+        internal const string ImprovedSpellSharingRagerArea = "fe784813-e347-4f36-807d-28d3edf5e079";
+        internal const string ImprovedSpellSharingRagerAreaBuff = "49ced93c-c5fd-467c-9be4-78c0855b5f8b";
+        internal const string ImprovedSpellSharingRagerToggleBuff = "d25691a6-008e-41b7-b28c-c494084a4b43";
+        internal const string ImprovedSpellSharingRagerToggle = "1de18e8d-f5d9-4ae4-8cb4-5cbccdd753b9";
+        #endregion
         //***********//
         internal static readonly (string guid, string displayName)[] Features =
           new (string, string)[]
@@ -317,6 +333,7 @@ namespace AddedFeats.Utils
               (TotemBeastSelection, Feats.TotemBeast.DisplayName),
               (VampiricCompanionFeat, Feats.VampiricCompanion.DisplayName),
               (SpiritsGift, Feats.SpiritsGift.DisplayName),
+              (ImprovedSpellSharing, Feats.ShareSpells.DisplayName)
           };
         #endregion
 

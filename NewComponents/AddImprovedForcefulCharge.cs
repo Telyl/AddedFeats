@@ -7,13 +7,15 @@ using Kingmaker.EntitySystem.Entities;
 using Kingmaker.RuleSystem;
 using Kingmaker.ResourceLinks;
 using Kingmaker;
+using static UnityModManagerNet.UnityModManager.ModEntry;
+using AddedFeats.Utils;
 
 namespace AddedFeats.NewComponents
 {
     [TypeId("1a344f2340da40347a11ee61fcad7223")]
     public class AddImprovedForcefulCharge : UnitFactComponentDelegate, IInitiatorRulebookHandler<RuleAttackWithWeapon>, IRulebookHandler<RuleAttackWithWeapon>, ISubscriber, IInitiatorRulebookSubscriber, IResourcesHolder
     {
-        private static readonly LogWrapper ComponentLogger = LogWrapper.Get("AddForcefulCharge");
+        private static readonly ModLogger Logger = Logging.GetLogger("AddImprovedForcefulCharge");
 
         public void OnEventAboutToTrigger(RuleAttackWithWeapon evt)
         {

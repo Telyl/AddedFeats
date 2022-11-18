@@ -127,6 +127,7 @@ namespace AddedFeats
                 EvolvedCompanion.Configure();
                 VampiricCompanion.Configure();
                 SpiritsGift.Configure();
+                ShareSpells.Configure();
             }
             private static void ConfigureSpells()
             {

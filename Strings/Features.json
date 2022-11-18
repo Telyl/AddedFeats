@@ -601,6 +601,15 @@
   {
     "Key": "SpiritFocusWind.Description",
     "enGB": "The shamans spirit animal crackles with electrical energy when it moves, giving off light like a candle. This electricity deals no damage to the animal or any creature that touches the animal. The animal gains electricity resistance 10."
+  },
+  {
+    "Key": "ShareSpells.Name",
+    "ProcessTemplates": false,
+    "enGB": "Improved Spell Sharing"
+  },
+  {
+    "Key": "ShareSpells.Description",
+    "enGB": "When you have this ability toggled and that companion creature has this feat, you can cast a spell on yourself and divide the duration evenly between yourself and the companion creature. You can use this feat only on spells with a duration of at least 2 rounds. For example, you could cast bulls strength on yourself, and instead of the spell lasting 1 minute per level on yourself, it lasts 5 rounds per level on yourself and 5 rounds per level on your companion."
   }
 
 
