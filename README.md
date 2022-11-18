@@ -12,6 +12,7 @@ Additional features for Pathfinder: Wrath of the Righteous
     * [Planar Focus](https://www.d20pfsrd.com/feats/general-feats/planar-focus/)
     * [Totem Beast](https://www.d20pfsrd.com/feats/general-feats/totem-beast/)
     * [Evolved Companion](https://www.d20pfsrd.com/feats/general-feats/evolved-companion)
+    * [Improved Natural Armor (Animal Companion Feat)](https://www.d20pfsrd.com/feats/monster-feats/improved-natural-armor/)
     * [Improved Natural Attack (Animal Companion Feat)](https://www.d20pfsrd.com/feats/monster-feats/improved-natural-attack/)
     * [Spirit's Gift](https://www.d20pfsrd.com/feats/general-feats/spirit-s-gift)
     * [Vampiric Companion](https://www.d20pfsrd.com/feats/general-feats/vampiric-companion/)
