@@ -83,21 +83,6 @@ namespace AddedFeats.NewComponents
                     }
                 }
             }
-
-
-            
-            /*
-            BlueprintBuff buff = evt.Blueprint;
-            var target = evt.GetRuleTarget();
-            if (buff != null)
-            {
-                if (Context.MaybeCaster
-                if target.Pets
-                target.Descriptor.AddBuff(buff, target, evt.Duration, null);
-            }
-            */
-
-            
         }
     }
 }

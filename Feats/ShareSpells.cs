@@ -94,7 +94,7 @@ namespace AddedFeats.Feats
                 Guids.ImprovedSpellSharingRagerToggleBuff,
                 Guids.ImprovedSpellSharingRagerToggle
                 )
-                .AddPrerequisitePet()
+                //Logic goes here for prereqs!
                 .AddFacts(new() { ShareSpellsAbility })
                 .Configure(delayed: true);
         }
