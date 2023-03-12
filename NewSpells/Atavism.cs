@@ -69,6 +69,7 @@ namespace AddedFeats.NewSpells
             AbilityConfigurator.NewSpell(SpellName, Guids.AtavismSpell, SpellSchool.Transmutation, canSpecialize: true, SpellDescriptor.None)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
+                .SetLocalizedDuration(Duration.MinutePerLevel)
                 .SetIcon(AbilityRefs.WitchHexBeastsGiftClawAbility.Reference.Get().Icon)
                 .SetRange(AbilityRange.Close)
                 .SetSpellResistance()
