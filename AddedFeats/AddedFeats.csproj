@@ -69,6 +69,9 @@
 	  <Reference Include="TabletopTweaks-Core">
 	    <HintPath>D:\Program Files (x86)\Steam\steamapps\common\Pathfinder Second Adventure\Mods\TabletopTweaks-Core\TabletopTweaks-Core.dll</HintPath>
 	  </Reference>
+	  <Reference Include="WOTR_MAKING_FRIENDS">
+	    <HintPath>D:\Program Files (x86)\Steam\steamapps\common\Pathfinder Second Adventure\Mods\WOTR_MAKING_FRIENDS\WOTR_MAKING_FRIENDS.dll</HintPath>
+	  </Reference>
 	</ItemGroup>
 	<Target Name="GenerateCustomPropsFile" Condition="$(WrathInstallDir) == ''">
 		<Exec Command="findstr /C:&quot;Mono path[0]&quot; &quot;$(WrathData)\Player.log&quot;" IgnoreExitCode="true" ConsoleToMSBuild="true">

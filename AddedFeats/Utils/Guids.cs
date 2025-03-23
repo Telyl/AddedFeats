@@ -9,7 +9,7 @@ namespace AddedFeats.Utils
     internal class Guids
     {
         internal const string Stalker = "a4e236d12a3844318d4d1c5ef1ef7f99";
-        internal const string StalkerTactics = "3de1f3b700a9477989f5d1954beca351"; 
+        internal const string StalkerTactics = "3de1f3b700a9477989f5d1954beca351";
 
         #region Animal Focus Additions
         // Favored Animal Focus Bat
@@ -254,8 +254,92 @@ namespace AddedFeats.Utils
         internal const string ImprovedNaturalAttackTail = "6be0ab7c-34b7-4d29-bd8d-2c9146ff6788";
         internal const string ImprovedNaturalAttackSlam = "cfffbb0c-5479-4eca-9394-4c38a0ac0e0c";
         #endregion
+        #region Totem Beast
+        //Totem Beast
+        internal const string TotemBeastSelection = "f3dea40e-9536-4fec-8f53-25031ef360c5";
+        internal const string TotemBeastBull = "6270e7eb-eab4-492e-85cf-0794b87ab78a";
+        internal const string TotemBeastBear = "1c516d01-37b1-4652-8e55-8d65f2f22dc8";
+        internal const string TotemBeastTiger = "0588e49b-3885-45bf-8322-e6ef0938b875";
+        internal const string TotemBeastFalcon = "1ceceb1b-5b34-43e8-9795-f2541e91b2b8";
+        internal const string TotemBeastStag = "b28668bc-84ac-43ef-949d-bda568bbadad";
+        internal const string TotemBeastMouse = "22406716-3bae-4687-9903-f076a97fa937";
+        internal const string TotemBeastOwl = "572d9def-6827-47f9-afb3-ae239fa32457";
+        internal const string TotemBeastMonkey = "e46464da-f1f8-4495-b3f0-eaae9a4e366b";
+
+        internal const string TotemBeastBullBuff = "6240e7eb-eab4-492e-85cf-0794b87ab78a";
+        internal const string TotemBeastBearBuff = "1c616d01-37b1-4652-8e55-8d65f2f22dc8";
+        internal const string TotemBeastTigerBuff = "0558e49b-3885-45bf-8322-e6ef0938b875";
+        internal const string TotemBeastFalconBuff = "14eceb1b-5b34-43e8-9795-f2541e91b2b8";
+        internal const string TotemBeastStagBuff = "b28468bc-84ac-43ef-949d-bda568bbadad";
+        internal const string TotemBeastMouseBuff = "22306716-3bae-4687-9903-f076a97fa937";
+        internal const string TotemBeastOwlBuff = "572d5def-6827-47f9-afb3-ae239fa32457";
+        internal const string TotemBeastMonkeyBuff = "e46664da-f1f8-4495-b3f0-eaae9a4e366b";
+
+        internal const string TotemBeastBullPet = "5270e7eb-eab4-492e-85cf-0794b87ab78a";
+        internal const string TotemBeastBearPet = "2c516d01-37b1-4652-8e55-8d65f2f22dc8";
+        internal const string TotemBeastTigerPet = "1588e49b-3885-45bf-8322-e6ef0938b875";
+        internal const string TotemBeastFalconPet = "2ceceb1b-5b34-43e8-9795-f2541e91b2b8";
+        internal const string TotemBeastStagPet = "c28668bc-84ac-43ef-949d-bda568bbadad";
+        internal const string TotemBeastMousePet = "32406716-3bae-4687-9903-f076a97fa937";
+        internal const string TotemBeastOwlPet = "672d9def-6827-47f9-afb3-ae239fa32457";
+        internal const string TotemBeastMonkeyPet = "a46464da-f1f8-4495-b3f0-eaae9a4e366b";
+        #endregion
         #region Homebrew
         internal const string MythicAnimalFocus = "f15fc8d6-b2cd-495d-8977-bf99e6176d1d";
         #endregion
+        #region Evolved Companion (1-Point)
+        internal const string EvolvedCompanion = "c7d4b27e268e4ed1b41f7a3b9c9dbe21";
+        internal const string EvolvedCompanionBite = "388de9deb1b94bac930e9f7d8d062d38";
+        internal const string EvolvedCompanionBitePet = "488de9deb1b94bac930e9f7d8d062d38";
+        internal const string EvolvedCompanionClaws = "72d330c423e84dc8b696f885ee32ad4a";
+        internal const string EvolvedCompanionClawsPet = "123456c423e84dc8b696f885ee32ad4a";
+        internal const string EvolvedCompanionMagicAttacks = "3018d065a89248a69996b5d9d1be12ce";
+        internal const string EvolvedCompanionMagicAttacksPet = "2e4ab768278248fdb9289eb6fb534a83";
+        //internal const string EvolvedCompanionNaturalArmor = "277e56ea76f24dab874ed3b45482b2ff";
+        //internal const string EvolvedCompanionNaturalArmorPet = "123dbc68278248fdb9289eb6fb534a83";
+        internal const string EvolvedCompanionPincers = "312fb06787e644489cdc8aa66d78b409";
+        internal const string EvolvedCompanionPincersPet = "2234b66787e644489cdc8aa66d78b409";
+        internal const string EvolvedCompanionResistance = "59a7104fc8584cceb60b1e8559c4c913";
+        internal const string EvolvedCompanionResistancePet = "66bb104fc8584cceb60b1e8559c4c913";
+        internal const string EvolvedCompanionScent = "5181e593f8d74c6ea893e9e09b6a19c7";
+        internal const string EvolvedCompanionScentPet = "11315593f8d74c6ea893e9e09b6a19c7";
+        internal const string EvolvedCompanionSlam = "55ed92937fbe4b9194c6aad803218c1f";
+        internal const string EvolvedCompanionSlamPet = "443212937fbe4b9194c6aad803218c1f";
+        
+        internal const string EvolvedCompanionSpike = "fd3641814f6f4308913244c9c336b8a1";
+        internal const string EvolvedCompanionSpikePet = "ddced8bff52c4ac4a9ca2506802a771b";
+        internal const string EvolvedCompanionTail = "45e95322af734fb8acac2957fe8b9ab1";
+        internal const string EvolvedCompanionTailPet = "44ced8bff52c4ac4a9ca2506802a771b";
+        internal const string EvolvedCompanionTailSlap = "103aa1ad1c60401991e04ebcbc78b657";
+        internal const string EvolvedCompanionTailSlapPet = "aaaaa1ad1c60401991e04ebcbc78b657";
+        internal const string EvolvedCompanionTentacle = "aaab92937fb4329194c6aad803218c1f";
+        internal const string EvolvedCompanionTentaclePet = "ccc0e104567949ca83bbb1949bd8b9c1";
+        #region Evolution: Skilled (1-Point)
+        internal const string EvolvedCompanionSkilled = "1e590d90-7bff-4eae-aa51-bf2b7b290846";
+        internal const string EvolvedCompanionSkilledAthleticsFeat = "df2e0632-6236-44b2-9276-1abc4b158a4a";
+        internal const string EvolvedCompanionSkilledAthleticsPet = "4e7fbe05-8e57-49a7-8a7b-b6522678c54f";
+        internal const string EvolvedCompanionSkilledMobilityFeat = "463cf9d5-30c7-4766-b3d0-e10325a6204b";
+        internal const string EvolvedCompanionSkilledMobilityPet = "1fb4fd93-d493-4fbd-9567-9a83136e056b";
+        internal const string EvolvedCompanionSkilledTrickeryFeat = "93b53ac7-496c-48ac-9c3b-c7d710939532";
+        internal const string EvolvedCompanionSkilledTrickeryPet = "2111245d-f576-4565-8b71-4dda317e2f2c";
+        internal const string EvolvedCompanionSkilledStealthFeat = "c43e2c79-40e3-4600-b9fa-13fa86f76217";
+        internal const string EvolvedCompanionSkilledStealthPet = "e2142a40-4adf-41cf-b6be-3ed4ccd96d07";
+        internal const string EvolvedCompanionSkilledArcanaFeat = "42f8e400-79d9-4663-bb06-5da8236264d0";
+        internal const string EvolvedCompanionSkilledArcanaPet = "4842c47c-e93a-4a68-8f8d-5fdff9aec9f4";
+        internal const string EvolvedCompanionSkilledWorldFeat = "64cf5019-1980-4e7b-81fa-fe2cafc65580";
+        internal const string EvolvedCompanionSkilledWorldPet = "77d77350-94ee-4760-9056-12babbee6b9b";
+        internal const string EvolvedCompanionSkilledNatureFeat = "3c4d4434-d328-422d-a152-26aef27382cd";
+        internal const string EvolvedCompanionSkilledNaturePet = "7c3a3e64-d271-4408-b64f-4b3d79b4dac2";
+        internal const string EvolvedCompanionSkilledReligionFeat = "197a973d-c3f8-4267-8b48-3ebf7b20a26b";
+        internal const string EvolvedCompanionSkilledReligionPet = "7253d867-6017-42d1-88ed-f9fa9916c2ac";
+        internal const string EvolvedCompanionSkilledPerceptionFeat = "de7956f5-81e0-46ea-928d-8f0296aa8c6d";
+        internal const string EvolvedCompanionSkilledPerceptionPet = "d42dd01a-7745-4431-b5c7-890c3145c890";
+        internal const string EvolvedCompanionSkilledPersuasionFeat = "0ac3b6b1-236b-406d-b553-015af1ae18f4";
+        internal const string EvolvedCompanionSkilledPersuasionPet = "868b208d-c95e-4c37-87ab-003c01d7d936";
+        internal const string EvolvedCompanionSkilledUMDFeat = "74f248f0-d898-4c17-bd33-c068028d94f8";
+        internal const string EvolvedCompanionSkilledUMDPet = "0cd03586-72d1-4eb6-acc8-399fad2782dc";
+        #endregion
+        #endregion
+
     }
 }

@@ -459,10 +459,270 @@
         "ProcessTemplates": false,
         "enGB": "Mythic Animal Focus"
     },
-
     {
         "Key": "MythicAnimalFocus.Description",
         "ProcessTemplates": false,
         "enGB": "You use your mythic powers to power your bond with your animal companion. Benefit: You may now apply an additional animal focus to both herself and her animal companion."
+    },
+    {
+        "Key": "EvolvedCompanion.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion"
+    },
+
+    {
+        "Key": "EvolvedCompanion.Description",
+        "ProcessTemplates": false,
+        "enGB": "You may select from the list of 1-point evolutions."
+    },
+    {
+        "Key": "EvolvedCompanionBite.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion - Bite"
+    },
+
+    {
+        "Key": "EvolvedCompanionBite.Description",
+        "ProcessTemplates": false,
+        "enGB": "Your animal companion gains a bite attack that deals 1d4 damage."
+    },
+    {
+        "Key": "EvolvedCompanionClaws.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion - Claws"
+    },
+
+    {
+        "Key": "EvolvedCompanionClaws.Description",
+        "ProcessTemplates": false,
+        "enGB": "You animal companion grows claws that deals 1d4 damage as a secondary attack. This feat does not benefit an animal companion that already has claw attacks."
+    },
+    {
+        "Key": "EvolvedCompanionMagicAttacks.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion - Magic Attacks"
+    },
+
+    {
+        "Key": "EvolvedCompanionMagicAttacks.Description",
+        "ProcessTemplates": false,
+        "enGB": "You animal companion is infused with magic, allowing it to treat all of its natural attacks as if they were magic for the purposes of overcoming damage reduction."
+    },
+    {
+        "Key": "EvolvedCompanionPincers.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion - Pincers"
+    },
+
+    {
+        "Key": "EvolvedCompanionPincers.Description",
+        "ProcessTemplates": false,
+        "enGB": "You animal companion grows pincers that deals 1d6 damage as a secondary attack. This feat does not benefit an animal companion that already has pincer attacks."
+    },
+    {
+        "Key": "EvolvedCompanionScent.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion - Scent"
+    },
+
+    {
+        "Key": "EvolvedCompanionScent.Description",
+        "ProcessTemplates": false,
+        "enGB": "Your animal companion gaints the scent feature. They gain blindsense with a range of up to 30 feet. This feat does not benefit an animal companion that already has the scent feature."
+    },
+    {
+        "Key": "EvolvedCompanionSlam.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion - Slam"
+    },
+    {
+        "Key": "EvolvedCompanionSlam.Description",
+        "ProcessTemplates": false,
+        "enGB": "You animal companion gains a slam as a primary attack that deals 1d8 damage."
+    },
+    {
+        "Key": "EvolvedCompanionSpike.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion - Spike"
+    },
+    {
+        "Key": "EvolvedCompanionSpike.Description",
+        "ProcessTemplates": false,
+        "enGB": "You animal companion gains a spike as a primary attack that deals 1d4 damage."
+    },
+    {
+        "Key": "EvolvedCompanionTail.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion - Tail"
+    },
+    {
+        "Key": "EvolvedCompanionTail.Description",
+        "ProcessTemplates": false,
+        "enGB": "You animal companion gains a tail that provides an racial mobility bonus of +2. This evolution is required for tail slap."
+    },
+    {
+        "Key": "EvolvedCompanionTailSlap.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion - Tail Slap"
+    },
+    {
+        "Key": "EvolvedCompanionTailSlap.Description",
+        "ProcessTemplates": false,
+        "enGB": "You animal companion gains a secondary tail attack that does 1d4 damage."
+    },
+    {
+        "Key": "EvolvedCompanionTentacle.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion - Tentacle"
+    },
+    {
+        "Key": "EvolvedCompanionTentacle.Description",
+        "ProcessTemplates": false,
+        "enGB": "You animal companion gains a secondary tentacle attack that does 1d4 damage."
+    },
+    {
+        "Key": "TotemBeastSelection.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast"
+    },
+    {
+        "Key": "TotemBeastSelection.Description",
+        "enGB": "Select one animal aspect from the list presented in the hunter classs animal focus class feature. Your animal companion gains the benefits of the selected animal aspect, treating its Hit Dice as its effective hunter level for this ability."
+    },
+    {
+        "Key": "TotemBeastBull.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Bull"
+    },
+    {
+        "Key": "TotemBeastBull.Description",
+        "enGB": "The creature gains a +2 inherent bonus to Strength. This bonus increases to +4 at 8th level and +6 at 15th level."
+    },
+    {
+        "Key": "TotemBeastBear.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Bear"
+    },
+    {
+        "Key": "TotemBeastBear.Description",
+        "enGB": "The creature gains a +2 inherent bonus to Constitution. This bonus increases to +4 at 8th level and +6 at 15th level."
+    },
+    {
+        "Key": "TotemBeastTiger.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Tiger"
+    },
+    {
+        "Key": "TotemBeastTiger.Description",
+        "enGB": "The creature gains a +2 inherent bonus to Dexterity. This bonus increases to +4 at 8th level and +6 at 15th level."
+    },
+    {
+        "Key": "TotemBeastFalcon.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Falcon"
+    },
+    {
+        "Key": "TotemBeastFalcon.Description",
+        "enGB": "The creature gains a +4 inherent bonus to Perception. This bonus increases to +6 at 8th level and +8 at 15th level."
+    },
+    {
+        "Key": "TotemBeastMonkey.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Monkey"
+    },
+    {
+        "Key": "TotemBeastMonkey.Description",
+        "enGB": "The creature gains a +4 inherent bonus to Athletics. This bonus increases to +6 at 8th level and +8 at 15th level."
+    },
+    {
+        "Key": "TotemBeastStag.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Stag"
+    },
+    {
+        "Key": "TotemBeastStag.Description",
+        "enGB": "The creature gains a +5 inherent bonus to Movement Speed. This bonus increases to +10 at 8th level and +20 at 15th level."
+    },
+    {
+        "Key": "TotemBeastOwl.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Owl"
+    },
+    {
+        "Key": "TotemBeastOwl.Description",
+        "enGB": "The creature gains a +4 inherent bonus to Stealth. This bonus increases to +6 at 8th level and +8 at 15th level."
+    },
+    {
+        "Key": "TotemBeastMouse.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Mouse"
+    },
+    {
+        "Key": "TotemBeastMouse.Description",
+        "enGB": "The creature gains evasion, as the rogue class feature. At 12th level, this increases to improved evasion, as the rogue advanced talent."
+    },
+    {
+        "Key": "EvolvedCompanionSkilled.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion - Skilled"
+    },
+    {
+        "Key": "EvolvedCompanionSkilled.Description",
+        "enGB": "The creature becomes especially adept at a specific skill, gaining a +8 racial bonus on that skill. This evolution can be selected more than once. Its effects do not stack."
+    },
+    {
+        "Key": "EvolvedCompanionSkilledAthletics.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion: Skilled (Athletics)"
+    },
+    {
+        "Key": "EvolvedCompanionSkilledMobility.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion: Skilled (Mobility)"
+    },
+    {
+        "Key": "EvolvedCompanionSkilledTrickery.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion: Skilled (Trickery)"
+    },
+    {
+        "Key": "EvolvedCompanionSkilledStealth.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion: Skilled (Stealth)"
+    },
+    {
+        "Key": "EvolvedCompanionSkilledArcana.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion: Skilled (Arcana)"
+    },
+    {
+        "Key": "EvolvedCompanionSkilledWorld.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion: Skilled (World)"
+    },
+    {
+        "Key": "EvolvedCompanionSkilledNature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion: Skilled (Nature)"
+    },
+    {
+        "Key": "EvolvedCompanionSkilledReligion.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion: Skilled (Religion)"
+    },
+    {
+        "Key": "EvolvedCompanionSkilledPerception.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion: Skilled (Perception)"
+    },
+    {
+        "Key": "EvolvedCompanionSkilledPersuasion.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion: Skilled (Persuasion)"
+    },
+    {
+        "Key": "EvolvedCompanionSkilledUMD.Name",
+        "ProcessTemplates": false,
+        "enGB": "Evolved Companion: Skilled (Use Magic Device)"
     }
 ]

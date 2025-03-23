@@ -18,6 +18,7 @@ using AddedFeats.NewFeatures;
 using AddedFeats.NewFeatures.AnimalCompanionSpecific;
 using AddedFeats.NewFeatures.SpiritFocus;
 using AddedFeats.NewHomebrew;
+using AddedFeats.NewFeatures.EvolvedCompanion;
 
 namespace AddedFeats;
 
@@ -79,6 +80,8 @@ public static class Main {
                 ForcefulCharge.Configure();
                 SpiritsGift.Configure();
                 ImprovedNaturalAttack.Configure();
+                EvolvedCompanion.Configure();
+                TotemBeast.Configure();
 
                 //Spells
                 StrongJaw.Configure();
