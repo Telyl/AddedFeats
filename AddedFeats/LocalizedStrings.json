@@ -1,0 +1,468 @@
+[
+    //ARCHETYPES
+    {
+        "Key": "Stalker.Name",
+        "ProcessTemplates": false,
+        "enGB": "Stalker"
+    },
+    {
+        "Key": "Stalker.Description",
+        "enGB": "The Stalker and his pet hunts with deadly precision."
+    },
+    {
+        "Key": "StalkerTactics.Name",
+        "ProcessTemplates": false,
+        "enGB": "Stalker Tactics"
+    },
+    {
+        "Key": "StalkerTactics.Description",
+        "enGB": "At 9th level, the stalker's pet learns to inflict a debilitating injury (per the 4th level rogue ability). The pet also gains 1d6 sneak attack damage.."
+    },
+    //FAVORED ANIMAL FOCUS
+    {
+        "Key": "FavoredAnimalFocus.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus"
+    },
+    {
+        "Key": "FavoredAnimalFocus.Description",
+        "enGB": "Choose one animal focus. When you apply that animal focus to your animal companion, the benefits increase by one step. For example, if you are 6th level and choose the bear animal focus, then when you apply the animal focus to your animal companion, it gains a +4 inherent bonus to Constitution instead of +2."
+    },
+    {
+        "Key": "FavoredBear.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Bear"
+    },
+    {
+        "Key": "FavoredBear.Description",
+        "enGB": "The animal companions Constitution bonus increases by one step when using Animal Focus - Bear up to +8."
+    },
+    {
+        "Key": "FavoredBull.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Bull"
+    },
+    {
+        "Key": "FavoredBull.Description",
+        "enGB": "The animal companions Strength bonus increases by one step when using Animal Focus - Bear up to +8."
+    },
+    {
+        "Key": "FavoredTiger.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Tiger"
+    },
+    {
+        "Key": "FavoredTiger.Description",
+        "enGB": "The animal companions Dexterity bonus increases to by one step when using Animal Focus - Tiger up to +8"
+    },
+    {
+        "Key": "FavoredStag.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Stag"
+    },
+    {
+        "Key": "FavoredStag.Description",
+        "enGB": "The animal companions movement speed bonus increases by one step when using Animal Focus - Stag up to +30."
+    },
+    {
+        "Key": "FavoredFalcon.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Falcon"
+    },
+    {
+        "Key": "FavoredFalcon.Description",
+        "enGB": "The animal companions Perception bonus increases by one step when using Animal Focus - Falcon up to +12."
+    },
+    {
+        "Key": "FavoredMouse.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Mouse"
+    },
+    {
+        "Key": "FavoredMouse.Description",
+        "enGB": "The animal companions gains Improved Uncanny Dodge when using Animal Focus - Mouse using its level as rogue levels for the purpose of determining flanking."
+    },
+    {
+        "Key": "FavoredOwl.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Owl"
+    },
+    {
+        "Key": "FavoredOwl.Description",
+        "enGB": "The animal companions stealth bonus increases by one step when using Animal Focus - Owl up to +12."
+    },
+    {
+        "Key": "FavoredMonkey.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Monkey"
+    },
+    {
+        "Key": "FavoredMonkey.Description",
+        "enGB": "The animal companions athletics bonus increases by one step when using Animal Focus - Monkey up to +12."
+    },
+    {
+        "Key": "FavoredBat.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Bat"
+    },
+    {
+        "Key": "FavoredBat.Description",
+        "enGB": "The range of the animal companion’s blindsense increases by one step when using Animal Focus - Bat up to 20 feet."
+    },
+    {
+        "Key": "FavoredFrog.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Frog"
+    },
+    {
+        "Key": "FavoredFrog.Description",
+        "enGB": "The animal companions mobility bonus increases by one step when using Animal Focus - Frog up to +12."
+    },
+    {
+        "Key": "FavoredSnake.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Snake"
+    },
+    {
+        "Key": "FavoredSnake.Description",
+        "enGB": "The animal companions bonus to attacks of opportunity and dodge bonus to attacks of opportunity increase by one step when using Animal Focus - Snake up to +8."
+    },
+    {
+        "Key": "FavoredWolf.Name",
+        "ProcessTemplates": false,
+        "enGB": "Favored Animal Focus - Wolf"
+    },
+    {
+        "Key": "FavoredWolf.Description",
+        "enGB": "The animal companions bonus to its scent range increases by one step when using Animal Focus - Wolf, up to 60 feet."
+    },
+    {
+        "Key": "AnimalFocusBat.Name",
+        "ProcessTemplates": false,
+        "enGB": "Animal Focus - Bat"
+    },
+    {
+        "Key": "AnimalFocusBat.Description",
+        "enGB": "The creature gains blindsense to a range of 10 feet with immunity to gaze attacks."
+    },
+    {
+        "Key": "AnimalFocusFrog.Name",
+        "ProcessTemplates": false,
+        "enGB": "Animal Focus - Frog"
+    },
+    {
+        "Key": "AnimalFocusFrog.Description",
+        "enGB": "The creature gains a +4 competence bonus on Mobility checks. These bonuses increase to +6 at 8th level and +8 at 15th level."
+    },
+    {
+        "Key": "AnimalFocusSnake.Name",
+        "ProcessTemplates": false,
+        "enGB": "Animal Focus - Snake"
+    },
+    {
+        "Key": "AnimalFocusSnake.Description",
+        "enGB": "The creature gains a +2 bonus on attack rolls when making attacks of opportunity and a +2 dodge bonus to AC against attacks of opportunity. These bonuses increase to +4 at 8th level and +6 at 15th level."
+    },
+    {
+        "Key": "AnimalFocusWolf.Name",
+        "ProcessTemplates": false,
+        "enGB": "Animal Focus - Wolf"
+    },
+    {
+        "Key": "AnimalFocusWolf.Description",
+        "enGB": "The creature gains the scent ability with a range of 30 feet."
+    },
+    {
+        "Key": "PlanarFocusFeature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Planar Focus"
+    },
+    {
+        "Key": "PlanarFocusFeature.Description",
+        "enGB": "When you use your animal focus class feature, you can choose any of the following new aspects: Air, Chaotic, Cold, Earth, Evil, Fire, Good, Lawful, Shadow, Water."
+    },
+    {
+        "Key": "PlanarFocusAir.Name",
+        "ProcessTemplates": false,
+        "enGB": "Planar Focus - Air"
+    },
+    {
+        "Key": "PlanarFocusAir.Description",
+        "enGB": "You gain immunity to difficult terrain and ground based effects."
+    },
+    {
+        "Key": "PlanarFocusChaos.Name",
+        "ProcessTemplates": false,
+        "enGB": "Planar Focus - Chaos"
+    },
+    {
+        "Key": "PlanarFocusChaos.Description",
+        "enGB": "Your form shifts subtly, making it difficult for others to aim precise attacks against you. You gain a 25% chance to negate extra damage from critical hits and precision damage from attacks made against you (such as from sneak attacks)."
+    },
+    {
+        "Key": "PlanarFocusCold.Name",
+        "ProcessTemplates": false,
+        "enGB": "Planar Focus - Cold"
+    },
+    {
+        "Key": "PlanarFocusCold.Description",
+        "enGB": "Creatures that attack you with natural attacks or melee weapons take 1d4 points of cold damage for every 4 class levels you possess."
+    },
+    {
+        "Key": "PlanarFocusEarth.Name",
+        "ProcessTemplates": false,
+        "enGB": "Planar Focus - Earth"
+    },
+    {
+        "Key": "PlanarFocusEarth.Description",
+        "enGB": "You gain +2 bonus to CMB when performing bull rush maneuver, and a +2 bonus to CMD when defending against it. You also receive +2 enhancement bonus to your natural armor."
+    },
+    {
+        "Key": "PlanarFocusEvil.Name",
+        "ProcessTemplates": false,
+        "enGB": "Planar Focus - Evil"
+    },
+    {
+        "Key": "PlanarFocusEvil.Description",
+        "enGB": "You gain a +2 profane bonus to AC and on saves against attacks made and effects created by good outsiders."
+    },
+    {
+        "Key": "PlanarFocusFire.Name",
+        "ProcessTemplates": false,
+        "enGB": "Planar Focus - Fire"
+    },
+    {
+        "Key": "PlanarFocusFire.Description",
+        "enGB": "Your natural attacks and melee weapons deal 1d6 points of fire damage for every 4 class levels you possess."
+    },
+    {
+        "Key": "PlanarFocusGood.Name",
+        "ProcessTemplates": false,
+        "enGB": "Planar Focus - Good"
+    },
+    {
+        "Key": "PlanarFocusGood.Description",
+        "enGB": "You gain a +2 sacred bonus to AC and on saves against attacks made or effects created by evil outsiders."
+    },
+
+    {
+        "Key": "PlanarFocusLawful.Name",
+        "ProcessTemplates": false,
+        "enGB": "Planar Focus - Lawful"
+    },
+    {
+        "Key": "PlanarFocusLawful.Description",
+        "enGB": "You gain immunity to polymorph spells."
+    },
+
+    {
+        "Key": "PlanarFocusShadow.Name",
+        "ProcessTemplates": false,
+        "enGB": "Planar Focus - Shadow"
+    },
+    {
+        "Key": "PlanarFocusShadow.Description",
+        "enGB": "You gain a +5 bonus on Stealth and Trickery checks."
+    },
+
+    {
+        "Key": "PlanarFocusWater.Name",
+        "ProcessTemplates": false,
+        "enGB": "Planar Focus - Water"
+    },
+    {
+        "Key": "PlanarFocusWater.Description",
+        "enGB": "You gain immunity to combat maneuvers."
+    },
+    {
+        "Key": "StrongJaw.Name",
+        "ProcessTemplates": false,
+        "enGB": "Strong Jaw"
+    },
+    {
+        "Key": "StrongJaw.Description",
+        "enGB": "Laying a hand upon an allied creatures jaw, claws, tentacles, or other natural weapons, you enhance the power of that creatures natural attacks. Each natural attack that creature makes deals damage as if the creature were two sizes larger than it actually is. If the creature is already Gargantuan or Colossal-sized, double the amount of damage dealt by each of its natural attacks instead. This spell does not actually change the creature’s size; all of its statistics except the amount of damage dealt by its natural attacks remain unchanged."
+    },
+    {
+        "Key": "Atavism.Name",
+        "ProcessTemplates": false,
+        "enGB": "Atavism"
+    },
+    {
+        "Key": "Atavism.Description",
+        "enGB": "By bringing forth the primeval ancestry of the target animal, you awaken a savage engine of destruction. The animal immediately gains the advanced creature simple template. It gains a +2 bonus on all rolls, including damage rolls and special ability DCs, a +4 bonus to AC and CMD, and +2 hit points per HD. The animals primal instincts take hold for the duration of this spell—if the animal knows tricks granted by the Lore (Nature) skill, it loses access to all of those tricks save for attack."
+    },
+    {
+        "Key": "ImprovedSpellShare.Name",
+        "ProcessTemplates": false,
+        "enGB": "Improved Spell Sharing"
+    },
+    {
+        "Key": "ImprovedSpellShare.Description",
+        "enGB": "When you have this ability toggled and that companion creature has this feat, you can cast a spell on yourself and divide the duration evenly between yourself and the companion creature. You can use this feat only on spells with a duration of at least 2 rounds. For example, you could cast bulls strength on yourself, and instead of the spell lasting 1 minute per level on yourself, it lasts 5 rounds per level on yourself and 5 rounds per level on your companion."
+    },
+    {
+        "Key": "VampiricCompanion.Name",
+        "ProcessTemplates": false,
+        "enGB": "Vampiric Companion"
+    },
+    {
+        "Key": "VampiricCompanion.Description",
+        "enGB": "Your animal companion or familiars type changes to undead. The creature gains fast healing 5 as well as your vampire or dhampir weaknesses."
+    },
+    {
+        "Key": "ForcefulCharge.Name",
+        "ProcessTemplates": false,
+        "enGB": "Forceful Charge"
+    },
+    {
+        "Key": "ForcefulCharge.Description",
+        "enGB": "Once per round when this animal companion hits an opponent with a charge attack, it can initiate a bull rush against that target as a free action."
+    },
+    {
+        "Key": "ImprovedForcefulCharge.Name",
+        "ProcessTemplates": false,
+        "enGB": "Improved Forceful Charge"
+    },
+    {
+        "Key": "ImprovedForcefulCharge.Description",
+        "enGB": "If the animal companion pushes the target at least 10 feet as a result of Forceful Charge, it can attempt a trip combat maneuver check against the target as a free action. This trip combat maneuver provokes attacks of opportunity as normal."
+    },
+    {
+        "Key": "SpiritsGift.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirits Gift"
+    },
+    {
+        "Key": "SpiritsGift.Description",
+        "enGB": "At the start of the day, you can choose to commune with a single shaman spirit. Once during the next 24 hours, you can spend a standard action to grant your animal companion or familiar that shaman spirits spirit animal ability for 1 minute per level in the class that grants your animal companion or familiar."
+    },
+    {
+        "Key": "SpiritFocusBattle.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Battle"
+    },
+    {
+        "Key": "SpiritFocusBattle.Description",
+        "enGB": "The shamans spirit animal looks like a fiercer version of its species, with rippling muscles and a stockier frame. It gains a +2 natural armor bonus to AC. If it already has a natural armor bonus, the bonus increases by 2 instead."
+    },
+    {
+        "Key": "SpiritFocusBones.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Bones"
+    },
+    {
+        "Key": "SpiritFocusBones.Description",
+        "enGB": "The shamans spirit animal gives off a ghostly glow and seems nearly transparent. The animal is under the constant effects of blur, with a caster level equal to the shamans level."
+    },
+    {
+        "Key": "SpiritFocusFlame.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Flame"
+    },
+    {
+        "Key": "SpiritFocusFlame.Description",
+        "enGB": "The shamans spirit animal is surrounded by a nimbus of flame that gives off light like a candle. This nimbus is warm to the touch, but doesnt cause any damage. The animal is immune to fire damage, but is vulnerable to cold damage."
+    },
+    {
+        "Key": "SpiritFocusFrost.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Frost"
+    },
+    {
+        "Key": "SpiritFocusFrost.Description",
+        "enGB": "The shamans spirit animal is covered in a light layer of glimmering frost, and its breath comes out as mist regardless of the temperature. The animal has resistance 5 to cold and electricity."
+    },
+    {
+        "Key": "SpiritFocusLife.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Life"
+    },
+    {
+        "Key": "SpiritFocusLife.Description",
+        "enGB": "The shamans spirit animal appears to be a beautiful and very healthy version of its species, and seems especially vibrant and full of life. Her animal companion gains fast healing 1; if the spirit animal already has fast healing, instead its fast healing increases by 1."
+    },
+    {
+        "Key": "SpiritFocusLore.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Lore"
+    },
+    {
+        "Key": "SpiritFocusLore.Description",
+        "enGB": "The shamans spirit animal appears to be quiet and unassuming. It gains a +2 bonus on Initiative checks and a +4 bonus on Stealth checks."
+    },
+    {
+        "Key": "SpiritFocusMammoth.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Mammoth"
+    },
+    {
+        "Key": "SpiritFocusMammoth.Description",
+        "enGB": "The shamans spirit animal appears more primal and prehistoric than an ordinary animal of its kind. It gains a +2 untyped bonus to its Strength score."
+    },
+    {
+        "Key": "SpiritFocusNature.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Nature"
+    },
+    {
+        "Key": "SpiritFocusNature.Description",
+        "enGB": "The shamans spirit animal looks feral, and appears to be in peak physical form. The animal can move through any sort of undergrowth or natural difficult terrain at its normal speed without taking damage or suffering any other impairment."
+    },
+    {
+        "Key": "SpiritFocusSlums.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Slums"
+    },
+    {
+        "Key": "SpiritFocusSlums.Description",
+        "enGB": "The shamans spirit animal looks like a leaner version of its species, with hungry eyes and a wiry frame. It gains a +4 bonus on initiative checks."
+    },
+    {
+        "Key": "SpiritFocusStone.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Stone"
+    },
+    {
+        "Key": "SpiritFocusStone.Description",
+        "enGB": "The shamans spirit animal looks as though its made out of earth and stone, with tiny gemstones embedded in its flesh. The animal gains DR 5/adamantine."
+    },
+    {
+        "Key": "SpiritFocusWaves.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Waves"
+    },
+    {
+        "Key": "SpiritFocusWaves.Description",
+        "enGB": "The skin of the shamans spirit animal constantly distorts, much as a ponds surface ripples when drops of water fall gently into it. The animal gains Mobility as a bonus feat."
+    },
+    {
+        "Key": "SpiritFocusWind.Name",
+        "ProcessTemplates": false,
+        "enGB": "Spirit Focus - Wind"
+    },
+    {
+        "Key": "SpiritFocusWind.Description",
+        "enGB": "The shamans spirit animal crackles with electrical energy when it moves, giving off light like a candle. This electricity deals no damage to the animal or any creature that touches the animal. The animal gains electricity resistance 10."
+    },
+    {
+        "Key": "ImprovedNaturalAttack.Name",
+        "ProcessTemplates": false,
+        "enGB": "Improved Natural Attack"
+    },
+    {
+        "Key": "ImprovedNaturalAttack.Description",
+        "enGB": "Choose one of the creatures natural attack forms (not an unarmed strike). The damage for this natural attack increases by one step on the following list, as if the creatures size had increased by one category. Damage dice increase as follows: 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 3d6, 4d6, 6d6, 8d6, 12d6. This feat can be taken multiple times for a different natural attack."
+    },
+    {
+        "Key": "MythicAnimalFocus.Name",
+        "ProcessTemplates": false,
+        "enGB": "Mythic Animal Focus"
+    },
+
+    {
+        "Key": "MythicAnimalFocus.Description",
+        "ProcessTemplates": false,
+        "enGB": "You use your mythic powers to power your bond with your animal companion. Benefit: You may now apply an additional animal focus to both herself and her animal companion."
+    }
+]
