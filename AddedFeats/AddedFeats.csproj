@@ -24,12 +24,6 @@
 		<Reference Include="$(WrathInstallDir)\Wrath_Data\Managed\UnityModManager\0Harmony.dll*" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Compile Remove="NewFeatures\FavoredAnimalFocus\FavoredAnimalFocusBat.cs" />
-	  <Compile Remove="NewFeatures\FavoredAnimalFocus\FavoredAnimalFocusFrog.cs" />
-	  <Compile Remove="NewFeatures\FavoredAnimalFocus\FavoredAnimalFocusSnake.cs" />
-	  <Compile Remove="NewFeatures\FavoredAnimalFocus\FavoredAnimalFocusWolf.cs" />
-	</ItemGroup>
-	<ItemGroup>
 		<None Include="Info.json" CopyToOutputDirectory="PreserveNewest" />
 		<None Include="LocalizedStrings.json" CopyToOutputDirectory="PreserveNewest" />
 	</ItemGroup>
@@ -68,9 +62,6 @@
 	<ItemGroup>
 	  <Reference Include="TabletopTweaks-Core">
 	    <HintPath>D:\Program Files (x86)\Steam\steamapps\common\Pathfinder Second Adventure\Mods\TabletopTweaks-Core\TabletopTweaks-Core.dll</HintPath>
-	  </Reference>
-	  <Reference Include="WOTR_MAKING_FRIENDS">
-	    <HintPath>D:\Program Files (x86)\Steam\steamapps\common\Pathfinder Second Adventure\Mods\WOTR_MAKING_FRIENDS\WOTR_MAKING_FRIENDS.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
 	<Target Name="GenerateCustomPropsFile" Condition="$(WrathInstallDir) == ''">

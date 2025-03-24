@@ -10,6 +10,8 @@ using AddedFeats.Utils;
 using System;
 using static UnityModManagerNet.UnityModManager.ModEntry;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
+using Kingmaker.Utility;
+using Kingmaker.Blueprints.Classes.Spells;
 
 namespace AddedFeats.NewFeatures
 {
@@ -48,7 +50,7 @@ namespace AddedFeats.NewFeatures
                 .Configure();
             }
             #endregion
-            #region falcon,owl,monkey
+            #region falcon,owl,monkey,frog
             BlueprintBuff falconbuff = BuffConfigurator.New(FeatName + "FalconBuff", Guids.TotemBeastFalconBuff)
                 .SetDisplayName("TotemBeastFalcon.Name")
                 .SetDescription("TotemBeastFalcon.Description")
@@ -61,7 +63,13 @@ namespace AddedFeats.NewFeatures
                 .SetDisplayName("TotemBeastMonkey.Name")
                 .SetDescription("TotemBeastMonkey.Description")
                 .SetIcon(BuffRefs.AnimalFocusMonkeyBuff.Reference.Get().Icon).Configure();
-            (BlueprintBuff, Kingmaker.EntitySystem.Stats.StatType)[] skillbuffs = { (falconbuff, StatType.SkillPerception), (owlbuff, StatType.SkillStealth), (monkeybuff, StatType.SkillAthletics) };
+            BlueprintBuff frogbuff = BuffConfigurator.New(FeatName + "FrogBuff", Guids.TotemBeastFrogBuff)
+                .SetDisplayName("TotemBeastFrog.Name")
+                .SetDescription("TotemBeastFrog.Description")
+                .SetIcon(AbilityRefs.Grace.Reference.Get().Icon).Configure();
+
+            (BlueprintBuff, Kingmaker.EntitySystem.Stats.StatType)[] skillbuffs = { (falconbuff, StatType.SkillPerception), (owlbuff, StatType.SkillStealth), 
+                (monkeybuff, StatType.SkillAthletics), (frogbuff, StatType.SkillMobility) };
             foreach (var (buff, stat) in skillbuffs)
             {
                 BuffConfigurator.For(buff)
@@ -96,6 +104,36 @@ namespace AddedFeats.NewFeatures
                 .SetDescription("TotemBeastMouse.Description")
                 .AddFacts(new() { FeatureRefs.Evasion.Reference.Get() })
                 .SetIcon(BuffRefs.AnimalFocusMouseBuff.Reference.Get().Icon).Configure();
+            #endregion
+            #region snake, wolf, bat
+            BlueprintBuff snakebuff = BuffConfigurator.New(FeatName + "SnakeBuff", Guids.TotemBeastSnakeBuff)
+                .SetDisplayName("TotemBeastSnake.Name")
+                .SetDescription("TotemBeastSnake.Description")
+                .AddACBonusAgainstAttackOfOpportunity(bonus: new ContextValue()
+                {
+                    ValueType = ContextValueType.Rank
+                })
+                .AddAttackOfOpportunityAttackBonus(bonus: new ContextValue()
+                {
+                    ValueType = ContextValueType.Rank
+                }, descriptor: ModifierDescriptor.Other)
+                .AddContextRankConfig(
+                    ContextRankConfigs.CharacterLevel()
+                    .WithCustomProgression((7, 2), (15, 4), (16, 6)))
+                .SetIcon(AbilityRefs.BloodragerSerpentineFormAbility.Reference.Get().Icon).Configure();
+
+            BlueprintBuff wolfbuff = BuffConfigurator.New(FeatName + "WolfBuff", Guids.TotemBeastWolfBuff)
+                .SetDisplayName("TotemBeastWolf.Name")
+                .SetDescription("TotemBeastWolf.Description")
+                .AddBlindsense(range: 30.Feet(), false)
+                .SetIcon(AbilityRefs.AspectOfTheWolf.Reference.Get().Icon).Configure();
+
+            BlueprintBuff batbuff = BuffConfigurator.New(FeatName + "BatBuff", Guids.TotemBeastBatBuff)
+                .SetDisplayName("TotemBeastBat.Name")
+                .SetDescription("TotemBeastBat.Description")
+                .AddBlindsense(range: 10.Feet(), true)
+                .AddSpellImmunityToSpellDescriptor(descriptor: SpellDescriptor.GazeAttack)
+                .SetIcon(AbilityRefs.AnimalAspectBase.Reference.Get().Icon).Configure();
             #endregion
             // These are the feats we add for totem beast to our pet.
             var focbullpet = FeatureConfigurator.New(FeatName + "BullPet", Guids.TotemBeastBullPet)
@@ -156,6 +194,38 @@ namespace AddedFeats.NewFeatures
                 .SetReapplyOnLevelUp()
                 .Configure();
 
+            var focbatpet = FeatureConfigurator.New(FeatName + "BatPet", Guids.TotemBeastBatPet)
+                .SetDisplayName("TotemBeastBat.Name")
+                .SetDescription("TotemBeastBat.Description")
+                .SetIcon(AbilityRefs.AnimalAspectGorilla.Reference.Get().Icon)
+                .AddFacts(new() { batbuff })
+                .SetReapplyOnLevelUp()
+                .Configure();
+
+            var focfrogpet = FeatureConfigurator.New(FeatName + "FrogPet", Guids.TotemBeastFrogPet)
+                .SetDisplayName("TotemBeastFrog.Name")
+                .SetDescription("TotemBeastFrog.Description")
+                .SetIcon(AbilityRefs.AnimalAspectGorilla.Reference.Get().Icon)
+                .AddFacts(new() { frogbuff })
+                .SetReapplyOnLevelUp()
+                .Configure();
+
+            var focsnakepet = FeatureConfigurator.New(FeatName + "SnakePet", Guids.TotemBeastSnakePet)
+                .SetDisplayName("TotemBeastSnake.Name")
+                .SetDescription("TotemBeastSnake.Description")
+                .SetIcon(AbilityRefs.AnimalAspectGorilla.Reference.Get().Icon)
+                .AddFacts(new() { snakebuff })
+                .SetReapplyOnLevelUp()
+                .Configure();
+
+            var focwolfpet = FeatureConfigurator.New(FeatName + "WolfPet", Guids.TotemBeastWolfPet)
+                .SetDisplayName("TotemBeastWolf.Name")
+                .SetDescription("TotemBeastWolf.Description")
+                .SetIcon(AbilityRefs.AnimalAspectGorilla.Reference.Get().Icon)
+                .AddFacts(new() { wolfbuff })
+                .SetReapplyOnLevelUp()
+                .Configure();
+
             //We are creating feats for the selection to apply the feat to our pet. There has to be a better way to do this. Madness ensues.
             var fbull = FeatureConfigurator.New(FeatName + "Bull", Guids.TotemBeastBull)
                 .SetDisplayName("TotemBeastBull.Name")
@@ -188,12 +258,30 @@ namespace AddedFeats.NewFeatures
             var fmonkey = FeatureConfigurator.New(FeatName + "Monkey", Guids.TotemBeastMonkey)
                 .SetDisplayName("TotemBeastMonkey.Name")
                 .SetDescription("TotemBeastMonkey.Description")
-                .AddFeatureToPet(focmonkeypet).Configure();          
+                .AddFeatureToPet(focmonkeypet).Configure();
+
+            var fbat = FeatureConfigurator.New(FeatName + "Bat", Guids.TotemBeastBat)
+                .SetDisplayName("TotemBeastBat.Name")
+                .SetDescription("TotemBeastBat.Description")
+                .AddFeatureToPet(focbatpet).Configure();
+            var ffrog= FeatureConfigurator.New(FeatName + "Frog", Guids.TotemBeastFrog)
+                .SetDisplayName("TotemBeastFrog.Name")
+                .SetDescription("TotemBeastFrog.Description")
+                .AddFeatureToPet(focfrogpet).Configure();
+            var fsnake = FeatureConfigurator.New(FeatName + "Snake", Guids.TotemBeastSnake)
+                .SetDisplayName("TotemBeastSnake.Name")
+                .SetDescription("TotemBeastSnake.Description")
+                .AddFeatureToPet(focsnakepet).Configure();
+            var fwolf = FeatureConfigurator.New(FeatName + "Wolf", Guids.TotemBeastWolf)
+                .SetDisplayName("TotemBeastWolf.Name")
+                .SetDescription("TotemBeastWolf.Description")
+                .AddFeatureToPet(focwolfpet).Configure();
+
 
             var selection = FeatureSelectionConfigurator.New(FeatName + "Selection", Guids.TotemBeastSelection)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
-                .AddToAllFeatures(fbull, fbear, ftiger, ffalcon, fstag, fmouse, fowl, fmonkey)
+                .AddToAllFeatures(fbull, fbear, ftiger, ffalcon, fstag, fmouse, fowl, fmonkey, fbat, ffrog, fsnake, fwolf)
                 .SetHideInUI(true)
                 .SetHideInCharacterSheetAndLevelUp(true)
                 .SetHideNotAvailibleInUI(false)

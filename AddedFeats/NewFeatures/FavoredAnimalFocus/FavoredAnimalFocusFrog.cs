@@ -19,13 +19,14 @@ using System;
 using System.Runtime.CompilerServices;
 using Kingmaker.Tutorial;
 using Kingmaker.UI.ServiceWindow.CharacterScreen;
+using Kingmaker.Blueprints.Classes.Spells;
 
 namespace AddedFeats.NewFeatures.FavoredAnimalFocus
 {
     /// <summary>
     /// Creates the Favored Animal Focus - Frog logic and feature.
     /// </summary>
-    internal class AnimalFocusFrog
+    internal class FavoredAnimalFocusFrog 
     {
         private static readonly string FeatName = "FavoredAnimalFocusFrog";
         private static readonly string DisplayName = "FavoredFrog.Name";
@@ -34,10 +35,10 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
         private static readonly string FavoredAnimalFocusCharacter = Guids.FavoredAnimalFocusFrog;
         private static readonly string FavoredAnimalFocusPet = Guids.FavoredAnimalFocusFrogPet;
         private static readonly string FavoredAnimalFocusBuff = Guids.FavoredAnimalFocusFrogBuff;
-        private static readonly StatType FavoredAnimalFocusStat = StatType.Constitution;
-        private static readonly ModifierDescriptor FavoredAnimalFocusDescriptor = ModifierDescriptor.Inherent;
+        private static readonly StatType FavoredAnimalFocusStat = StatType.SkillMobility;
+        private static readonly ModifierDescriptor FavoredAnimalFocusDescriptor = ModifierDescriptor.Competence;
 
-         public static BlueprintFeature Configure()
+        public static BlueprintFeature Configure()
         {
             //Create a pet feature to use as the conditional information for the new buff.
             FeatureConfigurator.New(FeatName + "Pet", FavoredAnimalFocusPet)
@@ -46,25 +47,25 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
                 .SetHideInUI(true)
                 .SetHideInCharacterSheetAndLevelUp(true)
                 .SetHideNotAvailibleInUI(false)
-                .Configure(); 
+                .Configure();
 
             //The magical new ability with it's new context and everything
             BlueprintBuff FavoredAnimalBuff = BuffConfigurator.New(FeatName + "Buff", FavoredAnimalFocusBuff)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetFlags(BlueprintBuff.Flags.HiddenInUi)
-                .AddContextStatBonus(FavoredAnimalFocusStat, 
+                .AddContextStatBonus(FavoredAnimalFocusStat,
                 value: new ContextValue()
                 {
                     ValueType = ContextValueType.Rank
                 }, FavoredAnimalFocusDescriptor)
                 .AddContextRankConfig(
                     ContextRankConfigs.CharacterLevel()
-                    .WithCustomProgression((7, 4), (15, 6), (16, 8)))
+                    .WithCustomProgression((7, 6), (15, 8), (16, 12)))
                 .Configure();
 
             //Patch the existing AnimalFocusEffect to get it into our game.
-            FeatureConfigurator.For(FeatureRefs.AnimalFocusFrogEffect)
+            FeatureConfigurator.For(FeatureRefs.AnimalFocusBearEffect)
             .AddFactContextActions(
                 activated:
                     ActionsBuilder.New()

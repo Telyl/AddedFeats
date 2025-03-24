@@ -12,20 +12,25 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
 
         public static void Configure()
         {
-            var focbear = AnimalFocusBear.Configure();
-            var focbull = AnimalFocusBull.Configure();
-            var focfalcon = AnimalFocusFalcon.Configure();
-            var focmonkey = AnimalFocusMonkey.Configure();
-            var focmouse = AnimalFocusMouse.Configure();
-            var focowl = AnimalFocusOwl.Configure();
-            var focstag = AnimalFocusStag.Configure();
-            var foctiger = AnimalFocusTiger.Configure();
+            var focbear = FavoredAnimalFocusBear.Configure();
+            var focbull = FavoredAnimalFocusBull.Configure();
+            var focfalcon = FavoredAnimalFocusFalcon.Configure();
+            var focmonkey = FavoredAnimalFocusMonkey.Configure();
+            var focmouse = FavoredAnimalFocusMouse.Configure();
+            var focowl = FavoredAnimalFocusOwl.Configure();
+            var focstag = FavoredAnimalFocusStag.Configure();
+            var foctiger = FavoredAnimalFocusTiger.Configure();
+            var focbat = FavoredAnimalFocusBat.Configure();
+            var focfrog = FavoredAnimalFocusFrog.Configure();
+            var focsnake = FavoredAnimalFocusSnake.Configure();
+            var focwolf = FavoredAnimalFocusWolf.Configure();
 
             var selection = FeatureSelectionConfigurator.New(FeatName, Guids.FavoredAnimalFocusSelection)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .AddPrerequisiteFeature(FeatureRefs.HunterAnimalFocusFeature.Reference.Get())
-                .AddToAllFeatures(focbear, focbull, focfalcon, focmonkey, focmouse, focowl, focstag, foctiger)
+                .AddToAllFeatures(focbear, focbull, focfalcon, focmonkey, focmouse, 
+                focowl, focstag, foctiger, focbat, focfrog, focsnake, focwolf)
                 .SetHideInUI(true)
                 .SetHideInCharacterSheetAndLevelUp(true)
                 .SetHideNotAvailibleInUI(false)

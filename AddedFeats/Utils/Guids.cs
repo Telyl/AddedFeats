@@ -265,6 +265,10 @@ namespace AddedFeats.Utils
         internal const string TotemBeastMouse = "22406716-3bae-4687-9903-f076a97fa937";
         internal const string TotemBeastOwl = "572d9def-6827-47f9-afb3-ae239fa32457";
         internal const string TotemBeastMonkey = "e46464da-f1f8-4495-b3f0-eaae9a4e366b";
+        internal const string TotemBeastBat = "1c2a6e5fb3954df7ad6a86008a9f62bd";
+        internal const string TotemBeastFrog = "ccca6e5fb3954df7ad6a86008a9f62bd";
+        internal const string TotemBeastSnake = "aaaa6e5fb3954df7ad6a86008a9f62bd";
+        internal const string TotemBeastWolf = "eeea6e5fb3954df7ad6a86008a9f62bd";
 
         internal const string TotemBeastBullBuff = "6240e7eb-eab4-492e-85cf-0794b87ab78a";
         internal const string TotemBeastBearBuff = "1c616d01-37b1-4652-8e55-8d65f2f22dc8";
@@ -274,6 +278,10 @@ namespace AddedFeats.Utils
         internal const string TotemBeastMouseBuff = "22306716-3bae-4687-9903-f076a97fa937";
         internal const string TotemBeastOwlBuff = "572d5def-6827-47f9-afb3-ae239fa32457";
         internal const string TotemBeastMonkeyBuff = "e46664da-f1f8-4495-b3f0-eaae9a4e366b";
+        internal const string TotemBeastBatBuff = "9fa00f3c2d334b65870f28319a754abc";
+        internal const string TotemBeastFrogBuff = "9fa00f3c2d334b65870f28319a754dee";
+        internal const string TotemBeastSnakeBuff = "9fa00f3c2d334b65870f28319a754aaa";
+        internal const string TotemBeastWolfBuff = "9fa00f3c2d334b65870f28319a754123";
 
         internal const string TotemBeastBullPet = "5270e7eb-eab4-492e-85cf-0794b87ab78a";
         internal const string TotemBeastBearPet = "2c516d01-37b1-4652-8e55-8d65f2f22dc8";
@@ -283,6 +291,10 @@ namespace AddedFeats.Utils
         internal const string TotemBeastMousePet = "32406716-3bae-4687-9903-f076a97fa937";
         internal const string TotemBeastOwlPet = "672d9def-6827-47f9-afb3-ae239fa32457";
         internal const string TotemBeastMonkeyPet = "a46464da-f1f8-4495-b3f0-eaae9a4e366b";
+        internal const string TotemBeastFrogPet = "2645cad29dd241f12341ef4c6f6ef63a";
+        internal const string TotemBeastSnakePet = "2645cad29dd241456541ef4c6f6ef63a";
+        internal const string TotemBeastBatPet = "2645cad29dd241f47891ef4c6f6ef63a";
+        internal const string TotemBeastWolfPet = "2645cad29dd241fabc41ef4c6f6ef63a";
         #endregion
         #region Homebrew
         internal const string MythicAnimalFocus = "f15fc8d6-b2cd-495d-8977-bf99e6176d1d";

@@ -25,7 +25,7 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
     /// <summary>
     /// Creates the Favored Animal Focus - Bear logic and feature.
     /// </summary>
-    internal class AnimalFocusFalcon
+    internal class FavoredAnimalFocusFalcon
     {
         private static readonly string FeatName = "FavoredAnimalFocusFalcon";
         private static readonly string DisplayName = "FavoredFalcon.Name";

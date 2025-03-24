@@ -587,7 +587,7 @@
     },
     {
         "Key": "TotemBeastSelection.Description",
-        "enGB": "Select one animal aspect from the list presented in the hunter classs animal focus class feature. Your animal companion gains the benefits of the selected animal aspect, treating its Hit Dice as its effective hunter level for this ability."
+        "enGB": "Select one animal aspect from the list presented in the hunter animal focus class feature. Your animal companion gains the benefits of the selected animal aspect, treating its Hit Dice as its effective hunter level for this ability."
     },
     {
         "Key": "TotemBeastBull.Name",
@@ -660,6 +660,42 @@
     {
         "Key": "TotemBeastMouse.Description",
         "enGB": "The creature gains evasion, as the rogue class feature. At 12th level, this increases to improved evasion, as the rogue advanced talent."
+    },
+    {
+        "Key": "TotemBeastBat.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Bat"
+    },
+    {
+        "Key": "TotemBeastBat.Description",
+        "enGB": "The creature gains blindsense to a range of 10 feet with immunity to gaze attacks."
+    },
+    {
+        "Key": "TotemBeastFrog.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Frog"
+    },
+    {
+        "Key": "TotemBeastFrog.Description",
+        "enGB": "The creature gains a +4 competence bonus on Mobility checks. These bonuses increase to +6 at 8th level and +8 at 15th level."
+    },
+    {
+        "Key": "TotemBeastSnake.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Snake"
+    },
+    {
+        "Key": "TotemBeastSnake.Description",
+        "enGB": "The creature gains a +2 bonus on attack rolls when making attacks of opportunity and a +2 dodge bonus to AC against attacks of opportunity. These bonuses increase to +4 at 8th level and +6 at 15th level."
+    },
+    {
+        "Key": "TotemBeastWolf.Name",
+        "ProcessTemplates": false,
+        "enGB": "Totem Beast - Wolf"
+    },
+    {
+        "Key": "TotemBeastWolf.Description",
+        "enGB": "The creature gains the scent ability with a range of 30 feet."
     },
     {
         "Key": "EvolvedCompanionSkilled.Name",

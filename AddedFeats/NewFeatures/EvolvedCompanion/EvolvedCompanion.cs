@@ -1,14 +1,6 @@
 ﻿using AddedFeats.Utils;
-using Kingmaker.Blueprints.Classes;
-using static UnityModManagerNet.UnityModManager.ModEntry;
-using System;
 using Kingmaker.EntitySystem.Stats;
-using BlueprintCore.Blueprints.References;
 using BlueprintCore.Blueprints.CustomConfigurators.Classes.Selection;
-using WOTR_MAKING_FRIENDS.GUIDs;
-using static WOTR_MAKING_FRIENDS.Features.EidolonFeatures.ProgressionFeatures.FeatureAddAbilityDivineTroth;
-using BlueprintCore.Blueprints.CustomConfigurators.Classes;
-using Kingmaker.Blueprints.Items.Weapons;
 
 namespace AddedFeats.NewFeatures.EvolvedCompanion
 {

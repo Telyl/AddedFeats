@@ -19,13 +19,14 @@ using System;
 using System.Runtime.CompilerServices;
 using Kingmaker.Tutorial;
 using Kingmaker.UI.ServiceWindow.CharacterScreen;
+using Kingmaker.Blueprints.Classes.Spells;
 
 namespace AddedFeats.NewFeatures.FavoredAnimalFocus
 {
     /// <summary>
-    /// Creates the Favored Animal Focus - Bat logic and feature.
+    /// Creates the Favored Animal Focus - Wolf logic and feature.
     /// </summary>
-    internal class AnimalFocusBat
+    internal class FavoredAnimalFocusBat
     {
         private static readonly string FeatName = "FavoredAnimalFocusBat";
         private static readonly string DisplayName = "FavoredBat.Name";
@@ -34,10 +35,8 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
         private static readonly string FavoredAnimalFocusCharacter = Guids.FavoredAnimalFocusBat;
         private static readonly string FavoredAnimalFocusPet = Guids.FavoredAnimalFocusBatPet;
         private static readonly string FavoredAnimalFocusBuff = Guids.FavoredAnimalFocusBatBuff;
-        private static readonly StatType FavoredAnimalFocusStat = StatType.Constitution;
-        private static readonly ModifierDescriptor FavoredAnimalFocusDescriptor = ModifierDescriptor.Inherent;
 
-         public static BlueprintFeature Configure()
+        public static BlueprintFeature Configure()
         {
             //Create a pet feature to use as the conditional information for the new buff.
             FeatureConfigurator.New(FeatName + "Pet", FavoredAnimalFocusPet)
@@ -46,18 +45,19 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
                 .SetHideInUI(true)
                 .SetHideInCharacterSheetAndLevelUp(true)
                 .SetHideNotAvailibleInUI(false)
-                .Configure(); 
+                .Configure();
 
             //The magical new ability with it's new context and everything
             BlueprintBuff FavoredAnimalBuff = BuffConfigurator.New(FeatName + "Buff", FavoredAnimalFocusBuff)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetFlags(BlueprintBuff.Flags.HiddenInUi)
-                .AddBlindsense(20.Feet(), false)
+                .AddBlindsense(range: 20.Feet(), true)
+                .AddSpellImmunityToSpellDescriptor(descriptor: SpellDescriptor.GazeAttack)
                 .Configure();
 
             //Patch the existing AnimalFocusEffect to get it into our game.
-            FeatureConfigurator.For(Guids.AnimalFocusBatFeatureEffect)
+            FeatureConfigurator.For(FeatureRefs.AnimalFocusBearEffect)
             .AddFactContextActions(
                 activated:
                     ActionsBuilder.New()

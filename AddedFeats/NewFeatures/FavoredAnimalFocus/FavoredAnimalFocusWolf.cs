@@ -19,13 +19,14 @@ using System;
 using System.Runtime.CompilerServices;
 using Kingmaker.Tutorial;
 using Kingmaker.UI.ServiceWindow.CharacterScreen;
+using Kingmaker.Blueprints.Classes.Spells;
 
 namespace AddedFeats.NewFeatures.FavoredAnimalFocus
 {
     /// <summary>
     /// Creates the Favored Animal Focus - Wolf logic and feature.
     /// </summary>
-    internal class AnimalFocusWolf
+    internal class FavoredAnimalFocusWolf
     {
         private static readonly string FeatName = "FavoredAnimalFocusWolf";
         private static readonly string DisplayName = "FavoredWolf.Name";
@@ -34,8 +35,6 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
         private static readonly string FavoredAnimalFocusCharacter = Guids.FavoredAnimalFocusWolf;
         private static readonly string FavoredAnimalFocusPet = Guids.FavoredAnimalFocusWolfPet;
         private static readonly string FavoredAnimalFocusBuff = Guids.FavoredAnimalFocusWolfBuff;
-        private static readonly StatType FavoredAnimalFocusStat = StatType.Constitution;
-        private static readonly ModifierDescriptor FavoredAnimalFocusDescriptor = ModifierDescriptor.Inherent;
 
          public static BlueprintFeature Configure()
         {
@@ -46,25 +45,18 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
                 .SetHideInUI(true)
                 .SetHideInCharacterSheetAndLevelUp(true)
                 .SetHideNotAvailibleInUI(false)
-                .Configure(); 
+                .Configure();
 
             //The magical new ability with it's new context and everything
             BlueprintBuff FavoredAnimalBuff = BuffConfigurator.New(FeatName + "Buff", FavoredAnimalFocusBuff)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .SetFlags(BlueprintBuff.Flags.HiddenInUi)
-                .AddContextStatBonus(FavoredAnimalFocusStat, 
-                value: new ContextValue()
-                {
-                    ValueType = ContextValueType.Rank
-                }, FavoredAnimalFocusDescriptor)
-                .AddContextRankConfig(
-                    ContextRankConfigs.CharacterLevel()
-                    .WithCustomProgression((7, 4), (15, 6), (16, 8)))
+                .AddBlindsense(range: 60.Feet(), false)
                 .Configure();
 
             //Patch the existing AnimalFocusEffect to get it into our game.
-            FeatureConfigurator.For(FeatureRefs.AnimalFocusWolfEffect)
+            FeatureConfigurator.For(FeatureRefs.AnimalFocusBearEffect)
             .AddFactContextActions(
                 activated:
                     ActionsBuilder.New()

@@ -25,7 +25,7 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
     /// <summary>
     /// Creates the Favored Animal Focus - Bear logic and feature.
     /// </summary>
-    internal class AnimalFocusStag
+    internal class FavoredAnimalFocusStag
     {
         private static readonly string FeatName = "FavoredAnimalFocusStag";
         private static readonly string DisplayName = "FavoredStag.Name";
@@ -59,7 +59,7 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
                 }, FavoredAnimalFocusDescriptor)
                 .AddContextRankConfig(
                     ContextRankConfigs.CharacterLevel()
-                    .WithCustomProgression((7, 10), (15, 20), (16, 30)))
+                    .WithCustomProgression((7, 5), (15, 10), (16, 15)))
                 .Configure();
 
             //Patch the existing AnimalFocusEffect to get it into our game.
