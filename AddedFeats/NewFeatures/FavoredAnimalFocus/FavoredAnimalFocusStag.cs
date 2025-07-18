@@ -63,7 +63,7 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
                 .Configure();
 
             //Patch the existing AnimalFocusEffect to get it into our game.
-            FeatureConfigurator.For(FeatureRefs.AnimalFocusBearEffect)
+            FeatureConfigurator.For(FeatureRefs.AnimalFocusStagEffect)
             .AddFactContextActions(
                 activated:
                     ActionsBuilder.New()
