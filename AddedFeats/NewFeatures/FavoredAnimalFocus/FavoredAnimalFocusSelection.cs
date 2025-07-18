@@ -20,17 +20,17 @@ namespace AddedFeats.NewFeatures.FavoredAnimalFocus
             var focowl = FavoredAnimalFocusOwl.Configure();
             var focstag = FavoredAnimalFocusStag.Configure();
             var foctiger = FavoredAnimalFocusTiger.Configure();
-            var focbat = FavoredAnimalFocusBat.Configure();
-            var focfrog = FavoredAnimalFocusFrog.Configure();
-            var focsnake = FavoredAnimalFocusSnake.Configure();
-            var focwolf = FavoredAnimalFocusWolf.Configure();
+            //var focbat = FavoredAnimalFocusBat.Configure();
+            //var focfrog = FavoredAnimalFocusFrog.Configure();
+            //var focsnake = FavoredAnimalFocusSnake.Configure();
+            //var focwolf = FavoredAnimalFocusWolf.Configure();
 
             var selection = FeatureSelectionConfigurator.New(FeatName, Guids.FavoredAnimalFocusSelection)
                 .SetDisplayName(DisplayName)
                 .SetDescription(Description)
                 .AddPrerequisiteFeature(FeatureRefs.HunterAnimalFocusFeature.Reference.Get())
                 .AddToAllFeatures(focbear, focbull, focfalcon, focmonkey, focmouse, 
-                focowl, focstag, foctiger, focbat, focfrog, focsnake, focwolf)
+                focowl, focstag, foctiger) //focbat, focfrog, focsnake, focwolf)
                 .SetHideInUI(true)
                 .SetHideInCharacterSheetAndLevelUp(true)
                 .SetHideNotAvailibleInUI(false)
